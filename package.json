@@ -1,0 +1,16 @@
+{
+  "name": "kids-reading-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A kid-safe reading app for ages 4-8: stories, kids world news, quizzes, read-aloud narration, and parent progress tracking.",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "migrate": "node --env-file=.env scripts/migrate.js",
+    "seed": "node --env-file=.env scripts/seed.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.1"
+  }
+}

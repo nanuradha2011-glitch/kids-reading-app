@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kids Reading App</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <span class="floaty" style="top:8%; left:10%;">⭐</span>
+  <span class="floaty" style="top:18%; right:12%; animation-delay: 1.2s;">🌈</span>
+  <span class="floaty" style="bottom:14%; left:8%; animation-delay: 2.4s;">📚</span>
+  <span class="floaty" style="bottom:10%; right:10%; animation-delay: 0.6s;">🚀</span>
+
+  <!-- ============ LOGIN / SIGNUP VIEW ============ -->
+  <div class="card" id="auth-card">
+    <p class="title">📖 Little Explorers</p>
+    <p class="subtitle">A parent account for your kids' 5-minute reading habit</p>
+
+    <div class="tabs" id="auth-tabs">
+      <button class="tab active" data-panel="login">Log In</button>
+      <button class="tab" data-panel="signup">Sign Up</button>
+    </div>
+
+    <div class="panel active" id="login">
+      <form id="login-form">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required>
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required>
+        <button class="primary" type="submit">Log In</button>
+      </form>
+    </div>
+
+    <div class="panel" id="signup">
+      <form id="signup-form">
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" required>
+        <label for="signup-password">Password (min 8 characters)</label>
+        <input type="password" id="signup-password" required minlength="8">
+        <button class="primary" type="submit">Create Account</button>
+      </form>
+    </div>
+
+    <p id="auth-status"></p>
+  </div>
+
+  <!-- ============ PARENT DASHBOARD VIEW ============ -->
+  <div class="card wide hidden" id="dashboard-card">
+    <div class="dash-header">
+      <div>
+        <p class="title small">👋 Hi there!</p>
+        <p class="subtitle" id="dash-email" style="margin:0;"></p>
+      </div>
+      <button class="secondary" id="logout-btn">Log Out</button>
+    </div>
+
+    <h3 class="section-heading">Your kids</h3>
+    <div id="kid-list" class="kid-list"></div>
+    <p id="no-kids-msg" class="hint hidden">No kid profiles yet — add your first one below!</p>
+
+    <h3 class="section-heading">Add a kid</h3>
+    <form id="add-kid-form" class="inline-form">
+      <input type="text" id="kid-name" placeholder="Name" required>
+      <input type="number" id="kid-age" placeholder="Age" min="1" max="17" required style="max-width:90px;">
+      <button class="primary" type="submit">Add</button>
+    </form>
+
+    <p id="dash-status"></p>
+  </div>
+
+  <!-- ============ KID READER: TABS + GRID ============ -->
+  <div class="card xwide hidden" id="reader-card">
+    <div class="dash-header">
+      <button class="secondary" id="back-to-kids-btn">← Back</button>
+      <p class="title small" id="reader-kid-name" style="margin:0;"></p>
+    </div>
+
+    <div class="tabs" id="content-tabs">
+      <button class="tab active" data-type="story">📖 Stories</button>
+      <button class="tab" data-type="news">🌍 Kids World News</button>
+    </div>
+
+    <div id="story-grid" class="story-grid"></div>
+    <p id="no-stories-msg" class="hint hidden">Nothing here yet — check back soon!</p>
+  </div>
+
+  <!-- ============ READING VIEW ============ -->
+  <div class="card wide hidden" id="reading-card">
+    <button class="secondary" id="back-to-grid-btn">← Back to list</button>
+    <p class="reading-category" id="reading-category"></p>
+    <h2 class="reading-title" id="reading-title"></h2>
+
+    <button class="audio-btn" id="read-aloud-btn">🔊 Read to Me</button>
+
+    <div class="reading-body" id="reading-body"></div>
+
+    <div class="reaction-row" id="reaction-row">
+      <button class="reaction-btn" data-reaction="like">👍<span>Like</span></button>
+      <button class="reaction-btn" data-reaction="dislike">👎<span>Dislike</span></button>
+      <button class="reaction-btn" data-reaction="love">❤️<span>Love</span></button>
+      <button class="reaction-btn" data-reaction="inspiring">✨<span>Inspiring</span></button>
+    </div>
+
+    <button class="primary" id="mark-done-btn">I'm Done Reading! 🎉</button>
+    <p id="reading-status"></p>
+
+    <div class="quiz-section" id="quiz-section">
+      <h3 class="section-heading">📝 Quick Quiz!</h3>
+      <div id="quiz-body"></div>
+    </div>
+  </div>
+
+  <!-- ============ PARENT PROGRESS VIEW ============ -->
+  <div class="card wide hidden" id="progress-card">
+    <div class="dash-header">
+      <button class="secondary" id="back-from-progress-btn">← Back</button>
+      <p class="title small" id="progress-kid-name" style="margin:0;"></p>
+    </div>
+
+    <div class="stat-row" id="progress-stats"></div>
+
+    <h3 class="section-heading">📚 Recent Activity</h3>
+    <div id="progress-activity"></div>
+    <p id="progress-empty-msg" class="hint hidden">No stories read yet — once they start, activity shows up here.</p>
+  </div>
+
+  <!-- ============ VOCABULARY POPUP ============ -->
+  <!-- Fixed to the bottom of the screen rather than anchored to the
+       tapped word — much simpler to position correctly at any screen
+       size than a floating tooltip next to arbitrary text. -->
+  <div class="vocab-popup hidden" id="vocab-popup">
+    <button class="vocab-close" id="vocab-close-btn">✕</button>
+    <div class="vocab-popup-word" id="vocab-popup-word"></div>
+    <div class="vocab-popup-def" id="vocab-popup-def"></div>
+    <button class="secondary" id="vocab-replay-btn">🔊 Say it again</button>
+  </div>
+
+  <script>
+    const KID_EMOJIS = ['🦊', '🐼', '🦁', '🐸', '🐨', '🦄', '🐢', '🐳'];
+    const CATEGORY_ICONS = {
+      kindness: '💖', space: '🚀', nature: '🌿',
+      ocean: '🌊', invention: '💡', animals: '🐾',
+    };
+
+    // Which kid we're currently reading as, which tab (story/news) is
+    // open, and which single item is on screen in the reading view.
+    let currentKid = null;
+    let currentTab = 'story';
+    let currentStoryId = null;
+
+    function show(el) { el.classList.remove('hidden'); }
+    function hide(el) { el.classList.add('hidden'); }
+
+    // Escapes text that came from a user (kid names, comments) before it
+    // goes into innerHTML, so typed text is always displayed as plain
+    // text and never runs as HTML/script — this is what prevents XSS.
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    async function api(url, options = {}) {
+      const res = await fetch(url, {
+        headers: { 'Content-Type': 'application/json' },
+        ...options,
+      });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(body.error || 'Something went wrong');
+      return body;
+    }
+
+    async function loadKids() {
+      const kids = await api('/api/kids');
+      const list = document.getElementById('kid-list');
+      list.innerHTML = '';
+      document.getElementById('no-kids-msg').classList.toggle('hidden', kids.length > 0);
+      kids.forEach((kid, i) => {
+        const card = document.createElement('div');
+        card.className = 'kid-card';
+        card.innerHTML = `
+          <button class="progress-btn" title="View progress">📊</button>
+          <div class="kid-avatar">${KID_EMOJIS[i % KID_EMOJIS.length]}</div>
+          <div class="kid-name">${escapeHtml(kid.name)}</div>
+          <div class="kid-age">Age ${kid.age}</div>
+        `;
+        // Clicking a kid enters THEIR reading world — everything after
+        // this point (stories, progress, reactions) is scoped to
+        // whichever kid was clicked, stored in currentKid.
+        card.addEventListener('click', () => enterReader(kid));
+        // stopPropagation so tapping the little 📊 badge doesn't ALSO
+        // trigger the card's own click (which would enter reading mode).
+        card.querySelector('.progress-btn').addEventListener('click', (e) => {
+          e.stopPropagation();
+          openProgress(kid);
+        });
+        list.appendChild(card);
+      });
+    }
+
+    // --- Enter a kid's reading world ---
+    function enterReader(kid) {
+      currentKid = kid;
+      currentTab = 'story';
+      hide(document.getElementById('dashboard-card'));
+      show(document.getElementById('reader-card'));
+      document.getElementById('reader-kid-name').textContent = `${kid.name}'s Reading World`;
+      document.querySelectorAll('#content-tabs .tab').forEach((t) => t.classList.remove('active'));
+      document.querySelector('#content-tabs .tab[data-type="story"]').classList.add('active');
+      loadStoryGrid('story');
+    }
+
+    async function loadStoryGrid(type) {
+      currentTab = type;
+      const stories = await api(`/api/kids/${currentKid.id}/stories?type=${type}`);
+      const grid = document.getElementById('story-grid');
+      grid.innerHTML = '';
+      document.getElementById('no-stories-msg').classList.toggle('hidden', stories.length > 0);
+      stories.forEach((story) => {
+        const card = document.createElement('div');
+        card.className = 'story-card';
+        card.innerHTML = `
+          ${story.is_read ? '<div class="read-badge">✓ Read</div>' : ''}
+          <div class="story-icon">${CATEGORY_ICONS[story.category] || '📘'}</div>
+          <div class="story-title">${story.title}</div>
+          <div class="story-meta">${story.read_minutes} min read</div>
+        `;
+        card.addEventListener('click', () => openStory(story.id));
+        grid.appendChild(card);
+      });
+    }
+
+    async function openStory(id) {
+      stopReadAloud(); // never let audio from a previous story keep playing
+      // Passing kid_id lets the server tell us this kid's existing
+      // reaction (if any) in the same response, so the right button can
+      // start out highlighted.
+      const story = await api(`/api/stories/${id}?kid_id=${currentKid.id}`);
+      currentStoryId = story.id;
+      hide(document.getElementById('reader-card'));
+      show(document.getElementById('reading-card'));
+      document.getElementById('reading-category').textContent =
+        `${CATEGORY_ICONS[story.category] || '📘'} ${story.category} · ${story.read_minutes} min`;
+      document.getElementById('reading-title').textContent = story.title;
+      document.getElementById('reading-status').textContent = '';
+      hideVocabPopup();
+      renderReadableBody(story.body, story.vocabulary || []);
+      setActiveReaction(story.my_reaction);
+      renderQuiz(story.quiz || []);
+    }
+
+    // --- Reactions ---
+    function setActiveReaction(reactionType) {
+      document.querySelectorAll('.reaction-btn').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.reaction === reactionType);
+      });
+    }
+    document.querySelectorAll('.reaction-btn').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const reaction = await api(`/api/kids/${currentKid.id}/reactions`, {
+          method: 'POST',
+          body: JSON.stringify({ story_id: currentStoryId, reaction_type: btn.dataset.reaction }),
+        });
+        setActiveReaction(reaction.reaction_type);
+      });
+    });
+
+    // ================= READ-ALOUD (speech synthesis + word highlight) =================
+    // wordSpans holds every word currently on screen, in reading order,
+    // each remembering the character offset (into the ORIGINAL text
+    // string) where that word starts. The browser's speech engine
+    // reports that same kind of offset as it speaks, so we can match
+    // "audio just started this word" to "highlight this exact span".
+    let wordSpans = [];
+
+    function renderReadableBody(text, vocabulary) {
+      const container = document.getElementById('reading-body');
+      container.innerHTML = '';
+      wordSpans = [];
+
+      // Build a lookup from a "cleaned" word (lowercase, punctuation
+      // stripped) to its definition, so "Meadow" and "meadow." in the
+      // text both match a vocabulary entry of "meadow".
+      const vocabMap = {};
+      vocabulary.forEach((v) => { vocabMap[v.word.toLowerCase()] = v.definition; });
+
+      // Split into "word" and "whitespace" chunks. Whitespace (including
+      // the blank lines between paragraphs) is inserted as plain text so
+      // the existing white-space:pre-line CSS still lays it out the same
+      // as before — only the words themselves become clickable-by-code
+      // <span> targets.
+      const tokenPattern = /(\S+)|(\s+)/g;
+      let match;
+      while ((match = tokenPattern.exec(text))) {
+        if (match[1]) {
+          const span = document.createElement('span');
+          span.className = 'word';
+          span.textContent = match[1];
+          span.dataset.start = match.index;
+
+          const cleaned = match[1].toLowerCase().replace(/[^a-z]/g, '');
+          if (vocabMap[cleaned]) {
+            span.classList.add('vocab-word');
+            span.addEventListener('click', () => showVocabPopup(cleaned, vocabMap[cleaned]));
+          }
+
+          container.appendChild(span);
+          wordSpans.push(span);
+        } else {
+          container.appendChild(document.createTextNode(match[2]));
+        }
+      }
+    }
+
+    function clearHighlight() {
+      wordSpans.forEach((s) => s.classList.remove('highlight'));
+    }
+
+    // Given the character index the speech engine says it just reached,
+    // find the LAST word whose start position is still <= that index —
+    // that's the word currently being spoken.
+    function highlightWordAtCharIndex(charIndex) {
+      let target = null;
+      for (const span of wordSpans) {
+        if (Number(span.dataset.start) <= charIndex) target = span;
+        else break;
+      }
+      clearHighlight();
+      if (target) {
+        target.classList.add('highlight');
+        target.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    }
+
+    // Voices load asynchronously in most browsers — this resolves as
+    // soon as they're ready, or after a short timeout if this browser
+    // never fires the event (some headless/limited environments don't).
+    function getVoicesAsync() {
+      return new Promise((resolve) => {
+        const existing = speechSynthesis.getVoices();
+        if (existing.length) return resolve(existing);
+        const timeout = setTimeout(() => resolve(speechSynthesis.getVoices()), 1000);
+        speechSynthesis.onvoiceschanged = () => {
+          clearTimeout(timeout);
+          resolve(speechSynthesis.getVoices());
+        };
+      });
+    }
+
+    // Voice "gender" isn't a real, reliable field in the Web Speech API —
+    // this is a best-effort match against common female-voice names
+    // across platforms, falling back gracefully if none are found. What
+    // voices actually exist depends on the device this runs on.
+    const FEMALE_VOICE_NAMES = [
+      'Samantha', 'Google UK English Female', 'Google US English',
+      'Microsoft Zira', 'Microsoft Jenny', 'Victoria', 'Karen', 'Moira', 'Tessa', 'Fiona', 'Susan',
+    ];
+    function pickFemaleVoice(voices) {
+      for (const name of FEMALE_VOICE_NAMES) {
+        const v = voices.find((v) => v.name === name);
+        if (v) return v;
+      }
+      const hint = voices.find((v) => /female/i.test(v.name));
+      if (hint) return hint;
+      return voices.find((v) => v.lang && v.lang.startsWith('en')) || voices[0] || null;
+    }
+
+    const readBtn = document.getElementById('read-aloud-btn');
+    let isPaused = false;
+
+    async function startReadAloud() {
+      speechSynthesis.cancel();
+      const text = document.getElementById('reading-body').textContent;
+      const utterance = new SpeechSynthesisUtterance(text);
+      const voice = pickFemaleVoice(await getVoicesAsync());
+      if (voice) utterance.voice = voice;
+      utterance.rate = 0.9; // a touch slower than default, easier for young listeners to follow
+      utterance.pitch = 1.05;
+      utterance.onboundary = (e) => {
+        if (typeof e.charIndex === 'number') highlightWordAtCharIndex(e.charIndex);
+      };
+      utterance.onend = () => { isPaused = false; readBtn.textContent = '🔊 Read to Me'; clearHighlight(); };
+      utterance.onerror = () => { isPaused = false; readBtn.textContent = '🔊 Read to Me'; clearHighlight(); };
+      speechSynthesis.speak(utterance);
+      readBtn.textContent = '⏸ Pause';
+    }
+
+    function stopReadAloud() {
+      speechSynthesis.cancel();
+      isPaused = false;
+      readBtn.textContent = '🔊 Read to Me';
+      clearHighlight();
+    }
+
+    readBtn.addEventListener('click', () => {
+      if (!speechSynthesis.speaking) {
+        startReadAloud();
+      } else if (isPaused) {
+        speechSynthesis.resume();
+        isPaused = false;
+        readBtn.textContent = '⏸ Pause';
+      } else {
+        speechSynthesis.pause();
+        isPaused = true;
+        readBtn.textContent = '▶ Resume';
+      }
+    });
+
+    // ================= VOCABULARY POPUP =================
+    let lastVocabSpoken = ''; // remembered so the "Say it again" button works without re-passing args
+
+    async function speakText(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      const voice = pickFemaleVoice(await getVoicesAsync());
+      if (voice) utterance.voice = voice;
+      utterance.rate = 0.9;
+      utterance.pitch = 1.05;
+      speechSynthesis.speak(utterance);
+    }
+
+    function showVocabPopup(word, definition) {
+      stopReadAloud(); // don't let the word's own audio overlap the story narration
+      document.getElementById('vocab-popup-word').textContent = word;
+      document.getElementById('vocab-popup-def').textContent = definition;
+      show(document.getElementById('vocab-popup'));
+      lastVocabSpoken = `${word}. ${definition}`;
+      speakText(lastVocabSpoken);
+    }
+
+    function hideVocabPopup() {
+      speechSynthesis.cancel();
+      hide(document.getElementById('vocab-popup'));
+    }
+
+    document.getElementById('vocab-close-btn').addEventListener('click', hideVocabPopup);
+    document.getElementById('vocab-replay-btn').addEventListener('click', () => {
+      if (lastVocabSpoken) speakText(lastVocabSpoken);
+    });
+
+    // ================= QUIZ =================
+    let quizQuestions = [];
+    let quizIndex = 0;
+    let quizScore = 0;
+
+    function renderQuiz(questions) {
+      quizQuestions = questions;
+      quizIndex = 0;
+      quizScore = 0;
+      document.getElementById('quiz-section').classList.toggle('hidden', questions.length === 0);
+      renderQuizQuestion();
+    }
+
+    function renderQuizQuestion() {
+      const box = document.getElementById('quiz-body');
+      if (quizIndex >= quizQuestions.length) {
+        box.innerHTML = `
+          <div class="quiz-result">🌟 You got ${quizScore} out of ${quizQuestions.length}! 🌟</div>
+          <button class="secondary" id="quiz-retry-btn">Try Again</button>
+        `;
+        document.getElementById('quiz-retry-btn').addEventListener('click', () => renderQuiz(quizQuestions));
+        api(`/api/kids/${currentKid.id}/quiz-attempts`, {
+          method: 'POST',
+          body: JSON.stringify({ story_id: currentStoryId, score: quizScore, total: quizQuestions.length }),
+        }).catch(() => {}); // saving the score shouldn't block showing it
+        return;
+      }
+
+      const q = quizQuestions[quizIndex];
+      box.innerHTML = `
+        <p class="quiz-question">${escapeHtml(q.question)}</p>
+        <div class="quiz-options">
+          ${q.options.map((opt, i) => `<button class="quiz-option" data-i="${i}">${escapeHtml(opt)}</button>`).join('')}
+        </div>
+      `;
+      box.querySelectorAll('.quiz-option').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const chosen = Number(btn.dataset.i);
+          box.querySelectorAll('.quiz-option').forEach((b) => (b.disabled = true));
+          if (chosen === q.correct) {
+            btn.classList.add('correct');
+            quizScore++;
+          } else {
+            btn.classList.add('incorrect');
+            box.querySelectorAll('.quiz-option')[q.correct].classList.add('correct');
+          }
+          setTimeout(() => {
+            quizIndex++;
+            renderQuizQuestion();
+          }, 1000);
+        });
+      });
+    }
+
+    // ================= PARENT PROGRESS VIEW =================
+    const REACTION_ICONS = { like: '👍', dislike: '👎', love: '❤️', inspiring: '✨' };
+
+    async function openProgress(kid) {
+      hide(document.getElementById('dashboard-card'));
+      show(document.getElementById('progress-card'));
+      document.getElementById('progress-kid-name').textContent = `${kid.name}'s Progress`;
+      const summary = await api(`/api/kids/${kid.id}/summary`);
+      renderProgressStats(summary);
+      renderProgressActivity(summary.recentActivity);
+    }
+
+    function renderProgressStats(summary) {
+      const quizAvgPct = summary.quizAttempts.length
+        ? Math.round(
+            (summary.quizAttempts.reduce((sum, q) => sum + q.score, 0) /
+              summary.quizAttempts.reduce((sum, q) => sum + q.total, 0)) *
+              100
+          )
+        : null;
+      const reactionSummary = summary.reactionCounts
+        .map((r) => `${REACTION_ICONS[r.reaction_type]} ${r.c}`)
+        .join('  ') || '—';
+
+      document.getElementById('progress-stats').innerHTML = `
+        <div class="stat-tile">
+          <div class="stat-value">${summary.totalRead}/${summary.totalAvailable}</div>
+          <div class="stat-label">Read</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">${summary.streak ? '🔥 ' + summary.streak : '0'}</div>
+          <div class="stat-label">Day streak</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">${quizAvgPct === null ? '—' : quizAvgPct + '%'}</div>
+          <div class="stat-label">Quiz avg</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value" style="font-size:16px;">${reactionSummary}</div>
+          <div class="stat-label">Reactions</div>
+        </div>
+      `;
+    }
+
+    function renderProgressActivity(items) {
+      const box = document.getElementById('progress-activity');
+      document.getElementById('progress-empty-msg').classList.toggle('hidden', items.length > 0);
+      box.innerHTML = items
+        .map((item) => {
+          const date = new Date(item.completed_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+          const quizBadge = item.total ? `<span class="activity-quiz">📝 ${item.score}/${item.total}</span>` : '';
+          const reactionBadge = item.reaction_type ? `<span>${REACTION_ICONS[item.reaction_type]}</span>` : '';
+          return `
+            <div class="activity-row">
+              <span class="activity-icon">${CATEGORY_ICONS[item.category] || '📘'}</span>
+              <span class="activity-title">${escapeHtml(item.title)}</span>
+              <span class="activity-date">${date}</span>
+              ${reactionBadge}
+              ${quizBadge}
+            </div>
+          `;
+        })
+        .join('');
+    }
+
+    document.getElementById('back-from-progress-btn').addEventListener('click', () => {
+      hide(document.getElementById('progress-card'));
+      show(document.getElementById('dashboard-card'));
+    });
+
+    // --- Content tabs (Stories / Kids World News) ---
+    document.querySelectorAll('#content-tabs .tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('#content-tabs .tab').forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+        loadStoryGrid(tab.dataset.type);
+      });
+    });
+
+    // --- Navigation buttons ---
+    document.getElementById('back-to-kids-btn').addEventListener('click', () => {
+      hide(document.getElementById('reader-card'));
+      show(document.getElementById('dashboard-card'));
+    });
+    document.getElementById('back-to-grid-btn').addEventListener('click', () => {
+      stopReadAloud();
+      hideVocabPopup();
+      hide(document.getElementById('reading-card'));
+      show(document.getElementById('reader-card'));
+      loadStoryGrid(currentTab); // refresh so the read badge is up to date
+    });
+
+    // --- Mark as read ---
+    document.getElementById('mark-done-btn').addEventListener('click', async () => {
+      const statusEl = document.getElementById('reading-status');
+      try {
+        await api(`/api/kids/${currentKid.id}/progress`, {
+          method: 'POST',
+          body: JSON.stringify({ story_id: currentStoryId }),
+        });
+        statusEl.textContent = '🌟 Nice job! Marked as read.';
+        statusEl.className = 'success';
+      } catch (err) {
+        statusEl.textContent = err.message;
+        statusEl.className = 'error';
+      }
+    });
+
+    async function enterDashboard(email) {
+      hide(document.getElementById('auth-card'));
+      show(document.getElementById('dashboard-card'));
+      document.getElementById('dash-email').textContent = email;
+      await loadKids();
+    }
+
+    async function checkLoginOnLoad() {
+      try {
+        const me = await api('/api/me');
+        await enterDashboard(me.email);
+      } catch {
+        show(document.getElementById('auth-card'));
+      }
+    }
+
+    // --- Auth tabs (Log In / Sign Up) — scoped to #auth-tabs so this
+    // doesn't also fire for the Stories/News tabs below, which share the
+    // .tab class but need different behavior (see #content-tabs handler).
+    document.querySelectorAll('#auth-tabs .tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('#auth-tabs .tab').forEach((t) => t.classList.remove('active'));
+        document.querySelectorAll('.panel').forEach((p) => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.panel).classList.add('active');
+        document.getElementById('auth-status').textContent = '';
+      });
+    });
+
+    // --- Signup ---
+    document.getElementById('signup-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('signup-email').value;
+      const password = document.getElementById('signup-password').value;
+      const statusEl = document.getElementById('auth-status');
+      try {
+        const result = await api('/api/signup', { method: 'POST', body: JSON.stringify({ email, password }) });
+        await enterDashboard(result.email);
+      } catch (err) {
+        statusEl.textContent = err.message;
+        statusEl.className = 'error';
+      }
+    });
+
+    // --- Login ---
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('login-email').value;
+      const password = document.getElementById('login-password').value;
+      const statusEl = document.getElementById('auth-status');
+      try {
+        const result = await api('/api/login', { method: 'POST', body: JSON.stringify({ email, password }) });
+        await enterDashboard(result.email);
+      } catch (err) {
+        statusEl.textContent = err.message;
+        statusEl.className = 'error';
+      }
+    });
+
+    // --- Add kid ---
+    document.getElementById('add-kid-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = document.getElementById('kid-name').value;
+      const age = document.getElementById('kid-age').value;
+      const statusEl = document.getElementById('dash-status');
+      try {
+        await api('/api/kids', { method: 'POST', body: JSON.stringify({ name, age }) });
+        document.getElementById('add-kid-form').reset();
+        statusEl.textContent = '';
+        await loadKids();
+      } catch (err) {
+        statusEl.textContent = err.message;
+        statusEl.className = 'error';
+      }
+    });
+
+    // --- Log out ---
+    document.getElementById('logout-btn').addEventListener('click', async () => {
+      await api('/api/logout', { method: 'POST' });
+      hide(document.getElementById('dashboard-card'));
+      show(document.getElementById('auth-card'));
+    });
+
+    checkLoginOnLoad();
+  </script>
+</body>
+</html>
