@@ -6,6 +6,7 @@ module.exports = [
     content_type: 'story',
     category: 'kindness',
     title: 'The Brave Little Snail',
+    age_band: 'little_ones',
     read_minutes: 4,
     quiz: [
       { question: 'What kind of animal was Sam?', options: ['A snail', 'A dragonfly', 'A ladybug'], correct: 0 },
@@ -27,6 +28,7 @@ One rainy morning, a baby ladybug got stuck under a big leaf. She was too scared
     content_type: 'story',
     category: 'space',
     title: 'A Trip to the Moon',
+    age_band: 'explorers',
     read_minutes: 4,
     quiz: [
       { question: "Why do astronauts bounce when they walk on the Moon?", options: ['The Moon is very hot', "The Moon's gravity is weaker", 'The Moon is made of ice'], correct: 1 },
@@ -48,6 +50,7 @@ At night, look up and find the Moon glowing in the sky. It isn't making its own 
     content_type: 'story',
     category: 'nature',
     title: 'Why the Sky Turns Orange',
+    age_band: 'big_kids',
     read_minutes: 3,
     quiz: [
       { question: 'What color does the sky usually look like in the daytime?', options: ['Green', 'Blue', 'Purple'], correct: 1 },
@@ -68,6 +71,7 @@ That's why the sky can look like it's on fire with color right before night begi
     content_type: 'story',
     category: 'kindness',
     title: 'The Kindest Elephant in the Jungle',
+    age_band: 'explorers',
     read_minutes: 4,
     quiz: [
       { question: 'What did Ellie use to give the animals water?', options: ['A cup', 'Her trunk', 'A bucket'], correct: 1 },
@@ -88,6 +92,7 @@ Ellie walked to the water hole, filled her long trunk, and gently sprayed water 
     content_type: 'story',
     category: 'nature',
     title: 'How Bees Say Thank You',
+    age_band: 'little_ones',
     read_minutes: 3,
     quiz: [
       { question: 'What does a bee collect from flowers?', options: ['Nectar', 'Leaves', 'Sticks'], correct: 0 },
@@ -111,6 +116,7 @@ The next time you see a bee buzzing by, give it space to work — it's busy doin
     content_type: 'news',
     category: 'ocean',
     title: 'Whale Families Are Growing!',
+    age_band: 'explorers',
     read_minutes: 4,
     quiz: [
       { question: 'How many baby whales were counted this year?', options: ['3', '23', '100'], correct: 1 },
@@ -132,6 +138,7 @@ Somewhere in the ocean right now, a baby whale is swimming close beside its mama
     content_type: 'news',
     category: 'ocean',
     title: 'Turtle Helpers Save Baby Turtles',
+    age_band: 'explorers',
     read_minutes: 4,
     quiz: [
       { question: 'Who protects the turtle nests at night?', options: ['Turtle helpers', 'Fish', 'No one'], correct: 0 },
@@ -153,6 +160,7 @@ Since the helpers started this work, turtle nests being disturbed has dropped by
     content_type: 'news',
     category: 'invention',
     title: 'The Sidewalk That Drinks Rain',
+    age_band: 'big_kids',
     read_minutes: 4,
     quiz: [
       { question: 'What problem was Luca trying to solve?', options: ['Streets flooding', 'Too much sunshine', 'Noisy cars'], correct: 0 },
@@ -174,6 +182,7 @@ It just goes to show: you don't have to be a grown-up scientist to invent someth
     content_type: 'news',
     category: 'space',
     title: 'Look Up! A Big Month for Skywatching',
+    age_band: 'big_kids',
     read_minutes: 4,
     quiz: [
       { question: 'Which planet shines extra bright in the story?', options: ['Mars', 'Venus', 'Jupiter'], correct: 1 },
@@ -195,6 +204,7 @@ So grab a grown-up, go outside after dinner, and see what you can spot!`,
     content_type: 'news',
     category: 'animals',
     title: 'A Very Special Zoo Baby',
+    age_band: 'explorers',
     read_minutes: 4,
     quiz: [
       { question: 'What kind of animal was born at the Detroit Zoo?', options: ['A gorilla', 'A giraffe', 'A tiger'], correct: 0 },
@@ -211,5 +221,68 @@ So grab a grown-up, go outside after dinner, and see what you can spot!`,
 Zookeepers say the baby is healthy and growing stronger every day. Gorillas are very intelligent and caring animals, and baby gorillas often stay close to their mothers for years, learning how to climb, forage for food, and be part of their family group.
 
 Everyone at the zoo is celebrating this happy, once-in-a-lifetime arrival.`,
+  },
+
+  // ---------- AMAZING FACTS (short, no quiz/vocabulary — quick fun
+  // reads rather than full mini-articles) ----------
+  {
+    content_type: 'fact',
+    category: 'animals',
+    title: 'Octopuses Have Three Hearts!',
+    age_band: 'little_ones',
+    read_minutes: 1,
+    quiz: [],
+    vocabulary: [],
+    body: `An octopus has three hearts, not just one! Two of its hearts help pump blue blood to its gills, and the third heart sends blood to the rest of its body. Isn't that amazing?`,
+  },
+  {
+    content_type: 'fact',
+    category: 'animals',
+    title: "A Big Group of Flamingos Has a Silly Name",
+    age_band: 'little_ones',
+    read_minutes: 1,
+    quiz: [],
+    vocabulary: [],
+    body: `When lots of pink flamingos stand together, we call the group a flamboyance! Baby flamingos are actually born gray or white — they slowly turn pink from the tiny shrimp they eat.`,
+  },
+  {
+    content_type: 'fact',
+    category: 'nature',
+    title: 'A Fluffy Cloud Can Weigh as Much as 100 Elephants',
+    age_band: 'explorers',
+    read_minutes: 1,
+    quiz: [],
+    vocabulary: [],
+    body: `Clouds look light and fluffy, but they're actually really heavy! A cloud is made of millions and millions of tiny water droplets. Each droplet is super light, but put them all together and an average cloud can weigh about as much as 100 elephants.`,
+  },
+  {
+    content_type: 'fact',
+    category: 'nature',
+    title: 'Honey Can Last for Thousands of Years',
+    age_band: 'explorers',
+    read_minutes: 1,
+    quiz: [],
+    vocabulary: [],
+    body: `Honey almost never goes bad! People have found jars of honey in ancient Egyptian tombs that were more than 3,000 years old — and it was still safe to eat. Bees make honey in a special way that keeps it fresh for a very, very long time.`,
+  },
+  {
+    content_type: 'fact',
+    category: 'nature',
+    title: "Bananas Are Berries — But Strawberries Aren't",
+    age_band: 'big_kids',
+    read_minutes: 1,
+    quiz: [],
+    vocabulary: [],
+    body: `Scientists who study plants use a special rule to decide what counts as a real berry. By that rule, bananas, watermelons, and even avocados count as berries — but strawberries and raspberries don't! It all comes down to how the fruit grows, not how sweet or small it looks.`,
+  },
+  {
+    content_type: 'fact',
+    category: 'space',
+    title: 'Saturn Is So Light, It Could Float in Water',
+    age_band: 'big_kids',
+    read_minutes: 1,
+    quiz: [],
+    vocabulary: [],
+    body: `Saturn is the second-largest planet in our solar system, but most of it is made of gas instead of solid rock. That makes it surprisingly light for its huge size. If you could find a bathtub big enough to fit it, Saturn would actually float instead of sinking!`,
   },
 ];

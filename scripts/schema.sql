@@ -32,12 +32,25 @@ CREATE TABLE IF NOT EXISTS stories (
   title TEXT NOT NULL,
   body TEXT NOT NULL,
   category TEXT NOT NULL,
-  content_type TEXT NOT NULL DEFAULT 'story', -- 'story' or 'news' — which tab it shows in
+  content_type TEXT NOT NULL DEFAULT 'story', -- 'story', 'news', or 'fact' — which tab it shows in
   read_minutes INTEGER NOT NULL DEFAULT 5,
   quiz JSONB NOT NULL DEFAULT '[]',
   vocabulary JSONB NOT NULL DEFAULT '[]',
+  -- Which age band this item is written for: 'little_ones' (3-5),
+  -- 'explorers' (6-8), or 'big_kids' (9-10). A kid only sees content
+  -- tagged for their own band.
+  age_band TEXT NOT NULL DEFAULT 'explorers' CHECK (age_band IN ('little_ones', 'explorers', 'big_kids')),
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+-- ADD COLUMN IF NOT EXISTS so this also applies to a stories table that
+-- already existed before age_band did — CREATE TABLE IF NOT EXISTS above
+-- only defines new columns for a table created from scratch. Same
+-- retroactive-migration idea as the CREATE UNIQUE INDEX statements
+-- further down.
+ALTER TABLE stories ADD COLUMN IF NOT EXISTS age_band TEXT NOT NULL DEFAULT 'explorers';
+ALTER TABLE stories DROP CONSTRAINT IF EXISTS stories_age_band_check;
+ALTER TABLE stories ADD CONSTRAINT stories_age_band_check CHECK (age_band IN ('little_ones', 'explorers', 'big_kids'));
 
 CREATE TABLE IF NOT EXISTS reading_progress (
   id BIGSERIAL PRIMARY KEY,

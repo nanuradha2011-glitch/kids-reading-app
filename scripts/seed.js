@@ -33,16 +33,16 @@ async function main() {
 
     if (existingId) {
       await db.query(
-        `UPDATE stories SET body = $1, category = $2, content_type = $3, read_minutes = $4, quiz = $5::jsonb, vocabulary = $6::jsonb
-         WHERE id = $7`,
-        [item.body.trim(), item.category, item.content_type, item.read_minutes, quizJson, vocabJson, existingId]
+        `UPDATE stories SET body = $1, category = $2, content_type = $3, read_minutes = $4, quiz = $5::jsonb, vocabulary = $6::jsonb, age_band = $7
+         WHERE id = $8`,
+        [item.body.trim(), item.category, item.content_type, item.read_minutes, quizJson, vocabJson, item.age_band, existingId]
       );
       updated++;
     } else {
       await db.query(
-        `INSERT INTO stories (title, body, category, content_type, read_minutes, quiz, vocabulary)
-         VALUES ($1, $2, $3, $4, $5, $6::jsonb, $7::jsonb)`,
-        [item.title, item.body.trim(), item.category, item.content_type, item.read_minutes, quizJson, vocabJson]
+        `INSERT INTO stories (title, body, category, content_type, read_minutes, quiz, vocabulary, age_band)
+         VALUES ($1, $2, $3, $4, $5, $6::jsonb, $7::jsonb, $8)`,
+        [item.title, item.body.trim(), item.category, item.content_type, item.read_minutes, quizJson, vocabJson, item.age_band]
       );
       inserted++;
     }
