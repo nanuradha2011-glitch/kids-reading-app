@@ -267,6 +267,20 @@ button.secondary.full { width: 100%; margin-top: 12px; }
   box-shadow: 0 2px 6px rgba(21, 18, 31, 0.15);
 }
 .progress-btn:hover { transform: scale(1.1); }
+.delete-btn {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border: none;
+  background: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(21, 18, 31, 0.15);
+}
+.delete-btn:hover { transform: scale(1.1); background: #fff0f2; }
 
 /* --- Parent progress view --- */
 .stat-row {

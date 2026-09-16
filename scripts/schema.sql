@@ -118,6 +118,25 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_progress_kid_story ON reading_progress(kid
 CREATE UNIQUE INDEX IF NOT EXISTS idx_reactions_kid_story ON reactions(kid_id, story_id);
 CREATE UNIQUE INDEX IF NOT EXISTS idx_quiz_kid_story ON quiz_attempts(kid_id, story_id);
 
+-- Deleting a kid profile (Profile Settings -> a kid's own delete button)
+-- should take their reading history with them instead of failing with a
+-- foreign key error. These three tables' kid_id originally had no ON
+-- DELETE behavior specified (Postgres defaults to blocking the delete),
+-- so we drop and re-add each constraint with CASCADE. Postgres's default
+-- auto-generated name for an unnamed foreign key is
+-- "<table>_<column>_fkey", which is what these DROP statements target.
+ALTER TABLE reading_progress DROP CONSTRAINT IF EXISTS reading_progress_kid_id_fkey;
+ALTER TABLE reading_progress ADD CONSTRAINT reading_progress_kid_id_fkey
+  FOREIGN KEY (kid_id) REFERENCES kids(id) ON DELETE CASCADE;
+
+ALTER TABLE reactions DROP CONSTRAINT IF EXISTS reactions_kid_id_fkey;
+ALTER TABLE reactions ADD CONSTRAINT reactions_kid_id_fkey
+  FOREIGN KEY (kid_id) REFERENCES kids(id) ON DELETE CASCADE;
+
+ALTER TABLE quiz_attempts DROP CONSTRAINT IF EXISTS quiz_attempts_kid_id_fkey;
+ALTER TABLE quiz_attempts ADD CONSTRAINT quiz_attempts_kid_id_fkey
+  FOREIGN KEY (kid_id) REFERENCES kids(id) ON DELETE CASCADE;
+
 -- ================= ROW LEVEL SECURITY =================
 -- Supabase automatically exposes every table in this schema through its
 -- own public REST API (PostgREST), completely separately from our own

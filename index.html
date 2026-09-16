@@ -261,6 +261,7 @@
         const card = document.createElement('div');
         card.className = 'kid-card';
         card.innerHTML = `
+          <button class="delete-btn" title="Delete profile">🗑️</button>
           <button class="progress-btn" title="View progress">📊</button>
           <div class="kid-avatar">${KID_EMOJIS[i % KID_EMOJIS.length]}</div>
           <div class="kid-name">${escapeHtml(kid.name)}</div>
@@ -270,11 +271,25 @@
         // this point (stories, progress, reactions) is scoped to
         // whichever kid was clicked, stored in currentKid.
         card.addEventListener('click', () => enterReader(kid));
-        // stopPropagation so tapping the little 📊 badge doesn't ALSO
-        // trigger the card's own click (which would enter reading mode).
+        // stopPropagation on both little badge buttons so tapping them
+        // doesn't ALSO trigger the card's own click (entering reading mode).
         card.querySelector('.progress-btn').addEventListener('click', (e) => {
           e.stopPropagation();
           openProgress(kid);
+        });
+        card.querySelector('.delete-btn').addEventListener('click', async (e) => {
+          e.stopPropagation();
+          const sure = confirm(`Delete ${kid.name}'s profile? This also removes all their reading history, reactions, and quiz scores — it can't be undone.`);
+          if (!sure) return;
+          const statusEl = document.getElementById('dash-status');
+          try {
+            await api(`/api/kids/${kid.id}`, { method: 'DELETE' });
+            statusEl.textContent = '';
+            await loadKids();
+          } catch (err) {
+            statusEl.textContent = err.message;
+            statusEl.className = 'error';
+          }
         });
         list.appendChild(card);
       });
