@@ -1279,6 +1279,692 @@ Zookeepers say the baby is healthy and growing stronger every day. Gorillas are 
 Everyone at the zoo is celebrating this happy, once-in-a-lifetime arrival.`,
   },
 
+  // ---------- MORE NEWS: little_ones ----------
+  {
+    content_type: "news",
+    category: "ocean",
+    title: "A Secret Reef Wakes Up!",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did scientists find deep in the ocean?","options":["A secret reef full of life","A sunken ship","A giant whale"],"correct":0},{"question":"What lives on the reef?","options":["Only rocks","Coral and fish","Nothing at all"],"correct":1}],
+    vocabulary: [{"word":"reef","definition":"A colorful home under the sea made of coral."},{"word":"coral","definition":"A tiny sea creature that builds a hard, colorful home."}],
+    body: `Deep under the sea near Africa, scientists found a hidden reef. People thought it was gone forever, but it was alive the whole time! The reef is full of pretty coral and swimming fish, including shiny golden fish. Everyone was so happy to find this secret underwater garden still growing strong.`,
+  },
+  {
+    content_type: "news",
+    category: "ocean",
+    title: "Helpers Clean the Sea for Seals",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did the helpers clean up from the ocean?","options":["Sand","Old fishing nets and trash","Seaweed"],"correct":1},{"question":"Who is safer now because of the cleanup?","options":["Monk seals","Birds","Turtles"],"correct":0}],
+    vocabulary: [{"word":"seals","definition":"Cute, whiskery animals that swim in the ocean."},{"word":"cleanup","definition":"Picking up trash to make a place nice and safe."}],
+    body: `Near some island beaches, kind helpers went into the ocean to do a big cleanup. They picked up old fishing nets and trash that could hurt animals. Now, fewer monk seals get stuck in nets, so they are much safer! The helpers are proud to keep the ocean clean and happy for all the sea animals.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "A New Telescope Flies to Space!",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did NASA send into space?","options":["A new telescope","A rocket car","A space dog"],"correct":0},{"question":"What will the telescope look for?","options":["New planets and stars","New oceans","New mountains"],"correct":0}],
+    vocabulary: [{"word":"telescope","definition":"A special tool that helps us see far away in space."},{"word":"planets","definition":"Big round worlds that travel around a star."}],
+    body: `NASA sent a brand new telescope way up into space! It is called the Roman Space Telescope. This amazing tool will help scientists find lots and lots of new planets far, far away. It will also take pictures of many twinkling stars. Scientists cannot wait to see what wonders it will find!`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "A Robot Turtle Cleans the Sea",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What shape is the robot?","options":["A sea turtle","A fish","A boat"],"correct":0},{"question":"What does the robot find in the water?","options":["Treasure","Tiny bits of plastic","Fish eggs"],"correct":1}],
+    vocabulary: [{"word":"robot","definition":"A machine that can move and do jobs on its own."},{"word":"plastic","definition":"A material used to make bottles and toys, which can pollute water."}],
+    body: `A clever student built a robot that looks just like a sea turtle! The robot turtle swims around in the ocean using cameras to see. It hunts for tiny bits of plastic hiding in the water. This smart little robot helps keep the ocean clean for fish and other sea friends.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "A Sponge That Soaks Up Yucky Stuff",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did the student make?","options":["A special sponge","A new bike","A raincoat"],"correct":0},{"question":"What does the sponge soak up?","options":["Sunlight","Pollution from car tires","Rainbows"],"correct":1}],
+    vocabulary: [{"word":"sponge","definition":"A soft material that soaks up liquid like water."},{"word":"pollution","definition":"Dirty stuff that can harm water, air, or land."}],
+    body: `A smart student made a brand new kind of sponge. It is made from plants and can soak up yucky pollution that washes off car tires into water. This helps keep rivers and lakes cleaner. The clever sponge showed everyone at a big science fair how kids can help solve big problems!`,
+  },
+  {
+    content_type: "news",
+    category: "dinosaurs",
+    title: "Meet a Brand New Dinosaur!",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"How many legs did this dinosaur walk on?","options":["Two legs","Four legs","Six legs"],"correct":0},{"question":"Where was this dinosaur found?","options":["New Mexico","The ocean","A city"],"correct":0}],
+    vocabulary: [{"word":"dinosaur","definition":"A kind of animal that lived a very, very long time ago."},{"word":"skull","definition":"The bones that make up the head."}],
+    body: `Scientists found bones from a brand new dinosaur that no one knew about before! This dinosaur walked on two legs, kind of like a big bird. It had a super thick skull, like a strong helmet made of bone. It lived a very, very long time ago, long before people were around.`,
+  },
+  {
+    content_type: "news",
+    category: "nature",
+    title: "More Butterflies Fly Home!",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What kind of animal is this story about?","options":["Butterflies","Bees","Ladybugs"],"correct":0},{"question":"Why did more butterflies come this year?","options":["More flowers were planted","It rained more","They got bigger wings"],"correct":0}],
+    vocabulary: [{"word":"butterflies","definition":"Colorful bugs with big, pretty wings that fly."},{"word":"forest","definition":"A big place full of many trees."}],
+    body: `Every year, orange monarch butterflies fly far away to rest in a cozy forest. This year, scientists counted way more butterflies than before! That is wonderful news. People helped by planting lots of flowers and taking care of the forest. Now even more butterflies have a safe place to call home.`,
+  },
+  {
+    content_type: "news",
+    category: "animals",
+    title: "A Tiny Panda Cub is Born!",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What kind of baby animal was born?","options":["A panda cub","A puppy","A kitten"],"correct":0},{"question":"How does the baby panda look at birth?","options":["Very tiny","Very tall","Very loud"],"correct":0}],
+    vocabulary: [{"word":"cub","definition":"A baby animal, like a baby panda or bear."},{"word":"tiny","definition":"Very, very small."}],
+    body: `A tiny panda cub was born at a zoo, and she is a girl! When she was born, she was so tiny you could hold her in your hands. Her mommy panda is named Ai Bao, and the new cub has three big sisters. Everyone at the zoo is so excited to watch her grow big and fluffy!`,
+  },
+  {
+    content_type: "news",
+    category: "sports",
+    title: "Wow, Look at Those Jumps!",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did the boy do really fast?","options":["Star jumps","Push-ups","Cartwheels"],"correct":0},{"question":"What kind of animal set a jumping record?","options":["A cat","A dog","A bird"],"correct":1}],
+    vocabulary: [{"word":"jumps","definition":"Hops up off the ground with your feet."},{"word":"record","definition":"The best or fastest anyone has ever done something."}],
+    body: `Two amazing new records were made! A boy did super fast star jumps, again and again, in just one minute. And a speedy dog named Twinkie jumped through her owner's arms ten times in only a few seconds. Both of them worked hard to become the best jumpers around. What a fun way to move and play!`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "The Tallest Bridge in the World",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did people build very, very high up?","options":["A tower","A bridge","A tunnel"],"correct":1},{"question":"What does the new bridge help cars do?","options":["Go slower","Cross the canyon quickly","Fly"],"correct":1}],
+    vocabulary: [{"word":"bridge","definition":"Something built so people or cars can cross over a gap."},{"word":"canyon","definition":"A very deep, wide valley with steep sides."}],
+    body: `People built a giant new bridge way up high above a deep canyon in the mountains. It is the tallest bridge ever built! Before, cars took a long time to drive around the canyon. Now, cars can cross the bridge in just a few minutes. It is like magic for anyone driving through the mountains!`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "A Boy Shares His Birthday Money",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What does Max share every year?","options":["His toys","His birthday money","His lunch"],"correct":1},{"question":"Who does Max help with his gift?","options":["Only his family","People who need help","His teacher"],"correct":1}],
+    vocabulary: [{"word":"birthday","definition":"The special day every year that celebrates when you were born."},{"word":"donates","definition":"Gives something, like money or toys, to help others."}],
+    body: `An eight-year-old boy named Max has a very kind birthday tradition. Every year on his birthday, he donates some of his money to help people in his town who need it most. He has done this for six years in a row! Max shows that even kids can do big, caring things for their community.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "A Moon Spacecraft Wins an Award",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did the spacecraft land near?","options":["The Moon's south pole","The sun","A star"],"correct":0},{"question":"What did the spacecraft win?","options":["A race","A big space award","A soccer game"],"correct":1}],
+    vocabulary: [{"word":"spacecraft","definition":"A machine that flies through space."},{"word":"award","definition":"A special prize given for doing something great."}],
+    body: `A few years ago, a spacecraft called Chandrayaan-3 landed near the bottom of the Moon, somewhere no other spacecraft had ever landed before. Now, this brave little spacecraft has won a big space award! Scientists are so proud of what it discovered. It shows how exploring space can lead to amazing surprises.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "A Robot Runs a Marathon on Mars",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"Where has the rover been driving?","options":["On Mars","On the Moon","On Earth"],"correct":0},{"question":"How far has the rover driven?","options":["As far as a marathon","One mile","Around the block"],"correct":0}],
+    vocabulary: [{"word":"rover","definition":"A robot car that drives around and explores."},{"word":"marathon","definition":"A very, very long race that people run."}],
+    body: `NASA has a robot rover named Perseverance that drives around on Mars, exploring the red, rocky ground. It has now driven so far that it is the same distance as a whole marathon race! It took the little rover about five years to drive that far. That is a lot of exploring on another planet!`,
+  },
+  {
+    content_type: "news",
+    category: "music",
+    title: "A Young Violin Star Shines",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What instrument does Victoria play?","options":["The violin","The drums","The piano"],"correct":0},{"question":"What fun trick did she invent?","options":["Playing violin while roller skating","Playing violin underwater","Playing violin upside down"],"correct":0}],
+    vocabulary: [{"word":"violin","definition":"A musical instrument you play with a bow, held under your chin."},{"word":"prodigy","definition":"A young person who is amazingly talented at something."}],
+    body: `A nine-year-old girl named Victoria is a music prodigy who plays the violin beautifully. She even made up a fun new trick, playing her violin while roller skating! Victoria also loves playing violin for older people at nursing homes, just to make them smile. Everyone agrees she is a true young star.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "Teams Build Amazing Robots",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What do the teams build?","options":["Robots","Sandcastles","Kites"],"correct":0},{"question":"What did the robots have to do this year?","options":["Sing songs","Launch balls and climb a tower","Bake cookies"],"correct":1}],
+    vocabulary: [{"word":"robots","definition":"Machines that can move and do jobs."},{"word":"compete","definition":"To try hard against others in a game or contest."}],
+    body: `All around the world, teams of kids build robots and compete against each other for fun. This year, their robots had to grab big balls and launch them into a goal. Some robots even had to climb up a tower, all very fast! The kids worked together as a team to build their amazing robots.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "A Teen Raises Money with Fun Events",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What did the teenager host to raise money?","options":["Fun community events","A bake sale only","A movie"],"correct":0},{"question":"Who was the money for?","options":["Charity","Himself","His pet"],"correct":0}],
+    vocabulary: [{"word":"charity","definition":"A group that helps people who need it."},{"word":"events","definition":"Special happenings, like parties or shows, that people plan."}],
+    body: `A caring teenager wanted to help others, so he planned fun events for everyone in his town to enjoy together. People came, had fun, and gave money to help. All the money he raised went to charity to help people who need it. His kindness and hard work made a real difference in his community.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "The Comedy Kids Make People Laugh",
+    age_band: "little_ones",
+    read_minutes: 2,
+    quiz: [{"question":"What do the Comedy Kids do?","options":["Put on a funny show","Play soccer","Paint pictures"],"correct":0},{"question":"What was the money from their show used for?","options":["Cancer research","New toys","A trip"],"correct":0}],
+    vocabulary: [{"word":"comedy","definition":"Something silly and funny that makes people laugh."},{"word":"research","definition":"Careful study to learn new things and solve problems."}],
+    body: `A group of third-grade friends call themselves the Comedy Kids. They put on a silly comedy show full of jokes to make everyone giggle and laugh. People paid to watch, and all the money helped support cancer research. The Comedy Kids showed that laughing together can also help people in a big way.`,
+  },
+
+  // ---------- MORE NEWS: explorers ----------
+  {
+    content_type: "news",
+    category: "ocean",
+    title: "A Secret Reef Wakes Up",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"Where is the coral reef that scientists found alive?","options":["Near Benin, West Africa","In the Arctic Ocean","Near Australia"],"correct":0},{"question":"What special tool did scientists use to map the seafloor?","options":["A magnifying glass","Sonar","A telescope"],"correct":1}],
+    vocabulary: [{"word":"scientists","definition":"People whose job is to study and learn about the world."},{"word":"coral reef","definition":"A colorful underwater home built by tiny sea animals."},{"word":"sonar","definition":"A tool that uses sound waves to find things underwater."},{"word":"species","definition":"A group of living things that are the same kind."}],
+    body: `Long ago, scientists visited a coral reef deep in the ocean near Benin, in West Africa. It sat more than 50 meters below the surface, where sunlight barely reaches. Back in the 1960s, people thought this reef was probably dead.
+
+Recently, a team led by scientist Gérard Zinzindohoué went back to look again. They used sonar, which sends out sound waves to map the seafloor, and underwater cameras to see what was really there. To their amazement, the reef was alive and full of color! They found 8 different kinds of coral and 8 species of fish, including golden African snappers and damselfish, swimming along 11.5 kilometers of seafloor.
+
+Even more exciting, the whole reef system might stretch as far as 40 kilometers, and nobody has explored all of it yet. Gérard wondered how many other hidden reefs might still be waiting to be found deep in the ocean. Maybe someday, you could help discover one!`,
+  },
+  {
+    content_type: "news",
+    category: "ocean",
+    title: "Cleaning the Ocean for Seals",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What animal benefited from the ocean cleanup?","options":["Hawaiian monk seals","Polar bears","Sea turtles"],"correct":0},{"question":"How much did seal entanglements drop on some islands?","options":["10 percent","70 percent","100 percent"],"correct":1}],
+    vocabulary: [{"word":"monument","definition":"A special protected place set aside to keep something safe."},{"word":"debris","definition":"Trash or broken pieces left floating around."},{"word":"cleanup crews","definition":"Teams of people who work together to clean up a place."},{"word":"rare","definition":"Something that is very unusual or hard to find."}],
+    body: `In the Northwestern Hawaiian Islands, there is a huge ocean protected area called the Papahānaumokuākea Marine National Monument. It is home to many animals, including Hawaiian monk seals, a rare kind of seal found nowhere else in the world.
+
+For years, ocean trash like old fishing nets has floated through the water, and seals sometimes got tangled up in it. That can be very dangerous for them. So cleanup crews have been working hard, pulling dangerous floating nets and other debris out of the ocean.
+
+Their hard work is paying off! On some islands, the number of seals getting caught in nets has dropped by as much as 70 percent. That means far fewer seals are getting hurt. Thanks to the cleanup crews, Hawaiian monk seals have a safer ocean home to swim, rest, and raise their pups.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "A New Telescope Blasts Off",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What rocket launched the Roman Space Telescope?","options":["SpaceX Falcon Heavy","A hot air balloon","A weather balloon"],"correct":0},{"question":"About how many new exoplanets do scientists expect it to find?","options":["100","1,000","100,000"],"correct":2}],
+    vocabulary: [{"word":"telescope","definition":"A tool that makes faraway things in space look closer."},{"word":"launched","definition":"Sent up into the sky or space."},{"word":"commissioning","definition":"Testing all of a spacecraft's parts to make sure they work."},{"word":"exoplanets","definition":"Planets that circle a star outside our solar system."}],
+    body: `On August 30, 2026, NASA launched an amazing new space telescope called the Nancy Grace Roman Space Telescope. It rocketed into space aboard a SpaceX Falcon Heavy rocket from Kennedy Space Center in Florida.
+
+By September, the telescope began something called commissioning, which means testing all its parts to make sure everything works. It unfolded its solar panels for power, its antenna for sending messages back to Earth, and a sunshade to keep its instruments cool.
+
+Scientists are thrilled about what this telescope could discover. They expect it to find more than 100,000 new exoplanets, which are planets outside our solar system, and map 20 billion stars. That would make the largest star catalog ever created! The telescope's first images are expected in January 2027, and the whole world will be watching.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "A Robot Turtle Hunts Pollution",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What did the student's robot look like?","options":["A robotic sea turtle","A robotic shark","A robotic dolphin"],"correct":0},{"question":"What pollution was the robot designed to detect?","options":["Oil spills","Microplastic pollution","Loud noise"],"correct":1}],
+    vocabulary: [{"word":"autonomous","definition":"Able to work by itself, without a person controlling it."},{"word":"holographic","definition":"Making a picture look three-dimensional, like it has real depth."},{"word":"microplastic","definition":"A tiny piece of plastic, often too small to easily see."},{"word":"invention","definition":"Something new that a person designs and creates."}],
+    body: `At a big science fair called the Regeneron International Science and Engineering Fair, students from all over the world showed off their inventions. One award, called the Gordon E. Moore Award, went to a student from Canada with an incredible idea.
+
+She built an autonomous robotic sea turtle, which means it can swim and work all by itself without anyone steering it. The robot turtle uses holographic imaging, a special way of creating 3D pictures, along with artificial intelligence, to spot tiny bits of microplastic pollution floating in ocean water.
+
+Microplastics are so small they are hard to see, but they can hurt ocean animals. Thanks to this clever invention, scientists may have a new way to find and track this pollution before it spreads. The young inventor's hard work earned her one of the fair's top prizes.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "Tiny Sponges Clean Dirty Water",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What ingredient found in lemons did the student use?","options":["Citric acid","Sugar","Salt"],"correct":0},{"question":"What pollution does the hydrosponge remove from water?","options":["Tire-related pollution","Smoke","Sand"],"correct":0}],
+    vocabulary: [{"word":"pollution","definition":"Harmful waste or dirt that gets into air, water, or land."},{"word":"material","definition":"The substance something is made out of."},{"word":"invention","definition":"Something new that a person designs to solve a problem."},{"word":"remove","definition":"To take something away."}],
+    body: `At the same science fair, a student from Washington State came up with a clever way to clean up dirty water. She wanted to solve a tricky pollution problem: tiny bits of rubber that wear off car tires and wash into rivers and lakes.
+
+She created a special material using citric acid, the same kind of acid found in lemons, mixed with a plant-based fiber. She calls her invention a hydrosponge. Just like a kitchen sponge soaks up water, her hydrosponge soaks up tire pollution from water and helps remove it.
+
+Judges at the fair were impressed by how a simple sponge-like material could tackle such a big environmental problem. Her invention shows that even everyday things, like the acid in lemons, can be part of the solution to keeping our water clean for people, fish, and animals.`,
+  },
+  {
+    content_type: "news",
+    category: "dinosaurs",
+    title: "Meet Dinevenator, A New Dinosaur",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What kind of dinosaur was Dinevenator?","options":["A bird-like troodontid","A giant long-necked dinosaur","A flying dinosaur"],"correct":0},{"question":"Who does the name \"Dinevenator\" honor?","options":["The Navajo people","The Inca people","The Vikings"],"correct":0}],
+    vocabulary: [{"word":"paleontologist","definition":"A scientist who studies fossils of ancient plants and animals."},{"word":"fossil","definition":"The preserved remains or traces of an ancient living thing."},{"word":"species","definition":"A specific kind of living thing."},{"word":"ancestral","definition":"Having to do with family members who lived long ago."}],
+    body: `Back in 2005, a paleontologist named Robert Sullivan found a fossil skull in San Juan County, New Mexico. Fossils are the preserved remains of ancient living things, and this one turned out to be extra special. Years later, in 2026, scientist Steven Jasinski studied the skull closely and realized it belonged to a brand-new species that no one had ever named before.
+
+They called it Dinevenator robustus. It was a bird-like dinosaur that walked on two legs, measuring 8 to 10 feet long and weighing between 150 and 300 pounds. It belonged to a group called troodontids, known for being quick and clever. Its skull was unusually thick compared to its relatives. This dinosaur roamed the Earth about 70 to 75 million years ago.
+
+The name Dinevenator honors the Navajo people, whose word for themselves is "Diné," since their ancestral lands are where the fossil was discovered. It's a wonderful way to connect an ancient creature to the people who call that land home today.`,
+  },
+  {
+    content_type: "news",
+    category: "nature",
+    title: "More Butterflies Return to Mexico",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What did scientists measure at the reserve?","options":["Forest area covered by butterflies","Number of trees planted","Weight of butterflies"],"correct":0},{"question":"What has helped monarch numbers improve?","options":["More pollution","Planting trees and less illegal logging","Colder winters"],"correct":1}],
+    vocabulary: [{"word":"hibernating","definition":"Resting through the cold months in a safe, quiet spot."},{"word":"reserve","definition":"A protected area of land set aside for nature."},{"word":"conservation","definition":"The work of protecting nature and wildlife."},{"word":"logging","definition":"Cutting down trees, often for wood."}],
+    body: `Every year, millions of monarch butterflies fly all the way to Mexico's Monarch Butterfly Biosphere Reserve, where they spend the winter hibernating together in the forest. Scientists measure how much forest area the butterflies cover to see how the population is doing.
+
+This year brought wonderful news: the butterflies covered 7.24 acres of forest, a 64 percent increase from just 4.42 acres the year before! That's a big jump. Still, scientists say there's more work to do, since monarchs covered about 45 acres of forest 30 years ago.
+
+Conservation groups believe the improvement comes from planting more trees, reducing the use of harmful pesticides, and cracking down on illegal logging that destroys the butterflies' forest home. Every little bit of protection helps these amazing orange and black travelers return safely, year after year, to their winter home in Mexico.`,
+  },
+  {
+    content_type: "news",
+    category: "animals",
+    title: "A Tiny Panda Cub Is Born",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"How much did the panda cub weigh at birth?","options":["17 grams","171 grams","1,710 grams"],"correct":1},{"question":"How many panda daughters does the family now have?","options":["Two","Three","Four"],"correct":2}],
+    vocabulary: [{"word":"cub","definition":"A baby animal, like a baby panda or bear."},{"word":"weighed","definition":"How heavy something is."},{"word":"anniversary","definition":"A special day that marks the same date as an important event in the past."},{"word":"visitors","definition":"People who come to see or visit a place."}],
+    body: `On June 3, 2026, a tiny giant panda cub was born at Everland Zoo in South Korea. She weighed just 171 grams at birth, about as much as a bar of soap! Her mother is a panda named Ai Bao, who is 12 years old, and her father is a panda named Le Bao.
+
+This new cub has three older sisters: Fu Bao, and twins named Rui Bao and Hui Bao. That makes four panda daughters in the same family! Visitors at the zoo have loved watching this panda family grow over the years.
+
+This is an extra special year for Everland, too, because 2026 marks the 10th anniversary of its Panda World exhibit. Since it opened in 2016, about 18 million visitors have come to see the pandas. With a brand-new cub to meet, even more fans are sure to visit soon.`,
+  },
+  {
+    content_type: "news",
+    category: "sports",
+    title: "Amazing New World Records",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"How many star jumps did the boy do in 60 seconds?","options":["18","58","118"],"correct":2},{"question":"How fast did the dog Twinkie complete her 10 jumps?","options":["7.48 seconds","17.48 seconds","27.48 seconds"],"correct":0}],
+    vocabulary: [{"word":"record","definition":"The best or most ever achieved at something."},{"word":"achievement","definition":"Something impressive that someone has worked hard to accomplish."},{"word":"owner","definition":"A person who has and takes care of a pet."},{"word":"inspire","definition":"To give someone the idea or feeling to do something great."}],
+    body: `Guinness World Records loves celebrating amazing feats by kids and animals, and this year had two record-breakers that will make your jaw drop. First, a boy from South Africa did 118 star jumps in just 60 seconds. That's nearly 2 jumps every single second!
+
+Meanwhile, a talented dog named Twinkie set her own record. She jumped through her owner's arms 10 times in a row in only 7.48 seconds. That's fast enough to make anyone's head spin trying to count!
+
+Both records show that with practice, energy, and a little bit of fun, kids and their pets can achieve incredible things. Guinness World Records keeps track of achievements like these from all over the world, and these two are sure to inspire other kids and dogs to try setting new records of their own.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "The World's Tallest Bridge Opens",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"Where is the Huajiang Grand Canyon Bridge located?","options":["Guizhou Province, China","California, USA","Tokyo, Japan"],"correct":0},{"question":"How did engineers test the bridge's strength?","options":["By rolling 90 heavy trucks across it","By having people jump on it","By filling it with water"],"correct":0}],
+    vocabulary: [{"word":"canyon","definition":"A deep valley with steep sides, often carved out by a river."},{"word":"engineers","definition":"People who design and build big structures like bridges."},{"word":"tested","definition":"Checked to see if something works properly."},{"word":"stretches","definition":"Reaches or extends over a distance."}],
+    body: `China just opened the Huajiang Grand Canyon Bridge in Guizhou Province, and it's now the tallest bridge in the entire world! It stretches about 2,050 feet above the Beipan River below, which is roughly nine times higher than the famous Golden Gate Bridge.
+
+The bridge is also incredibly long, stretching 4,600 feet from one side of the canyon to the other. It took engineers nearly 4 years to build. Before the bridge existed, crossing the canyon by road took about 2 hours. Now, drivers can cross in only about 2 minutes!
+
+To make sure the bridge was safe and strong, engineers tested it in a dramatic way: they rolled 90 heavy trucks across it all at once. The bridge held steady, proving it was ready for cars, trucks, and travelers to use every day high above the canyon below.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "A Boy's Birthday Gift to His Town",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What does Max do every year on his birthday?","options":["Hold a fundraiser","Go on vacation","Build a robot"],"correct":0},{"question":"How much did Max donate this year?","options":["$44","$440","$4,400"],"correct":1}],
+    vocabulary: [{"word":"fundraiser","definition":"An event held to collect money for a good cause."},{"word":"donated","definition":"Gave money or something valuable to help others."},{"word":"charity","definition":"An organization that helps people in need."},{"word":"community","definition":"A group of people who live in the same area."}],
+    body: `For six years in a row, 8-year-old Max MacLean has done something special on his birthday. Instead of just wanting more toys, he holds a birthday fundraiser and splits the money he collects. Part goes toward his own education fund, and part goes to a charity that he gets to pick himself. Every year, Max thinks carefully about who in his community needs help the most.
+
+This year, Max donated $440 to the Campbell River Community Foundation. He chose this organization because it sends money directly to the people in his community who need help the most, rather than keeping it for itself. Friends and neighbors have watched Max grow this tradition year after year, always excited to see which charity he picks next.
+
+Over the past six years, Max has given more than $3,000 to local causes, all before turning nine years old! His generosity shows that anyone, no matter how young, can make a real difference in their community, one birthday at a time. Max hopes his story might inspire other kids to share, too.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "India's Moon Mission Wins an Award",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What did Chandrayaan-3 do in 2023?","options":["Soft-land near the Moon's south pole","Land on Mars","Fly to the Sun"],"correct":0},{"question":"What award did it receive in 2026?","options":["Goddard Astronautics Award","Nobel Prize","Olympic Medal"],"correct":0}],
+    vocabulary: [{"word":"spacecraft","definition":"A vehicle built to travel and explore in space."},{"word":"mission","definition":"An important job or task, especially in space exploration."},{"word":"award","definition":"A prize given to honor someone's great achievement."},{"word":"exploration","definition":"The act of traveling to learn about and discover new places."}],
+    body: `Back on August 23, 2023, India's Chandrayaan-3 spacecraft made history by becoming the very first spacecraft ever to softly land near the Moon's south pole. That part of the Moon is especially tricky to reach, with deep shadows and rocky, uneven ground, so it was an enormous achievement for scientists and engineers in India.
+
+Now, in 2026, that incredible mission is being honored again. The American Institute of Aeronautics and Astronautics gave Chandrayaan-3 the Goddard Astronautics Award, a major prize honoring outstanding achievements in space exploration. Awards like this celebrate the teams of people who plan, build, and guide spacecraft on their long journeys.
+
+The award was presented at a big space conference called ASCEND, where scientists and engineers from many countries gather to share their latest space discoveries. Winning this award shows just how important and impressive Chandrayaan-3's soft landing near the Moon's south pole really was, and how it continues to inspire space missions around the world.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "Perseverance Rover Runs a Marathon",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"How far has Perseverance driven on Mars?","options":["2.6 miles","26.2 miles","262 miles"],"correct":1},{"question":"Which earlier rover took much longer to drive the same distance?","options":["Opportunity","Curiosity","Sojourner"],"correct":0}],
+    vocabulary: [{"word":"rover","definition":"A robotic vehicle that explores the surface of a planet."},{"word":"milestone","definition":"An important point or achievement reached in a journey."},{"word":"marathon","definition":"A very long race, about 26.2 miles."},{"word":"Martian","definition":"Having to do with the planet Mars."}],
+    body: `NASA's Perseverance rover has been exploring Mars for years, rolling across rocky red ground to study the planet. It just reached an amazing milestone: it has now driven 26.2 miles across Mars. That's exactly the distance of a marathon race here on Earth!
+
+Perseverance reached this milestone on its 1,890th Martian day, which works out to about 5 years and 4 months after it landed on Mars. That's a long journey for a robot exploring another planet all by itself.
+
+What makes it even more impressive is the comparison to an earlier rover named Opportunity. Opportunity also drove a marathon's worth of distance, but it took 11 years and 2 months to do it. Perseverance finished the same distance in less than half that time, showing just how much rover technology has improved over the years.`,
+  },
+  {
+    content_type: "news",
+    category: "music",
+    title: "A Young Violin Superstar",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What instrument does Victoria Isaac play?","options":["Violin","Piano","Drums"],"correct":0},{"question":"What new performance style did she invent?","options":["Skate-dance while playing violin","Underwater violin","Silent violin"],"correct":0}],
+    vocabulary: [{"word":"violinist","definition":"A person who plays the violin."},{"word":"prodigy","definition":"Someone with amazing talent or skill at a very young age."},{"word":"produced","definition":"Made or created something, like a piece of music."},{"word":"volunteers","definition":"Offers to help or do something without being paid."}],
+    body: `Nine-year-old Victoria Isaac is a violinist with an incredible list of accomplishments, and she just earned the title "Young Prodigy of the Year" for music and creative innovation. A prodigy is someone with amazing talent at a very young age, and Victoria has certainly earned that name.
+
+At just 8 years old, she wrote, recorded, and produced her own music album entirely by herself, earning a Guinness World Record as the youngest music producer ever. She even invented her own performance style, called "skate-dance," where she plays violin while gliding around on roller skates!
+
+Victoria has founded her own music company, appeared in the India Book of Records four times, and completed 62 solo performances. She also volunteers her time playing violin for elderly patients and people receiving palliative care, sharing the joy of music with everyone she meets.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "Robots Battle in REBUILT",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What is this year's FIRST Robotics game called?","options":["REBUILT","ROBOWARS","SKYQUEST"],"correct":0},{"question":"How long does the autonomous part of the match last?","options":["10 seconds","20 seconds","60 seconds"],"correct":1}],
+    vocabulary: [{"word":"competition","definition":"An event where teams or people try to do their best to win."},{"word":"programming","definition":"Writing instructions that tell a robot or computer what to do."},{"word":"autonomously","definition":"Working on its own, without a person controlling it."},{"word":"alliance","definition":"A group that works together toward the same goal."}],
+    body: `Every year, thousands of teams from all over the world compete in a giant robotics competition called the FIRST Robotics Competition. Teams of students spend weeks designing, building, and programming their own robots to complete exciting challenges against other teams.
+
+This year's game is called "REBUILT." Robots must collect and launch balls, nicknamed "fuel," into alliance hubs, and even climb a tall tower before time runs out. Each match lasts just 2 minutes and 40 seconds, which is barely enough time to catch your breath while cheering.
+
+The most exciting part happens in the first 20 seconds, which run autonomously. That means the robots move completely on their own, using only the programming their team wrote ahead of time, with no human controlling them. After that, students take the controls themselves to finish the match and score as many points as possible for their alliance, working together as teammates until the very last second.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "A Teen's Big Fundraising Year",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"How did the teenager raise money?","options":["By organizing community events","By selling his bike","By winning a lottery"],"correct":0},{"question":"How much money did he raise for charity?","options":["$1,500","$15,000","$150,000"],"correct":1}],
+    vocabulary: [{"word":"organizing","definition":"Planning and arranging something, like an event."},{"word":"charity","definition":"Giving help or money to people who need it."},{"word":"community","definition":"A group of people living in the same area who often help each other."},{"word":"raised","definition":"Collected, especially money for a cause."}],
+    body: `A teenager in his town decided he wanted to make a real difference for people in need. So he came up with a plan: organizing a whole series of fun community events to raise money for charity. He spent months thinking of ideas that would bring people together while also doing good.
+
+Throughout the year, he planned and hosted event after event, inviting neighbors and friends to join in and support his cause. His hard work and dedication paid off in a huge way. Each event brought in a little more money, and word spread around town about what he was doing.
+
+By the end, he had raised an incredible $15,000 for charity, all through his own organizing and effort. His story shows that with a good plan and a caring heart, even one teenager can bring a whole community together to help others.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "The Comedy Kids Perform for a Cause",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What did the Comedy Kids do to raise money?","options":["Performed a comedy show","Ran a marathon","Sold paintings"],"correct":0},{"question":"What cause did their show support?","options":["Cancer research","Animal shelters","School supplies"],"correct":0}],
+    vocabulary: [{"word":"comedy","definition":"A type of entertainment meant to make people laugh."},{"word":"performed","definition":"Did something, like a show, in front of an audience."},{"word":"research","definition":"Careful study to learn new information about something."},{"word":"audience","definition":"A group of people watching a show or performance."}],
+    body: `A group of third-grade students had a big, funny idea: why not use comedy to help others? They called themselves "the Comedy Kids" and got to work planning a comedy show all their own, writing jokes and practicing skits together after school.
+
+The young comedians practiced their jokes and skits, then performed their show in front of a real audience of family and friends. Everyone laughed together, and the show raised money for an important cause: cancer research.
+
+Cancer research helps scientists learn more about the disease and search for better treatments that could help patients someday. Thanks to the Comedy Kids, their community had fun while also supporting something that could help many people. It just goes to show that kids can make a real impact, even with a comedy show!`,
+  },
+
+  // ---------- MORE NEWS: big_kids ----------
+  {
+    content_type: "news",
+    category: "ocean",
+    title: "The Deep Reef That Refused to Die",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"What did scientists find when they revisited the deep reef off Benin?","options":["It was completely dead, just as expected","It was alive and thriving with coral and fish","It had turned into a sandy plain"],"correct":1},{"question":"What tools did the scientists use to explore the reef?","options":["Only old maps from the 1960s","Modern sonar and underwater cameras","Weather balloons and satellites"],"correct":1}],
+    vocabulary: [{"word":"mesophotic","definition":"Describes deep ocean water that still gets a little sunlight."},{"word":"sonar","definition":"A tool that uses sound waves to map things underwater."},{"word":"thriving","definition":"Growing and doing very well."},{"word":"species","definition":"A specific type of living thing, like a certain kind of fish or coral."}],
+    body: `Back in the 1960s, surveys of a coral reef off the coast of Benin, in West Africa, suggested the reef was probably dead. It sat more than 50 meters below the surface, in a mesophotic zone, too deep and dim for most people to check on easily. For decades, nobody knew for certain what was really happening down there.
+
+Recently, a team of scientists led by researcher Gerard Zinzindohoue decided to find out. Using modern sonar to map the seafloor and underwater cameras to see what was actually living there, they scanned an area stretching 11.5 kilometers. What they discovered surprised everyone: the reef was not dead at all. It was thriving, home to eight different types of coral and eight species of fish, including golden African snappers and colorful damselfish darting between the rocks.
+
+Even more exciting, the scientists believe the full reef system might stretch as far as 40 kilometers, though most of it has not been explored yet. That means there could be entire underwater neighborhoods of coral and fish that no human has ever seen up close.
+
+Zinzindohoue wondered aloud how many other reefs might be hiding, alive and well, off the coast of West Africa, simply because nobody has had the right tools to look. This discovery is a reminder that oceans still hold enormous mysteries, and that a place written off as lost decades ago can turn out to be full of life, just waiting for someone curious enough to look again.`,
+  },
+  {
+    content_type: "news",
+    category: "ocean",
+    title: "Cleaning Up Ghost Nets Saves Seals",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What are \"ghost nets\"?","options":["Nets used to catch ghosts in stories","Old, abandoned fishing nets floating in the ocean","Special nets fishers use to protect seals"],"correct":1},{"question":"What happened to monk seal entanglements after cleanup crews removed debris?","options":["They increased on some islands","They stayed exactly the same","They dropped by as much as 70 percent on some islands"],"correct":2}],
+    vocabulary: [{"word":"entanglement","definition":"Getting caught or tangled up in something, like a net."},{"word":"debris","definition":"Scattered pieces of trash or broken material."},{"word":"endangered","definition":"At risk of disappearing forever."},{"word":"monument","definition":"A protected area or site set aside because it is important."}],
+    body: `In the Papahanaumokuakea Marine National Monument, a huge protected stretch of ocean in the Northwestern Hawaiian Islands, cleanup crews have been tackling a quiet but serious danger: floating fishing nets and other marine debris drifting through the water. These abandoned nets, sometimes called ghost nets, keep drifting and trapping animals long after fishers have lost track of them.
+
+For Hawaiian monk seals, one of the most endangered marine mammals in the world, ghost nets are especially dangerous. A seal can swim into a loose net and become caught, leading to painful entanglement that can injure or even kill it. Because monk seal populations are already so small, every single seal matters for the species to survive.
+
+That is why the cleanup work happening in the monument is such good news. Crews have been hauling nets and trash out of the water year after year, and the results are showing up in the data. On some islands, monk seal entanglements have dropped by as much as 70 percent since the cleanups ramped up.
+
+This kind of steady, unglamorous work, boat trips out to remote reefs, hours spent untangling and hauling heavy nets, does not always make headlines. But it is making a real difference for one of the ocean's rarest animals, giving monk seal pups a better chance to grow up safe in the waters where they belong.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "A New Telescope Blasts Off to Map the Universe",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"What rocket launched the Nancy Grace Roman Space Telescope?","options":["A SpaceX Falcon Heavy rocket","A hot air balloon","An older rocket from the 1990s"],"correct":0},{"question":"About how many new exoplanets do scientists expect Roman to discover?","options":["About 100","More than 100,000","Exactly 20"],"correct":1}],
+    vocabulary: [{"word":"commissioning","definition":"Testing a spacecraft's systems to make sure everything works before real science begins."},{"word":"exoplanets","definition":"Planets that orbit stars outside our solar system."},{"word":"flagship","definition":"The most important or advanced project of its kind."},{"word":"catalog","definition":"A large, organized list or collection of information."}],
+    body: `On August 30, 2026, NASA's newest flagship space telescope roared off the launch pad at Kennedy Space Center in Florida, riding a SpaceX Falcon Heavy rocket into space. The telescope is named the Nancy Grace Roman Space Telescope, and it is designed to answer some of the biggest questions in astronomy.
+
+After launch, the telescope did not start taking pictures right away. Instead, by September it began a careful process called commissioning, testing every system to make sure it works correctly in space. Engineers on the ground watched as Roman unfolded its solar panels for power, extended its antenna to communicate with Earth, and deployed a sunshade to block out unwanted light that could ruin its view of the distant universe.
+
+Once it settles into position about one million miles from Earth, Roman will get to work on an enormous task. Scientists expect it to discover more than 100,000 new exoplanets, planets orbiting other stars, and to map roughly 20 billion stars, creating the largest astronomical catalog ever assembled. It will also help researchers investigate dark matter and dark energy, two mysterious forces that shape the universe but that no one has ever directly seen.
+
+The first images from Roman are expected in January 2027. Until then, scientists are patiently checking and rechecking every instrument, because a telescope built to map billions of stars needs to get every detail right before the real discoveries can begin.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "A Robot Sea Turtle Hunts Microplastics",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What is the robotic sea turtle designed to detect?","options":["Sunken treasure","Microplastic pollution in ocean water","Fish migration patterns"],"correct":1},{"question":"At what event did the student win the Gordon E. Moore Award?","options":["The Regeneron International Science and Engineering Fair (ISEF)","The Olympics","A local school science night"],"correct":0}],
+    vocabulary: [{"word":"autonomous","definition":"Able to work on its own, without a person controlling every move."},{"word":"holographic","definition":"Using light to create a detailed, three-dimensional image."},{"word":"microplastic","definition":"A tiny piece of plastic, often too small to easily see."},{"word":"engineering","definition":"Designing and building machines or structures to solve problems."}],
+    body: `Every year, thousands of student scientists from around the world gather at the Regeneron International Science and Engineering Fair, known as ISEF, to show off inventions they have spent months building. In 2026, one of the top prizes, the Gordon E. Moore Award, went to a Canadian student for a project that looked like something out of a nature documentary: a robotic sea turtle.
+
+This is not just a toy shaped like a turtle. It is an autonomous machine, meaning it can swim and operate on its own without someone steering it the whole time. Built into its shell is holographic imaging technology, which uses light to create detailed three-dimensional pictures of what is around it, along with artificial intelligence that helps it make sense of what it sees.
+
+Its mission is a serious one. The robot turtle is designed to detect microplastic pollution floating in ocean water, tiny plastic particles that are often too small to spot with the naked eye but that can harm marine life and work their way through entire food chains.
+
+By combining clever engineering with real environmental science, this student showed how a device shaped like an actual sea creature could one day help researchers track pollution more easily, gliding through the water gathering the same kind of data as expensive research equipment, but doing it disguised as one of the ocean's own gentle swimmers.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "Tiny Hydrosponges Soak Up Tire Pollution",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What pollution problem was the student's invention designed to solve?","options":["Oil spills in the ocean","Tire-related pollutants washing into water","Smoke pollution in the air"],"correct":1},{"question":"What are the two key ingredients used to make the hydrosponges?","options":["Sand and glass","Citric acid and aluminum-crosslinked nanocellulose","Salt and sugar"],"correct":1}],
+    vocabulary: [{"word":"nanocellulose","definition":"A material made from extremely tiny plant fibers."},{"word":"pollutant","definition":"A substance that dirties or damages air, water, or soil."},{"word":"crosslinked","definition":"Chemically connected together to form a stronger material."},{"word":"citric","definition":"Relating to citric acid, a natural substance found in citrus fruits."}],
+    body: `A student from Washington State walked away from the 2026 Regeneron International Science and Engineering Fair with a Young Scientist Award for tackling a pollution problem many people do not even think about: tire dust. Every time cars and trucks drive down a road, their tires wear down bit by bit, and that worn rubber often washes into streams and waterways when it rains, carrying pollutants along with it.
+
+To fight this, the student developed a new kind of water treatment material using citric acid, a natural substance found in citrus fruits, combined with aluminum-crosslinked nanocellulose. Nanocellulose is made from incredibly tiny plant fibers, and crosslinking them with aluminum connects those fibers into a stronger, more absorbent structure.
+
+The result is something the student calls a "hydrosponge." Just like a kitchen sponge soaks up spilled water, these hydrosponges are built to soak up tire-related pollutants before they can spread further into rivers, lakes, and eventually the ocean.
+
+This project stands out because it targets a pollution source that is often overlooked. Most people picture pollution as smoke from factories or plastic in the ocean, but tire dust is a real and growing problem as more vehicles travel more roads every year. By turning plant fibers and citrus chemistry into a practical cleanup tool, this young inventor showed that solutions to big environmental problems can come from surprisingly simple, natural ingredients.`,
+  },
+  {
+    content_type: "news",
+    category: "dinosaurs",
+    title: "Meet Dinevenator, the Thick-Skulled Hunter",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"When was the fossil skull that led to this discovery first found?","options":["In 2026, by Steven Jasinski","In 2005, by Robert Sullivan","In 1970, by an unknown explorer"],"correct":1},{"question":"What made Dinevenator robustus unusual compared to related troodontids?","options":["It had no feathers at all","It could fly short distances","It had an unusually thick skull bone"],"correct":2}],
+    vocabulary: [{"word":"troodontid","definition":"A type of small, bird-like, feathered dinosaur closely related to raptors."},{"word":"omnivorous","definition":"Eating both plants and meat."},{"word":"paleontologist","definition":"A scientist who studies fossils of ancient life."},{"word":"cretaceous","definition":"A period of Earth's history, roughly 66 to 145 million years ago, when many dinosaurs lived."}],
+    body: `Sometimes a big discovery takes decades to fully reveal itself. Back in 2005, paleontologist Robert Sullivan found a fossil skull in San Juan County, New Mexico. For years, the skull sat as an intriguing puzzle. It was not until 2026 that scientist Steven Jasinski carefully studied it and realized it belonged to a species no one had ever named before.
+
+That species is now called Dinevenator robustus. It was a troodontid, a group of bird-like, feathered dinosaurs that walked on two legs and were closely related to raptors. Troodontids were omnivorous, meaning they ate both plants and meat, giving them a flexible diet as they hunted and foraged across their Cretaceous world roughly 70 to 75 million years ago.
+
+Dinevenator stood out from its troodontid relatives in one clear way: its skull bone was unusually thick and robust, making it one of the largest known troodontids ever discovered. Scientists think this thicker skull may have helped protect its head or supported stronger jaw muscles, though there is still more to learn.
+
+Its name tells a story all its own. "Dine" honors the Navajo people, whose ancestral lands include the area where the fossil was found. "Venator" is Latin for hunter, and "robustus" refers to that remarkably thick skull. Together, the name Dinevenator robustus captures both the science of the discovery and respect for the land where this ancient hunter once roamed, long before it was ever unearthed by human hands.`,
+  },
+  {
+    content_type: "news",
+    category: "nature",
+    title: "Monarch Butterflies Make a Comeback",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"By how much did the forest area covered by hibernating monarch colonies increase this year?","options":["By 64 percent","By 6 percent","It stayed exactly the same"],"correct":0},{"question":"What have conservationists credited for helping monarch numbers recover?","options":["Warmer winters only","Reduced illegal logging and pesticide-reduction efforts","Moving all the butterflies to zoos"],"correct":1}],
+    vocabulary: [{"word":"hibernating","definition":"Resting through the winter in a still, low-energy state."},{"word":"colonies","definition":"Large groups of the same kind of animal living closely together."},{"word":"degradation","definition":"Damage or decline in the quality of something, like a forest."},{"word":"pollinator","definition":"An animal, like a bee or butterfly, that helps plants reproduce by moving pollen."}],
+    body: `Every winter, millions of eastern monarch butterflies travel to Mexico's Monarch Butterfly Biosphere Reserve, where they gather in hibernating colonies clustered thickly across the forest trees. Scientists measure how much forest area these colonies cover each year, since more coverage generally means more butterflies survived the journey.
+
+This year brought genuinely good news: the area covered by hibernating monarchs grew by 64 percent, from 4.42 acres the previous year up to 7.24 acres. At the same time, forest degradation, damage to the trees the butterflies depend on, declined too, dropping from 9.21 acres down to 6.30 acres.
+
+Still, scientists are careful to keep this progress in perspective. Even at 7.24 acres, today's monarch colonies cover far less ground than the roughly 45 acres they filled 30 years ago. There is real work still ahead before monarch populations return to their former size.
+
+Conservationists point to several reasons behind this year's improvement. Reduced illegal logging in the reserve has protected more of the forest the butterflies need. Restoration and tree-nursery programs run by WWF and its partners have helped regrow damaged areas. And pesticide-reduction efforts have protected pollinator habitat far to the north, across the United States Great Plains, the very lands monarchs pass through on their long migration south. Together, these efforts show that when people commit to protecting habitat across an entire migration route, even a struggling species can start to rebound.`,
+  },
+  {
+    content_type: "news",
+    category: "animals",
+    title: "A Tiny New Panda Joins the Family",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"How much did the panda cub weigh at birth?","options":["About 171 grams","About 17 kilograms","About 1 kilogram"],"correct":0},{"question":"How many panda daughters do Ai Bao and Le Bao now have together?","options":["One","Two","Four"],"correct":2}],
+    vocabulary: [{"word":"conservation","definition":"The work of protecting animals, plants, and natural places."},{"word":"exhibit","definition":"A display set up for visitors to see, often at a zoo or museum."},{"word":"anniversary","definition":"The yearly date marking when something important happened."},{"word":"decade","definition":"A period of ten years."}],
+    body: `On June 3, 2026, a female giant panda cub was born at Everland Zoo in South Korea, arriving into the world weighing just 171 grams, barely more than a stick of butter. Her mother is Ai Bao, age 12, and her father is Le Bao, two pandas who have become something of a celebrity couple among panda fans.
+
+This tiny newcomer is not an only child. She joins three older sisters: Fu Bao, born in 2020, and twins Rui Bao and Hui Bao, born in 2023. That makes four panda daughters in total for Ai Bao and Le Bao, a remarkable family for a species where breeding successfully in captivity is not easy to achieve.
+
+The timing of this birth carries extra meaning. 2026 marks the 10th anniversary of Everland's Panda World exhibit, celebrating a full decade of joint conservation research between South Korea and China aimed at helping giant pandas thrive. Since the exhibit opened in 2016, it has drawn about 18 million visitors curious to see these black-and-white animals up close.
+
+As for the new cub's name, fans will have to wait a little longer to find out. Following Everland's tradition, her name will be chosen through a public naming contest once she reaches about 100 days old, giving her time to grow strong enough for her big introduction, and giving the public a chance to help welcome her properly.`,
+  },
+  {
+    content_type: "news",
+    category: "sports",
+    title: "New World Records for Star Jumps and a Speedy Dog",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"How many star jumps did the South African teenager complete in 60 seconds?","options":["50 star jumps","118 star jumps","200 star jumps"],"correct":1},{"question":"What record did the dog named Twinkie set?","options":["Fastest time running a marathon","Highest jump ever recorded","Fastest time completing 10 jumps through her owner's arms"],"correct":2}],
+    vocabulary: [{"word":"record","definition":"The best known result ever achieved in a particular activity."},{"word":"canine","definition":"Relating to dogs."},{"word":"athletic","definition":"Physically strong, fast, or skilled at exercise and sports."},{"word":"consecutive","definition":"Following one after another without a break."}],
+    body: `Guinness World Records recently highlighted a fresh batch of record-breaking feats, and two of them show that speed and athletic skill can come from the most unexpected places, including a teenager's legs and a small dog's paws.
+
+The first record belongs to a South African teenager under the age of 16, who completed an astonishing 118 star jumps in just 60 seconds. That works out to almost two star jumps every single second, a pace that requires serious athletic endurance and near-perfect rhythm to keep the body moving that fast without stumbling. Anyone who has tried even a handful of star jumps in a row knows how quickly your legs start to burn, which makes sustaining that speed for a full minute especially impressive.
+
+The second record went to a much smaller athlete: a canine named Twinkie. Twinkie completed 10 jumps through her owner's arms in a record time of just 7.48 seconds, threading each consecutive jump through the loop almost instantly, one after another, without a single miss.
+
+These two records, one set by a human and one by a dog, both celebrate the same thing: pushing a skill to its absolute limit through focus and repetition. Guinness World Records exists precisely to recognize achievements like these, moments when someone, or some pet, does something faster, longer, or more precisely than anyone has ever managed before.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "The World's Tallest Bridge Opens in China",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"About how high above the Beipan River does the Huajiang Grand Canyon Bridge sit?","options":["About 200 feet","About 2,050 feet","About 20,000 feet"],"correct":1},{"question":"How did engineers test the bridge before it opened to regular traffic?","options":["By having 90 heavy-duty trucks cross it at the same time","By waiting one year without using it","By only letting bicycles cross it first"],"correct":0}],
+    vocabulary: [{"word":"canyon","definition":"A deep valley with steep sides, often carved out by a river."},{"word":"span","definition":"The length a bridge stretches between its two ends."},{"word":"engineers","definition":"People who design and build structures like bridges, roads, and machines."},{"word":"elevation","definition":"Height above a certain point, such as the ground or sea level."}],
+    body: `China has opened what is now the world's tallest bridge, the Huajiang Grand Canyon Bridge in Guizhou Province, and its numbers are hard to wrap your head around. The bridge sits roughly 2,050 feet above the Beipan River below, an elevation about nine times higher than San Francisco's famous Golden Gate Bridge. It is even taller, measured from the river level, than the Shanghai Tower, China's tallest building.
+
+The bridge itself stretches 4,600 feet from one side of the canyon to the other, a span long enough to connect two areas that used to feel worlds apart. Before this bridge existed, driving across the canyon took roughly two hours, winding down one side and back up the other. Now, that same trip takes about two minutes.
+
+Building a structure at that height and length was no small task. It took nearly four years for engineers and construction crews to complete the project, carefully planning every cable and support to handle the wind, weight, and sheer scale involved in a bridge suspended so far above a river.
+
+Before opening the bridge to regular drivers, engineers wanted to be absolutely certain it could handle real-world weight and stress. So they rolled 90 heavy-duty trucks across the span all at the same time, a dramatic stress test that let them confirm the bridge could safely support enormous loads before anyone else drove across it.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "An 8-Year-Old's Birthday Gift to His Community",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"How does Max MacLean typically split the money he raises each birthday?","options":["He keeps it all for himself","He splits it between his education fund and a charity he chooses","He gives it all to his school"],"correct":1},{"question":"About how much has Max donated to local programs over 6 years?","options":["More than $3,000","Exactly $10","About $50"],"correct":0}],
+    vocabulary: [{"word":"fundraiser","definition":"An event or effort organized to collect money for a cause."},{"word":"foundation","definition":"An organization set up to support a cause with money or resources."},{"word":"proceeds","definition":"The money collected from an event or activity."},{"word":"tradition","definition":"A custom or activity repeated regularly, often every year."}],
+    body: `Most 8-year-olds look forward to their birthday for the presents. Max MacLean has built a different kind of tradition. For six years running, he has held an annual birthday fundraiser, splitting the proceeds between his own education fund and a charity that he researches and chooses entirely by himself.
+
+This year, Max's fundraiser raised $880 total. He decided to put half of it, $440, toward the Campbell River Community Foundation, an organization dedicated to supporting local needs in his area. Explaining his choice, Max said he wanted to give to an organization that "knows who needs the money the most," trusting the foundation to direct his gift where it could do the most good.
+
+What makes Max's story stand out is not just one generous birthday, but the consistency of it. Over six years, he has donated more than $3,000 total to local programs, an impressive total for anyone, let alone someone who has not even reached his teenage years yet.
+
+Max's approach also shows real thoughtfulness beyond simply handing over cash. Each year, he takes the time to research different charities before deciding where his proceeds should go, treating the decision seriously rather than picking at random. His annual birthday tradition proves that even a young person, thinking carefully and starting small, can build up a genuinely meaningful record of giving back to the place they call home.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "India's Moon Mission Wins a Top Space Award",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What made Chandrayaan-3's landing historic on August 23, 2023?","options":["It was the first spacecraft to soft land near the Moon's south pole","It was the first spacecraft ever to reach the Moon","It carried the first astronauts to the Moon"],"correct":0},{"question":"Who accepted the 2026 Goddard Astronautics Award on India's behalf?","options":["An astronaut from NASA","India's US Ambassador Vinay Kwatra","A student from ISEF"],"correct":1}],
+    vocabulary: [{"word":"astronautics","definition":"The science and technology of space travel."},{"word":"aerospace","definition":"Relating to the technology of flight and space travel."},{"word":"historic","definition":"Important enough to be remembered as part of history."},{"word":"mission","definition":"A planned task or journey, often carried out in space exploration."}],
+    body: `Some space missions leave a mark on history the moment they happen. India's Chandrayaan-3 did exactly that on August 23, 2023, when it became the first spacecraft ever to achieve a soft landing near the Moon's south pole, a historic accomplishment in a region that scientists consider especially important, and one that had never been explored up close before.
+
+That single mission continues to earn recognition years later. In 2026, Chandrayaan-3 received the Goddard Astronautics Award from the American Institute of Aeronautics and Astronautics, a leading organization in the aerospace field. The award was accepted on India's behalf by Vinay Kwatra, India's Ambassador to the United States, at the AIAA ASCEND conference, a major gathering for space and aerospace professionals.
+
+Why does the Moon's south pole matter so much? Scientists believe the region may hold water ice hidden in permanently shadowed craters, resources that could one day support future missions and even human exploration. Landing safely there took extraordinary precision, since the terrain is rougher and less understood than areas near the Moon's equator.
+
+This award also fits into India's bigger picture for the future. The country has outlined an ambitious plan called Space Vision 2047, aimed at deep space exploration and eventually human spaceflight. Chandrayaan-3's success near the south pole stands as an early, celebrated milestone on that much longer journey toward India's expanding role in space exploration.`,
+  },
+  {
+    content_type: "news",
+    category: "space",
+    title: "Perseverance Rover Finishes a Marathon on Mars",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"How far has the Perseverance rover now driven on Mars?","options":["26.2 miles, the length of a marathon","5 miles","1,890 miles"],"correct":0},{"question":"How does Perseverance's pace compare to the earlier Opportunity rover covering the same distance?","options":["It took much longer than Opportunity","It took less than half the time Opportunity needed","It took exactly the same amount of time"],"correct":1}],
+    vocabulary: [{"word":"marathon","definition":"A long-distance running race that is 26.2 miles."},{"word":"milestone","definition":"An important point of progress reached in a journey or project."},{"word":"rover","definition":"A vehicle designed to travel across the surface of another planet."},{"word":"crater","definition":"A large bowl-shaped hollow in the ground, often formed by an impact."}],
+    body: `NASA's Perseverance rover has quietly accomplished something worth celebrating back on Earth: it has now driven 26.2 miles across the surface of Mars, the exact distance of a marathon. The rover reached this milestone on its 1,890th Martian day since landing, roughly 5 years and 4 months after it first touched down.
+
+Covering that distance on Mars is nothing like running a marathon on Earth. Perseverance has to navigate rocky, uneven terrain millions of miles from any human hand that could fix it if something goes wrong, all while stopping regularly to study rocks, collect samples, and send data back to scientists on Earth.
+
+What makes this milestone especially impressive is the comparison to an earlier Mars rover. NASA's Opportunity rover also eventually covered a marathon's worth of ground, but it needed 11 years and 2 months to do it. Perseverance managed the same distance in less than half that time, a clear sign of how much rover technology, from wheels to navigation software, has improved since Opportunity's era.
+
+At the time it hit the marathon mark, Perseverance was exploring an area west of Jezero Crater, a region nicknamed "Arbot" by the mission team. Every mile Perseverance logs adds to scientists' understanding of Mars's ancient history, including whether the planet could have once supported life. A marathon on Mars may not come with cheering crowds, but for the scientists tracking Perseverance's journey, it is every bit as thrilling a finish line.`,
+  },
+  {
+    content_type: "news",
+    category: "music",
+    title: "The 9-Year-Old Music Producer Making History",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"What Guinness World Record did Victoria Isaac earn at age 8 years and 160 days?","options":["Fastest violinist in the world","Youngest music producer (female)","Youngest roller skater in the world"],"correct":1},{"question":"What is \"Melodies of Memories,\" the program Victoria runs?","options":["A school for young violinists","A volunteer program performing violin for elderly and palliative care patients","A record label for children's music"],"correct":1}],
+    vocabulary: [{"word":"prodigy","definition":"A young person with an extraordinary, exceptional talent."},{"word":"produced","definition":"Created and put together a piece of music from start to finish."},{"word":"palliative","definition":"Care focused on comfort for people who are seriously or terminally ill."},{"word":"innovation","definition":"A new idea or creative way of doing something."}],
+    body: `At just 9 years old, violinist Victoria Isaac was named "Young Prodigy of the Year" for music and creative innovation at India's Icon Awards 2026, a title that barely captures everything she has already accomplished.
+
+At age 8 years and 160 days, Victoria wrote, arranged, recorded, and produced her own entire album, called "Musically Fantastic," entirely by herself. That achievement earned her a Guinness World Record as the youngest female music producer ever recognized. Beyond the studio, Victoria has also created something called "Skate-Dance Music," a performance style where she plays violin while roller skating at the same time, blending two skills that most people would find difficult enough separately.
+
+Victoria's ambitions go well beyond performing. She founded her own registered music company, Victoriastic Limited, and has been listed in the India Book of Records four separate times. By age 9, she had already completed 62 solo performances, an enormous number of shows for a young musician still in elementary school.
+
+Perhaps most meaningful is a project called "Melodies of Memories," through which Victoria volunteers her violin performances for elderly and palliative care patients in Chennai, bringing comfort and music to people during difficult times in their lives. Between founding a company, breaking records, and dedicating her talent to helping others, Victoria Isaac shows that being a prodigy is not only about raw talent, but also about how that talent is shared with the world.`,
+  },
+  {
+    content_type: "news",
+    category: "invention",
+    title: "Students Battle It Out With Homemade Robots",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What is the name of the FIRST Robotics Competition's 2026 game?","options":["REBUILT","SPACE RACE","FUEL RUN"],"correct":0},{"question":"How much of the match is autonomous, run under the robot's own programming?","options":["The entire match","The first 20 seconds","The last 2 minutes"],"correct":1}],
+    vocabulary: [{"word":"autonomous","definition":"Able to work on its own, without a person controlling every move."},{"word":"alliance","definition":"A group of teams working together toward a shared goal."},{"word":"programming","definition":"Instructions written in code that a machine follows."},{"word":"compete","definition":"To take part in a contest against others."}],
+    body: `Every year, thousands of teams around the world compete in the FIRST Robotics Competition, a contest that challenges students to design, build, and program a robot completely from scratch, then put it to the test against other teams' machines.
+
+The 2026 game is called "REBUILT," and it comes with a specific set of challenges built right into its name. Robots have to collect and launch objects nicknamed "fuel," in the form of balls, into targets called alliance hubs. These hubs are not simply sitting open the whole time; they alternate between active and inactive, forcing teams to plan their strategy around timing rather than just raw speed. On top of scoring points with fuel, robots must also climb a tower before the match clock runs out.
+
+The entire match lasts just 2 minutes and 40 seconds, which sounds short until you consider everything packed into it. The first 20 seconds run autonomously, meaning the robot has to rely entirely on its own programming, with no human controlling it, to make smart decisions on the fly. Only after those 20 seconds does a human driver take over the controls for the rest of the match.
+
+Designing a robot that can shoot fuel accurately, adapt to hubs switching on and off, and still climb a tower, all while performing part of the challenge with no human help at all, demands serious teamwork, engineering skill, and creative problem solving from every student involved.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "Teen Raises $15,000 for Charity With Community Events",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"About how much money did the teenager raise for charity?","options":["$150","$15,000","$1,500,000"],"correct":1},{"question":"How did the teenager raise the money?","options":["By organizing and hosting a series of community events","By winning a lottery","By selling his own belongings only"],"correct":0}],
+    vocabulary: [{"word":"organizer","definition":"A person who plans and arranges an event."},{"word":"charity","definition":"An organization or cause set up to help people in need."},{"word":"community","definition":"A group of people living in the same area or sharing common interests."},{"word":"fundraising","definition":"The activity of collecting money for a cause."}],
+    body: `A teenager in his town recently proved that fundraising for a good cause does not require being an adult with a big budget, it just requires determination and a willingness to organize. Over time, through a series of community events, he managed to raise an impressive $15,000 for charity.
+
+Rather than relying on a single big event, the teenager took on the role of organizer for multiple gatherings, planning each one and encouraging neighbors and friends to get involved. Community fundraising like this often works best exactly this way, building momentum event by event rather than depending on one perfect night to reach a big total.
+
+Events like these usually succeed because they turn giving into something people want to show up for. Whether it is a bake sale, a car wash, a talent show, or another kind of gathering, the appeal is the same: people get to spend time with their community while also contributing to something bigger than themselves. That combination tends to bring out generosity that a simple donation request alone might not.
+
+Reaching $15,000 through this kind of grassroots fundraising is no small feat, especially for a teenager balancing school and everyday life alongside the planning work. His effort is a reminder that meaningful charity work does not always start with adults or big organizations. Sometimes it starts with one determined young person deciding that their community is worth organizing for.`,
+  },
+  {
+    content_type: "news",
+    category: "community",
+    title: "Third Graders Turn Jokes Into Cancer Research Funds",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What grade were the students who formed \"the Comedy Kids\"?","options":["Third grade","High school seniors","Kindergarten"],"correct":0},{"question":"What did the Comedy Kids do to raise money?","options":["They sold artwork","They performed a comedy show","They ran a marathon"],"correct":1}],
+    vocabulary: [{"word":"comedy","definition":"Entertainment meant to be funny and make people laugh."},{"word":"research","definition":"Careful study done to learn new information or find solutions."},{"word":"fundraiser","definition":"An event or effort organized to collect money for a cause."},{"word":"donate","definition":"To give money or goods to help a cause."}],
+    body: `A group of third-grade students decided that if they were going to raise money for a serious cause, they could still have fun doing it. Calling themselves "the Comedy Kids," they put together and performed a comedy show as a fundraiser, with proceeds going toward cancer research.
+
+Comedy might seem like an unusual choice for such a serious goal, but it made perfect sense to these young performers. A funny show draws a crowd, and a crowd willing to laugh together is often just as willing to donate to a cause that matters. By combining entertainment with generosity, the Comedy Kids found a way to make giving feel like a celebration rather than an obligation.
+
+Cancer research relies heavily on funding to keep scientists working toward better treatments and, eventually, cures. Every dollar raised, whether from a massive charity gala or a group of third graders performing jokes on a small stage, helps support that ongoing work. Research takes time, patience, and resources, and community fundraisers like this one play a real role in keeping that research moving forward.
+
+What stands out most about the Comedy Kids is their age. These are children still in elementary school, yet they recognized a need in their community and found a creative way to respond to it. Their comedy show is proof that you do not need to be an adult, or even a teenager, to organize an event that makes a genuine difference for a cause bigger than yourself.`,
+  },
+
   // ---------- AMAZING FACTS (short, no quiz/vocabulary — quick fun
   // reads rather than full mini-articles) ----------
   {
