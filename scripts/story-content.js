@@ -16,34 +16,6 @@ One rainy morning, a baby ladybug got stuck under a big leaf. She was too scared
   },
   {
     content_type: "story",
-    category: "space",
-    title: "A Trip to the Moon",
-    age_band: "explorers",
-    read_minutes: 4,
-    quiz: [{"question":"Why do astronauts bounce when they walk on the Moon?","options":["The Moon is very hot","The Moon's gravity is weaker","The Moon is made of ice"],"correct":1},{"question":"Does the Moon make its own light?","options":["Yes, it glows by itself","No, it reflects the Sun's light","It only glows at noon"],"correct":1}],
-    vocabulary: [{"word":"astronauts","definition":"People who travel and work up in space."},{"word":"gravity","definition":"The invisible pull that keeps your feet on the ground."},{"word":"reflecting","definition":"Bouncing light back, the way a mirror does."},{"word":"glowing","definition":"Giving off a soft, warm light."}],
-    body: `Did you know the Moon is closer to us than any other place in space? If you could drive a car straight up into the sky, it would take about six months to get there!
-
-The Moon doesn't have air to breathe, so astronauts wear special suits with their own air inside. When astronauts walk on the Moon, they bounce more than they walk, because the Moon's gravity is much weaker than Earth's. That means if you could jump on the Moon, you could leap over a school bus!
-
-At night, look up and find the Moon glowing in the sky. It isn't making its own light — it's actually reflecting light from the Sun, like a giant mirror in space.`,
-  },
-  {
-    content_type: "story",
-    category: "nature",
-    title: "Why the Sky Turns Orange",
-    age_band: "big_kids",
-    read_minutes: 3,
-    quiz: [{"question":"What color does the sky usually look like in the daytime?","options":["Green","Blue","Purple"],"correct":1},{"question":"Why does the sunset look orange and pink?","options":["The blue light gets scattered away","The sun changes color","Clouds paint the sky"],"correct":0}],
-    vocabulary: [{"word":"scattered","definition":"Spread out in lots of different directions."},{"word":"sunset","definition":"The time each evening when the sun goes down and the sky changes color."},{"word":"direction","definition":"The way something is pointing or moving, like up, down, or sideways."}],
-    body: `Every evening, the sky puts on a colorful show. In the daytime, the sky looks blue because sunlight bounces off tiny bits of air in every direction, and blue light bounces the most.
-
-But when the sun starts to set, its light has to travel through much more sky to reach your eyes. Along the way, the blue light gets scattered away, leaving behind the warm oranges, pinks, and reds we see at sunset.
-
-That's why the sky can look like it's on fire with color right before night begins! The next time you watch a sunset, you're watching sunlight taking the long way home.`,
-  },
-  {
-    content_type: "story",
     category: "kindness",
     title: "The Kindest Elephant in the Jungle",
     age_band: "explorers",
@@ -554,34 +526,6 @@ When they finally reached Theo's house, he thanked Zara and said nobody had ever
   },
   {
     content_type: "story",
-    category: "space",
-    title: "Why Saturn Wears a Ring",
-    age_band: "explorers",
-    read_minutes: 4,
-    quiz: [{"question":"What are Saturn's rings actually made of?","options":["One solid piece of metal","Chunks of ice and rock","Clouds of gas"],"correct":1},{"question":"Why do the rings look so bright?","options":["They glow on their own","Sunlight bounces off the icy pieces","They are painted"],"correct":1}],
-    vocabulary: [{"word":"spectacular","definition":"Amazing and beautiful to look at."},{"word":"debris","definition":"Scattered bits and pieces left over from something broken apart."},{"word":"telescope","definition":"A tool that makes faraway things, like stars and planets, look closer."},{"word":"astronomers","definition":"Scientists who study stars, planets, and outer space."}],
-    body: `Of all the planets, Saturn is the one everyone wants to draw first, thanks to its spectacular rings circling all the way around it. Kids often think the rings are solid, like a giant hula hoop, but they are actually made of countless chunks of ice and rock, some as tiny as a grain of sand and some as big as a house.
-
-Scientists believe the rings might be leftover pieces from a moon or comet that broke apart long ago, scattering debris that settled into a flat, shimmering band around the planet. Sunlight bounces off the icy pieces, which is why the rings look so bright and easy to spot through a telescope.
-
-Saturn actually has several rings, not just one, with thin gaps between them like grooves on a record. Astronomers keep discovering more about how the rings formed and how long they might last. Until then, kids everywhere can keep drawing Saturn's beautiful rings, wondering what tiny icy secrets are still swirling around out there.`,
-  },
-  {
-    content_type: "story",
-    category: "nature",
-    title: "The Tree That Talks to Its Friends",
-    age_band: "explorers",
-    read_minutes: 4,
-    quiz: [{"question":"What helps trees connect to each other underground?","options":["Mycelium","Rocks","Rain"],"correct":0},{"question":"What can trees do through this hidden network?","options":["Send sugars and warning signals to each other","Grow taller instantly","Change color"],"correct":0}],
-    vocabulary: [{"word":"mycelium","definition":"Thread-like strands of fungus that spread underground."},{"word":"network","definition":"A system of connected parts that link and work together."},{"word":"cooperating","definition":"Working together with others toward the same goal."}],
-    body: `In a quiet forest, an old oak tree seemed to stand alone, but underground, something amazing was happening. Threads of fungus called mycelium wrapped around the oak's roots and stretched out to connect with dozens of other trees nearby, forming a hidden network scientists sometimes call the wood wide web.
-
-Through this network, the oak tree could send sugars to a struggling young maple that wasn't getting enough sunlight, almost like sharing lunch with a hungry friend. If a beetle attacked one tree, it could even send warning signals through the network so its neighbors could prepare their defenses in time.
-
-A forest that looks like separate trees standing apart is actually more like one giant, cooperating family, quietly helping each other survive storms, droughts, and hungry insects. The next time you walk through the woods, remember that beneath your feet, an entire secret conversation might be happening, tree to tree, root to root.`,
-  },
-  {
-    content_type: "story",
     category: "ocean",
     title: "The Octopus with Eight Great Ideas",
     age_band: "explorers",
@@ -593,20 +537,6 @@ A forest that looks like separate trees standing apart is actually more like one
 Divers who studied the reef were amazed at Inky's clever tricks. She learned to open jars to reach food hidden inside, and she once used two halves of a coconut shell as a portable shelter, carrying them across the sea floor and clamping them shut whenever danger swam by. Scientists call this kind of tool use remarkably rare among ocean animals.
 
 Inky's neighbors on the reef, from shy shrimp to sleepy sea stars, all learned that if a problem seemed impossible, the octopus down the way probably had already figured it out. With eight clever arms and a mind built for puzzles, Inky proved that being soft and squishy could still make you the smartest creature in the reef.`,
-  },
-  {
-    content_type: "story",
-    category: "invention",
-    title: "The Wheel That Changed Everything",
-    age_band: "explorers",
-    read_minutes: 4,
-    quiz: [{"question":"What did inventors add to wheels to make them lighter and stronger?","options":["Spokes","Paint","Extra wood"],"correct":0},{"question":"What let wheels spin smoothly beneath carts?","options":["Ropes","Axles","Glue"],"correct":1}],
-    vocabulary: [{"word":"inventors","definition":"People who design and create new things."},{"word":"spokes","definition":"The thin rods that connect the center of a wheel to its outer edge."},{"word":"axles","definition":"The rods that a wheel spins around."},{"word":"transformed","definition":"Changed completely into something different."}],
-    body: `Thousands of years ago, moving heavy stones and carts meant dragging them slowly across the ground, wearing out both people and animals. Then someone had a clever idea: what if something round could roll instead of drag? The wheel was born, and it changed how humans moved things forever.
-
-Early wheels were solid slices of wood, heavy and a little wobbly, but they still made carts glide instead of scrape. Over time, inventors added spokes to make wheels lighter and stronger, and eventually axles that let wheels spin smoothly beneath carts and wagons. Suddenly, farmers could carry more crops, traders could travel farther, and builders could move enormous blocks of stone.
-
-Today, wheels are everywhere, from tiny gears inside a clock to giant tires on a truck, and even the wheels on your own bicycle. It is easy to forget that something as ordinary as a circle rolling along the ground once completely transformed how people lived. Sometimes the simplest ideas turn out to be the most powerful ones.`,
   },
   {
     content_type: "story",
@@ -754,54 +684,6 @@ The next morning, Priya's mom finally found the umbrellas in an unpacked box. Pr
   },
   {
     content_type: "story",
-    category: "space",
-    title: "The Comet That Almost Missed Its Date",
-    age_band: "big_kids",
-    read_minutes: 4,
-    quiz: [{"question":"How often does Halley’s Comet return to be visible from Earth?","options":["Every year","About every 76 years","Every 10 years"],"correct":1},{"question":"What causes the comet’s glowing tail?","options":["Sunlight bouncing off metal","The sun’s heat turning its ice into streaming gas and dust","Lightning inside the comet"],"correct":1}],
-    vocabulary: [{"word":"orbit","definition":"The curved path an object takes as it travels around another object in space."},{"word":"vaporize","definition":"To turn from a solid or liquid into a gas."},{"word":"predictable","definition":"Able to be known or guessed ahead of time."},{"word":"cosmic","definition":"Relating to the universe or outer space."}],
-    body: `Every 76 years, a ball of ice and dust the size of a small mountain swings past Earth, glows a fuzzy blue-white, and then disappears back into the darkness of space for another human lifetime. It's called Halley's Comet, and it is one of the few comets predictable enough that scientists can tell you almost exactly when it will return, even though nobody alive today will see it twice.
-
-Comets like this one travel in a long, stretched-out orbit shaped more like a squashed oval than a circle. For most of the journey, the comet is out past the orbit of Neptune, frozen and dark, moving so slowly it seems almost motionless. But as it swings closer to the sun, the sun's heat begins to vaporize the ice on its surface, releasing gas and dust that stream out behind it in a glowing tail sometimes millions of miles long.
-
-In 1705, an astronomer named Edmond Halley noticed that comets recorded in 1531, 1607, and 1682 all traced nearly identical paths. He guessed, correctly, that these weren't three different comets but the same one returning again and again on a predictable schedule. He predicted it would come back in 1758, and it did, sixteen years after he died, proving his calculation right.
-
-The comet is due back in 2061. Kids reading this story right now are exactly the generation who will get to look up and see it for themselves, a reminder that some cosmic appointments are kept precisely on time, across centuries.`,
-  },
-  {
-    content_type: "story",
-    category: "space",
-    title: "Footprints That Never Fade",
-    age_band: "big_kids",
-    read_minutes: 5,
-    quiz: [{"question":"Why do footprints on the Moon last so much longer than footprints on Earth?","options":["The Moon has no wind or rain to erase them","Moon dust is made of glue","Astronauts pressed extra hard"],"correct":0},{"question":"What slowly wears the footprints away over millions of years?","options":["Ocean waves","Tiny micrometeorite impacts","Moonquakes"],"correct":1}],
-    vocabulary: [{"word":"atmosphere","definition":"The layer of gases surrounding a planet."},{"word":"regolith","definition":"The layer of loose dust and broken rock covering a planet or moon’s solid surface."},{"word":"meteorite","definition":"A piece of rock or metal from space that survives its fall to a surface."},{"word":"permanent","definition":"Lasting for a very long time or forever, without changing."}],
-    body: `When astronauts walked on the Moon during the Apollo missions, they left behind footprints in the fine gray dust, and unlike footprints on a beach, those marks are still there today, exactly as sharp as the moment they were pressed in. Scientists estimate they could last for millions of years before slowly fading away.
-
-The reason comes down to what the Moon doesn't have. Earth's footprints disappear because of wind, rain, and waves, which are all driven by our planet's atmosphere and water. The Moon has essentially no atmosphere at all, so there's no breeze to blow dust around and no rain to wash anything away. The lunar dust, called regolith, is also oddly clingy; it's made of jagged, glassy particles formed by billions of years of tiny impacts, so once it's disturbed, it tends to stay put rather than shifting back into place.
-
-The only real threats to those footprints are extremely slow ones: micrometeorites, tiny grains of space rock too small to see, that constantly rain down and gradually erode the surface over enormous stretches of time. A single meteorite strike nearby could disturb the area too, but such direct hits are extremely rare. Even so, scientists calculate it would take millions of years for enough of these tiny impacts to smooth the footprints away completely.
-
-So somewhere on the Moon's Sea of Tranquility, Neil Armstrong's bootprints are still crisp in the dust, patiently waiting out the centuries. They're a strange kind of time capsule, proof that some of the most fragile-looking marks can also be among the most permanent.`,
-  },
-  {
-    content_type: "story",
-    category: "nature",
-    title: "The Secret Language of Trees",
-    age_band: "big_kids",
-    read_minutes: 4,
-    quiz: [{"question":"What is the \"wood wide web\"?","options":["A network of fungi connecting tree roots underground","A type of tree bark","A nickname for a rainforest"],"correct":0},{"question":"What can a \"mother tree\" do through this network?","options":["Change the weather","Send extra nutrients to struggling seedlings","Grow new branches instantly"],"correct":1}],
-    vocabulary: [{"word":"mycelium","definition":"The thread-like underground part of a fungus that spreads through soil."},{"word":"nutrients","definition":"Substances that living things need to grow and stay healthy."},{"word":"photosynthesis","definition":"The process plants use to turn sunlight, water, and air into food."},{"word":"cooperative","definition":"Working together with others toward a shared goal."}],
-    body: `Walk through an old forest and it might look like each tree is simply standing alone, quietly doing its own thing. But underground, something much stranger is happening: many trees are connected to each other through a vast web of thread-like fungi, and scientists have started calling it the "wood wide web."
-
-These fungal threads, called mycelium, wrap around and even grow into tree roots, forming a partnership called a mycorrhizal network. The fungus helps the tree absorb water and nutrients from the soil, and in exchange, the tree shares some of the sugar it makes through photosynthesis. But the network doesn't just connect one tree to one fungus; it links hundreds of trees together underground, sometimes across an entire forest.
-
-Researchers have discovered that trees use this network to do more than just share food. A large, old tree, sometimes nicknamed a "mother tree," can send extra nutrients through the network to smaller, shaded seedlings that are struggling to get enough sunlight. Trees under insect attack have even been shown to send chemical warning signals through the network, giving their neighbors a head start on defending themselves.
-
-None of this means trees are thinking or talking the way people do. But it does mean a forest behaves less like a crowd of strangers and more like a single, cooperative community, quietly trading resources and information beneath every footstep.`,
-  },
-  {
-    content_type: "story",
     category: "nature",
     title: "The Night the Fireflies Went Quiet",
     age_band: "big_kids",
@@ -815,22 +697,6 @@ Worried, Theo brought his notebook to his uncle, who studied insects at the stat
 Theo didn't think one kid could fix streetlights, but he figured he could fix porch lights. He wrote a short, polite flyer explaining what he'd learned and asked neighbors to try turning off unnecessary outdoor lights for just one hour each evening during firefly season. He slid copies into mailboxes up and down his street.
 
 To his surprise, most neighbors agreed to try it, making an intentional effort to dim their porches at dusk. Some even added motion-sensor lights that only switched on when needed. By August, Theo's nightly count had climbed back to almost ninety. It wasn't the two hundred of his childhood, but it was proof that a little intentional darkness could bring a little magic back.`,
-  },
-  {
-    content_type: "story",
-    category: "ocean",
-    title: "The Deepest Room on Earth",
-    age_band: "big_kids",
-    read_minutes: 5,
-    quiz: [{"question":"What is the Challenger Deep?","options":["The tallest mountain in the ocean","The lowest known point on Earth, in the Pacific Ocean","A type of submarine"],"correct":1},{"question":"Why must submersibles built for that depth have such strong hulls?","options":["To survive extremely high water pressure","To go faster underwater","To protect against sharks"],"correct":0}],
-    vocabulary: [{"word":"remote","definition":"Far away and difficult to reach."},{"word":"pressure","definition":"The force pushing on something, such as water pushing on an object underwater."},{"word":"submersible","definition":"A vehicle designed to travel and operate underwater."},{"word":"translucent","definition":"Allowing some light to pass through, so objects look partly see-through."}],
-    body: `Nearly seven miles beneath the surface of the Pacific Ocean lies a place called the Challenger Deep, the lowest known point on the entire planet. If you could drop Mount Everest into it, the mountain's peak would still sit more than a mile underwater. It is so deep, dark, and remote that only a handful of people have ever traveled there, fewer than have walked on the Moon.
-
-Getting there is a serious engineering challenge because of pressure. At the surface, the ocean's weight presses down on you gently, barely noticeable. But descend to the bottom of the Challenger Deep, and the water above pushes down with a force over a thousand times greater than at sea level, roughly the same as if you balanced fifty jumbo jets on top of a small car. Any submersible built to survive down there needs an incredibly strong, rounded hull to spread out that crushing pressure evenly.
-
-Despite the darkness and the pressure, the Challenger Deep isn't empty. Scientists have found strange, pale sea creatures adapted to life at extreme depths, including a type of shrimp-like amphipod and translucent fish with soft, jelly-like bodies built to withstand pressures that would flatten most animals instantly.
-
-In 1960, two explorers became the first humans to reach the bottom, spending just twenty minutes there before the long ascent back up. Since then, only a few more expeditions have followed, which means Earth's deepest room remains one of the least-visited places on our own planet, stranger, in some ways, than outer space.`,
   },
   {
     content_type: "story",
@@ -898,38 +764,6 @@ This kind of social learning, passing specific, detailed information from one ge
   },
   {
     content_type: "story",
-    category: "animals",
-    title: "The Long Walk of the Monarch",
-    age_band: "big_kids",
-    read_minutes: 5,
-    quiz: [{"question":"Why is the monarch butterfly migration considered astonishing?","options":["The butterflies fly at night only","No single butterfly makes the whole round trip; later generations complete it","They travel underwater part of the way"],"correct":1},{"question":"How do scientists think monarchs find their way to Mexico?","options":["By following other migrating birds","Using a mix of sun position, timing, and Earth’s magnetic field","By smell alone"],"correct":1}],
-    vocabulary: [{"word":"astonishing","definition":"Extremely surprising or amazing."},{"word":"generations","definition":"Groups of offspring, each born at different stages after their parents."},{"word":"navigate","definition":"To find and follow a path or direction to a destination."},{"word":"ancestors","definition":"Relatives who lived before, from earlier generations."}],
-    body: `Each fall, millions of monarch butterflies leave the fields and gardens of Canada and the northern United States and fly as far as three thousand miles south to a specific patch of forest in central Mexico, arriving within days of each other year after year, as if following a map nobody wrote down.
-
-What makes this journey especially astonishing is that no single monarch has ever made the round trip before. The butterflies that fly south in autumn are typically the great-great-grandchildren of the monarchs that flew north the previous spring. Along the way north, monarchs live only a few weeks each, laying eggs and dying before completing even a fraction of the total distance. Somehow, the urge and the route get passed along through several short-lived generations until, in late summer, one special generation is born that behaves completely differently: instead of breeding and dying quickly, these monarchs delay reproduction, build up fat reserves, and live up to eight months, long enough to fly the entire way to Mexico.
-
-Scientists believe monarchs navigate using a kind of internal compass that combines the position of the sun with an inner sense of time, plus a sensitivity to Earth's magnetic field, though exactly how such a tiny brain manages such a precise calculation is still being studied.
-
-When the migrating monarchs finally arrive in Mexico, they cluster together by the millions on the very same trees their ancestors used, sometimes bending the branches under their combined weight. None of them have ever seen that forest before. Somehow, they still know exactly how to find it.`,
-  },
-  {
-    content_type: "story",
-    category: "science",
-    title: "Why Ice Floats (And Why It Matters)",
-    age_band: "big_kids",
-    read_minutes: 4,
-    quiz: [{"question":"Why does ice float instead of sink?","options":["Ice is warmer than water","Frozen water molecules form a structure that takes up more space, making ice less dense","Ice contains air bubbles only"],"correct":1},{"question":"Why is it helpful that ice floats on top of lakes in winter?","options":["It lets boats travel faster","It insulates the water below so fish can survive the winter","It keeps the water warm enough to boil"],"correct":1}],
-    vocabulary: [{"word":"dense","definition":"Having a lot of mass packed tightly into a small space."},{"word":"molecules","definition":"Tiny particles made of atoms joined together, the building blocks of substances."},{"word":"insulating","definition":"Reducing the flow of heat, cold, or sound between two areas."},{"word":"aquatic","definition":"Living or happening in water."}],
-    body: `Drop an ice cube into a glass of water and watch it bob at the top instead of sinking to the bottom. That might seem completely ordinary, but it's actually strange behavior for a solid. For almost every other substance on Earth, the solid form is denser than the liquid form and sinks right down. Water is one of the rare exceptions, and that oddity turns out to be essential for life.
-
-The reason comes down to the shape of water molecules and how they arrange themselves when they freeze. In liquid water, molecules move around loosely and pack together fairly tightly. But as water cools and freezes into ice, its molecules lock into a rigid, six-sided crystal structure that actually takes up more space than the same molecules did as a liquid. Because that same amount of matter now occupies more volume, ice ends up less dense than liquid water, so it floats.
-
-This matters enormously for anything living in lakes, rivers, and oceans during winter. If ice sank instead of floated, lakes would freeze from the bottom up, eventually turning into solid blocks of ice in cold climates and wiping out fish and other aquatic life trapped inside. Instead, ice forms a floating layer on top, acting like an insulating blanket that keeps the water underneath liquid, so fish, frogs, and other creatures can survive the winter comfortably beneath the frozen surface.
-
-It's a small, everyday miracle hiding in your drink: one strange quirk of molecular geometry that quietly keeps entire ecosystems alive every winter.`,
-  },
-  {
-    content_type: "story",
     category: "science",
     title: "The Invisible Force That Holds You Down",
     age_band: "big_kids",
@@ -943,22 +777,6 @@ The famous story goes that in 1666, a young scientist named Isaac Newton watched
 Newton's idea explained not just falling apples but also why the Moon orbits Earth instead of flying off into space, and why planets circle the sun in predictable paths. Centuries later, Albert Einstein refined the idea further, describing gravity not just as a pull between objects but as a curving or warping of space itself, caused by mass, like a bowling ball resting on a stretched trampoline and bending the fabric around it.
 
 Whether you picture it as a pull or a curve in space, gravity is the quiet force running the entire universe, holding oceans to planets, planets to stars, and your own two feet firmly to the ground.`,
-  },
-  {
-    content_type: "story",
-    category: "science",
-    title: "The Chemistry of a Thunderstorm",
-    age_band: "big_kids",
-    read_minutes: 5,
-    quiz: [{"question":"What causes electric charge to build up inside a storm cloud?","options":["Wind blowing from outside the cloud","Ice and water particles colliding with each other","Sunlight heating the cloud"],"correct":1},{"question":"Why do you see lightning before you hear thunder?","options":["Thunder happens a few seconds after the lightning forms","Light travels much faster than sound","Lightning is silent"],"correct":1}],
-    vocabulary: [{"word":"collide","definition":"To crash into each other with force."},{"word":"charge","definition":"A property of matter that can attract or repel other charged matter, causing electricity."},{"word":"expands","definition":"Grows larger or spreads out."},{"word":"estimate","definition":"To make a rough guess or calculation based on available information."}],
-    body: `A single bolt of lightning can heat the surrounding air to nearly 54,000 degrees Fahrenheit, roughly five times hotter than the surface of the sun, and it happens in less time than it takes you to blink. Understanding how that much energy builds up inside an ordinary-looking storm cloud is one of nature's more dramatic chemistry lessons.
-
-Inside a thunderstorm, powerful updrafts and downdrafts toss around tiny particles of ice and water at incredible speeds, causing them to collide with each other over and over. Each collision knocks loose tiny electric charges, similar to what happens when you scuff your socks across a carpet. Smaller, lighter ice particles tend to pick up a positive charge and get carried toward the top of the cloud, while heavier particles carry a negative charge and sink toward the bottom.
-
-Eventually, the difference between the negative charge piling up at the cloud's base and the positive charge in the ground below it grows enormous. When that difference becomes too extreme to hold back any longer, electricity leaps across the gap in a blinding flash we call lightning, instantly heating the air along its path.
-
-That superheated air expands violently outward, faster than the speed of sound, creating the shockwave we hear afterward as thunder. Because light travels far faster than sound, you see the flash before you hear the boom, and counting the seconds between them is actually a rough way to estimate how many miles away the storm still is.`,
   },
   {
     content_type: "story",
@@ -991,22 +809,6 @@ At first, only a few neighbors used it, mostly out of curiosity. But within a fe
 Word spread beyond Maple Street, and soon three more of these tiny libraries appeared in nearby neighborhoods, each one decorated differently, one shaped like a lighthouse, another covered in mosaic tiles made from broken plates. This idea, now found in tens of thousands of yards across dozens of countries, is officially called the Little Free Library movement, though most people who use one never bother to learn its formal name.
 
 Mr. Alvarez still refills his box whenever it runs low, buying secondhand books at yard sales just to keep new stories circulating. He says the real point was never really about the books at all. It was about giving neighbors a small, ordinary reason to notice each other.`,
-  },
-  {
-    content_type: "story",
-    category: "art",
-    title: "The Museum That Lives in a Cave",
-    age_band: "big_kids",
-    read_minutes: 5,
-    quiz: [{"question":"About how old are the paintings in the Lascaux cave?","options":["About 500 years old","About 17,000 years old","About 100 years old"],"correct":1},{"question":"Why did the original cave close to the public in 1963?","options":["It was too small for visitors","Visitors’ breath was damaging the ancient pigments","It was turned into a museum gift shop"],"correct":1}],
-    vocabulary: [{"word":"pigments","definition":"Substances used to give color to paint or other materials."},{"word":"prehistoric","definition":"From a time before written history existed."},{"word":"ceremonial","definition":"Related to a formal ritual or special occasion."},{"word":"replica","definition":"An exact copy of something."}],
-    body: `Deep inside a hillside in southwestern France, hidden behind a narrow entrance that stayed sealed for thousands of years, is a gallery of paintings older than the pyramids, older than writing itself, older than nearly anything else humans have ever created. The Lascaux cave contains close to six hundred painted images, mostly of animals like horses, deer, and wild cattle, created roughly 17,000 years ago by people who left no other written record behind.
-
-The paintings were discovered almost by accident in 1940, when four teenagers exploring the hillside near their village followed their dog into a hole in the ground and found themselves standing in a chamber covered floor to ceiling in ancient art. Using only mineral pigments like red and yellow ochre and black charcoal, along with simple tools like moss brushes and hollow bones for blowing paint, prehistoric artists had created images so lifelike that some horses appear to be caught mid-gallop.
-
-Scientists still debate exactly why these images were made. Some believe they held spiritual or ceremonial meaning, perhaps tied to hunting rituals. Others think they may have functioned as an early kind of calendar, tracking the seasons when certain animals migrated. What's certain is that whoever painted them had real artistic skill, using the cave's natural bumps and curves to make animals appear three-dimensional in flickering torchlight.
-
-The original cave closed to the public in 1963, once scientists realized that visitors' breath was damaging the ancient pigments. Today, a remarkably exact replica sits nearby, letting visitors experience the wonder of Lascaux without threatening the irreplaceable original.`,
   },
   {
     content_type: "story",
@@ -1074,22 +876,6 @@ Astronomer Edwin Hubble later used Leavitt's discovery to prove that certain fuz
   },
   {
     content_type: "story",
-    category: "history",
-    title: "The Letter That Crossed an Ocean",
-    age_band: "big_kids",
-    read_minutes: 5,
-    quiz: [{"question":"Before the transatlantic cable, how long did it usually take to send a message across the Atlantic?","options":["A few minutes","Weeks, since messages traveled by ship","About one hour"],"correct":1},{"question":"Why did the first working cable in 1858 stop functioning after only three weeks?","options":["A ship accidentally cut it","Too much electrical voltage was pushed through it","It was stolen"],"correct":1}],
-    vocabulary: [{"word":"unspool","definition":"To unwind something, like wire or thread, from a roll."},{"word":"insulation","definition":"A protective layer used to prevent heat, electricity, or water from passing through."},{"word":"transmit","definition":"To send a signal or message from one place to another."},{"word":"durable","definition":"Strong and able to last a long time without breaking down."}],
-    body: `For most of human history, sending a message across the Atlantic Ocean meant putting it on a ship and waiting weeks, sometimes over a month, for it to arrive. In 1858, a team of engineers attempted something that sounded almost impossible: laying a copper wire cable along the floor of the entire Atlantic Ocean so that messages could travel between North America and Europe in minutes instead of weeks.
-
-The project required specially built ships to carry and unspool nearly 2,500 miles of cable, encased in layers of rubber-like insulation to protect it from seawater and enormous ocean pressure. Two earlier attempts had already failed when the cable snapped under its own weight partway through, sinking uselessly to the ocean floor. On the third attempt, engineers finally succeeded, and on August 16, 1858, Queen Victoria sent a congratulatory telegram to American President James Buchanan, a message that took about seventeen hours to transmit, agonizingly slow by today's standards but almost unimaginably fast for its time.
-
-Celebrations broke out in cities on both sides of the ocean, with fireworks and parades marking what people called the shrinking of the world. Unfortunately, the celebration was short-lived: engineers eager to speed up transmission pushed too much electrical voltage through the fragile cable, and it stopped working entirely after only about three weeks.
-
-It took until 1866 for a more durable cable to succeed permanently, but that brief, flickering month in 1858 had already proven the concept. For the first time in history, someone standing in London could send a message and get a reply from someone in New York within the same day.`,
-  },
-  {
-    content_type: "story",
     category: "dinosaurs",
     title: "The Dinosaur With a Built-In Umbrella",
     age_band: "big_kids",
@@ -1106,19 +892,303 @@ Recent fossil discoveries suggest Spinosaurus may have been surprisingly well ad
   },
   {
     content_type: "story",
-    category: "dinosaurs",
-    title: "The Tiny Dinosaur That Outlived Them All",
+    category: "food",
+    title: "The Pickle Jar Mystery",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What did Grandpa Tito say was making the bubbles in the jar?","options":["Bacteria working in the brine","Fizzy soda","A broken jar"],"correct":0},{"question":"How did the pickles end up tasting?","options":["Sweet","Sour and tangy","Spicy"],"correct":1}],
+    vocabulary: [{"word":"brine","definition":"Salty water used to flavor and preserve food."},{"word":"bacteria","definition":"Tiny living things too small to see that can help turn food into pickles."},{"word":"tangy","definition":"Having a sharp, zesty taste, like a pickle or lemon."},{"word":"mysterious","definition":"Hard to understand or explain, like a puzzle."}],
+    body: `Sofia found a glass jar bubbling quietly on the kitchen counter, filled with cucumbers, garlic, and cloudy water. "Grandpa Tito, why is your pickle jar making bubbles?" she asked, poking the lid gently.
+
+Grandpa Tito chuckled and pulled up a stool. "That's the brine working its magic," he said. "Salty water and time turn plain cucumbers into pickles, and those bubbles mean tiny helpers called bacteria are hard at work."
+
+Sofia leaned closer, watching the bubbles rise and pop. "Are they going to ruin it?" she asked, a little worried.
+
+"Not at all," Grandpa Tito said. "That's exactly how pickles get their sour, tangy taste. In a few more days, we'll have the crunchiest pickles on the block."
+
+Every afternoon after that, Sofia checked the jar, counting bubbles and sniffing the tangy smell drifting from the lid. When Grandpa Tito finally opened it a week later, Sofia took the very first crunchy bite and grinned. The mysterious bubbling jar had turned into her favorite snack.`,
+  },
+  {
+    content_type: "story",
+    category: "weather",
+    title: "Nina Chases a Sun Shower",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What did Deshawn call rain that falls while the sun is still shining?","options":["A sun shower","A thunderstorm","A snow shower"],"correct":0},{"question":"Why did Nina turn her back to the sun on the hill?","options":["To take a nap","To see a rainbow form","To hide from the rain"],"correct":1}],
+    vocabulary: [{"word":"droplets","definition":"Very small drops of liquid, like tiny bits of rain."},{"word":"arc","definition":"A curved line or shape, like part of a circle."},{"word":"shimmering","definition":"Shining with a soft, flickering light."},{"word":"blazed","definition":"Shone or burned very brightly."}],
+    body: `Nina stood on the porch, confused. Rain was falling in silver streaks, but the sun still blazed bright overhead. "How can it rain when there isn't a single cloud?" she asked her big brother, Deshawn.
+
+"That's called a sun shower," Deshawn said, grabbing his sneakers. "Wind can blow raindrops in from a storm far away, even while the sky above us stays clear. Come on, there might be a rainbow!"
+
+Nina raced after him to the top of the hill, droplets landing cool on her arms. She turned her back to the sun just like Deshawn showed her, and there it was: a bright arc of color stretching over the fields.
+
+"The sunlight bends inside each raindrop and splits into colors," Deshawn explained, pointing at the shimmering band of red, orange, and blue.
+
+Nina laughed, spinning under the mixed-up sky. "Sunshine and rain at the same time," she said. "That might be my new favorite kind of weather."`,
+  },
+  {
+    content_type: "story",
+    category: "invention",
+    title: "The Zipper That Wouldn't Zip",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What was stuck between the zipper's teeth?","options":["A thread","A rock","A coin"],"correct":0},{"question":"What did Leo rub on the teeth to help the zipper glide?","options":["Soap","Wax","Water"],"correct":1}],
+    vocabulary: [{"word":"interlock","definition":"To fit together tightly, like two puzzle pieces."},{"word":"jamming","definition":"Getting stuck and blocking something from moving."},{"word":"tweezers","definition":"A small tool with two thin arms used to pick up tiny things."},{"word":"slider","definition":"The small part you pull to open or close a zipper."}],
+    body: `Leo's favorite jacket had a zipper stuck halfway up, and no amount of tugging would budge it. "It's just teeth," his dad said, kneeling beside him in the garage. "A zipper has two rows of tiny metal teeth that interlock, like puzzle pieces, when you pull the slider between them."
+
+Leo squinted at the zipper. "So why won't it close?"
+
+"Something's probably jamming the teeth apart," Dad said, pointing to a thread caught between two teeth. Leo carefully pulled the thread free with tweezers, then rubbed a candle along the metal teeth.
+
+"Wax helps the slider glide smoothly," Dad explained. Leo gripped the tab and pulled slowly. This time, the teeth clicked together perfectly, zipping shut in one smooth motion.
+
+"It works!" Leo cheered, zipping and unzipping it three more times just to watch the teeth lock together. He decided that whoever invented the zipper must have been a genius, turning two rows of tiny teeth into the fastest way to close a jacket.`,
+  },
+  {
+    content_type: "story",
+    category: "music",
+    title: "Sana's Steady Metronome",
+    age_band: "explorers",
+    read_minutes: 3,
+    quiz: [{"question":"What problem was Sana having with her recital piece?","options":["She kept rushing and speeding up","She forgot the notes","She played too quietly"],"correct":0},{"question":"What did the metronome help Sana do?","options":["Read sheet music","Keep a steady tempo","Tune her piano"],"correct":1}],
+    vocabulary: [{"word":"metronome","definition":"A device that clicks at a steady beat to help musicians keep time."},{"word":"tempo","definition":"The speed at which a piece of music is played."},{"word":"rhythm","definition":"A repeating pattern of beats in music."},{"word":"recital","definition":"A performance where someone plays music for an audience."}],
+    body: `Sana's fingers froze over the piano keys every time her recital piece sped up in the middle. "I keep rushing," she groaned to her teacher, Ms. Alvarez.
+
+Ms. Alvarez set a small ticking device on the piano called a metronome. "This keeps a steady tempo," she said, "so your hands learn exactly how fast or slow to go, no matter how excited you feel."
+
+Sana pressed a key and the metronome clicked, calm and even, like a patient heartbeat. She matched her notes to each click, counting quietly under her breath. At first she still rushed ahead, but after a week of practicing with the clicking beat, her fingers finally matched its steady rhythm.
+
+On the night of the recital, Sana sat at the piano, took a breath, and played the whole piece exactly on tempo, without racing once. The audience clapped, and Ms. Alvarez winked from the front row. Sana smiled, realizing that steady and slow had helped her shine brighter than fast ever could.`,
+  },
+  {
+    content_type: "story",
+    category: "space",
+    title: "Priya and the Telescope That Wouldn't Focus",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"Why couldn't Priya see Saturn clearly at first?","options":["Her telescope was broken and needed to be replaced","She hadn't let her eyes adjust to the dark or focused carefully","Saturn was hidden behind clouds every night"],"correct":1},{"question":"What are Saturn's rings actually made of, according to Mr. Delgado?","options":["Solid glass panels","Ice chunks and bits of rock","Colorful gas clouds"],"correct":1}],
+    vocabulary: [{"word":"patience","definition":"The ability to wait calmly without getting frustrated."},{"word":"secondhand","definition":"Previously owned or used by someone else before."},{"word":"adjust","definition":"To change something slightly to make it work better."},{"word":"faint","definition":"Not bright, clear, or strong; hard to see or hear."}],
+    body: `Priya had exactly four nights left before the science fair, and her telescope kept turning Saturn into a faint orange smudge instead of a ringed planet. She'd saved for eight months to buy the secondhand telescope from a yard sale, and now, lying in the grass behind her house with her neighbor's dog snoring beside her, she felt like she'd wasted every dollar.
+
+"You're not doing anything wrong," said Mr. Delgado, leaning over the fence with his coffee mug. He'd noticed her out there three nights running and finally came over to look. "Saturn's rings are made of ice chunks and bits of rock, some tiny as sand, some big as a house. Seeing them clearly takes patience, not just a good telescope."
+
+He showed her how to let her eyes adjust to the dark for ten full minutes before looking, and how tightening the focus knob just a hair at a time worked better than cranking it. Priya tried again, breathing slowly the way he suggested instead of rushing.
+
+Then it happened. The smudge sharpened into a pale gold ball wrapped in a thin, glowing band, tilted just slightly, exactly like the pictures in her textbook.
+
+"There it is," she whispered, afraid that speaking too loudly might make it blur again.
+
+At the fair two days later, her poster board still had a coffee stain from where Mr. Delgado had rested his mug while teaching her, but her project won second place. She kept the stain. It felt like proof of how she'd actually gotten there.`,
+  },
+  {
+    content_type: "story",
+    category: "nature",
+    title: "Mateo and the Sunflower Bet",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"Why was Mateo's sunflower growing crooked?","options":["It leaned toward the sunlight instead of growing straight up","It was planted upside down","It didn't get enough water"],"correct":0},{"question":"What did Mateo learn by the end of the story?","options":["Winning the bet mattered more than anything else","Paying closer attention to his plant taught him something valuable","Sunflowers never need sunlight"],"correct":1}],
+    vocabulary: [{"word":"phototropism","definition":"The way a plant grows or bends toward a source of light."},{"word":"stubborn","definition":"Refusing to change or behave differently."},{"word":"shade","definition":"An area that is sheltered from direct sunlight."},{"word":"triumphant","definition":"Feeling or showing great joy after a success."}],
+    body: `Mateo and his cousin Lily made the bet on the first day of summer: whoever grew the taller sunflower by the county fair got the other person's allowance for a month. Mateo planted his seed in a pot on the back porch, watered it every morning, and bragged that his would win easily since he checked on it constantly.
+
+By July, Lily's sunflower stood straight and proud in her side yard, but Mateo's had grown crooked, curving sideways like it was trying to escape its pot. "Yours looks embarrassed," Lily teased over the fence.
+
+Frustrated, Mateo finally asked his grandfather, who'd grown vegetables for forty years, what was wrong. His grandfather crouched beside the pot and pointed at the porch roof, which cast shade over half the plant every afternoon.
+
+"Sunflowers lean toward light," he explained. "It's called phototropism. Your plant isn't stubborn or broken, it's just doing exactly what sunflowers do, stretching itself toward wherever the sun reaches it best."
+
+Mateo dragged the heavy pot into the middle of the yard that evening, away from the shade, grunting the whole way. Over the next two weeks, the stem slowly straightened itself, still not perfectly upright, but taller and steadier than before.
+
+At the fair, Lily's sunflower measured four inches taller, and she collected her allowance with a triumphant grin. But Mateo didn't mind as much as he expected. He'd learned something about his plant, and about paying closer attention, that felt worth more than a month of allowance.`,
+  },
+  {
+    content_type: "story",
+    category: "ocean",
+    title: "The Tide Pool Club",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What mistake was Yuki about to make?","options":["Poking a sea anemone without understanding it","Stepping on a hermit crab","Dropping the log book in the water"],"correct":0},{"question":"How did Yuki earn recognition in the club's log?","options":["By catching the most creatures","By observing carefully and spotting creatures others missed","By being the fastest runner on the beach"],"correct":1}],
+    vocabulary: [{"word":"anemone","definition":"A sea creature with a soft body and stinging tentacles that lives attached to rocks."},{"word":"tentacles","definition":"Long, flexible body parts some animals use to feel, grab, or sting."},{"word":"scuttled","definition":"Moved quickly with small, hurried steps."},{"word":"barnacles","definition":"Small sea creatures that attach themselves permanently to rocks or other hard surfaces."}],
+    body: `Every Saturday, a group of older kids met at Cypress Cove to search the tide pools and record what they found in a shared notebook they called the Tide Pool Club log. Nine-year-old Yuki had asked to join for weeks, and the club's unofficial leader, a sixth grader named Bree, finally said she could tag along, on one condition: "Don't touch anything you don't understand."
+
+Crouched over a shallow pool at low tide, Yuki spotted something that looked like a squishy purple flower stuck to a rock. Excited, she reached out to poke it before anyone could stop her.
+
+"Wait!" Bree grabbed her wrist gently. "That's a sea anemone. If you poke it hard, it uses its tentacles to sting tiny prey, and even though it won't really hurt you, it'll waste all its energy defending itself for nothing."
+
+Embarrassed, Yuki pulled her hand back and just watched instead. The anemone's tentacles swayed gently in the current, and after a minute, a small hermit crab scuttled past it completely unbothered, proving it really was just resting, not attacking.
+
+For the rest of the afternoon, Yuki kept her hands to herself and her eyes wide open, spotting a tiny striped goby fish and a cluster of barnacles that Bree hadn't even noticed. When Bree wrote the goby into the log that evening, she added Yuki's name beside the entry.
+
+"Found by Yuki," Bree read aloud, "who knows how to actually look before touching." Yuki decided that was the best compliment she'd gotten all summer.`,
+  },
+  {
+    content_type: "story",
+    category: "invention",
+    title: "The Backpack That Wouldn't Balance",
     age_band: "big_kids",
     read_minutes: 5,
-    quiz: [{"question":"According to scientists, what are birds?","options":["Distant cousins of fish","The last surviving branch of dinosaurs called theropods","Unrelated to dinosaurs entirely"],"correct":1},{"question":"Why did small, bird-like dinosaurs survive the asteroid impact better than giant dinosaurs?","options":["They could fly to space","They needed only small amounts of food to survive the aftermath","They lived underwater"],"correct":1}],
-    vocabulary: [{"word":"catastrophe","definition":"A sudden event that causes great damage or suffering."},{"word":"descendant","definition":"An animal or person related to an earlier ancestor."},{"word":"theropods","definition":"A group of mostly meat-eating dinosaurs that walked on two legs."},{"word":"scavenged","definition":"Searched for and collected usable scraps, often of food."}],
-    body: `Sixty-six million years ago, a massive asteroid slammed into Earth, triggering a global catastrophe that wiped out roughly three-quarters of all species alive at the time, including every dinosaur larger than a small dog. Yet if you've ever watched a pigeon peck at breadcrumbs or heard a sparrow chirp outside your window, you've actually been looking at a dinosaur descendant the entire time.
+    quiz: [{"question":"What was causing Dez's shoulder pain?","options":["An overstuffed backpack pulling his shoulders backward unevenly","Running too fast at recess","Sleeping in an odd position"],"correct":0},{"question":"How did Dez's invention try to fix the problem?","options":["By making the backpack lighter","By shifting some weight onto his hips with a waist strap","By removing the shoulder straps completely"],"correct":1}],
+    vocabulary: [{"word":"prototype","definition":"An early working model of something built to test an idea."},{"word":"distribution","definition":"The way something is spread out or shared across an area."},{"word":"salvaged","definition":"Saved or rescued from being thrown away."},{"word":"groove","definition":"A long, narrow line or mark pressed into a surface."}],
+    body: `Dez's shoulder had a red groove pressed into it every single afternoon from his overstuffed backpack, and nothing he tried, tightening the straps, loosening them, switching shoulders, seemed to fix it. His older sister said he was exaggerating, but the ache was real enough that he started dreading the walk home from Kennedy Middle School.
 
-Scientists now widely agree that birds are, technically, living dinosaurs, specifically the last surviving branch of a dinosaur group called theropods, the same broad family that included Tyrannosaurus rex and Velociraptor. Fossils discovered over the past few decades, especially in China, revealed small feathered dinosaurs with hollow bones, wishbones, and other skeletal features nearly identical to modern birds, filling in a transition that once seemed impossibly mysterious.
+For his engineering class project, Dez decided to redesign his own backpack instead of building something random like a birdhouse. He researched how weight distribution worked and learned that a heavy, unevenly loaded bag pulls a person's shoulders backward, forcing their spine to curve to compensate, which is exactly what caused the ache.
 
-So why did birds survive the asteroid impact when their giant relatives didn't? Researchers believe their small size mattered enormously. In the years after the impact, sunlight was blocked by debris and dust, plants died off, and food became scarce worldwide. Tiny animals that could survive on small amounts of seeds, insects, or scavenged scraps had a much better chance than enormous creatures that needed enormous quantities of food every single day just to stay alive.
+His solution was a wide waist strap, salvaged from an old fanny pack, sewn onto the bottom of his backpack to shift some weight onto his hips instead of his shoulders alone. His friend Toby laughed when he first saw it. "That looks ridiculous," Toby said, "like you're going hiking to math class."
 
-That means the story of dinosaurs never really ended in extinction at all. It simply narrowed down to one incredibly successful branch that kept adapting, shrinking, and changing for tens of millions of years, until it filled the skies with more than ten thousand living species. The next time a dinosaur story feels like ancient history, remember: one might currently be building a nest in your backyard tree.`,
+Dez wore it anyway for a full week, tracking how his shoulders felt each afternoon in a small notebook. By Thursday, the red groove hadn't appeared at all, and he genuinely felt less tired walking home.
+
+When he presented his prototype to the class, Toby was the first to ask to try it on. He wore it around the room for a minute, adjusting the waist strap, and admitted it actually felt more comfortable than he expected.
+
+Dez didn't win the class competition, that went to a solar-powered phone charger, but he wore his redesigned backpack every day afterward, red groove gone for good.`,
+  },
+  {
+    content_type: "story",
+    category: "animals",
+    title: "The Fox That Followed the Trash Cans",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"Why did the fox keep visiting the trash cans?","options":["It was looking for an easy meal","It wanted to live in Mrs. Patterson's yard","It was hiding from other foxes"],"correct":0},{"question":"How did Simone convince Mrs. Patterson not to trap the fox?","options":["She promised to catch it herself","She showed research and suggested securing the trash cans instead","She offered to pay for any damage"],"correct":1}],
+    vocabulary: [{"word":"adapting","definition":"Changing behavior or habits to survive better in new conditions."},{"word":"skeptical","definition":"Not easily convinced; doubtful about something."},{"word":"reluctantly","definition":"Done in an unwilling or hesitant way."},{"word":"secured","definition":"Made safe or firmly fixed in place."}],
+    body: `The first time Simone saw the fox, it was trotting along the fence line behind her house just after sunset, a flash of orange fur with a white-tipped tail disappearing behind Mrs. Patterson's shed. After that, she started catching glimpses of it almost every evening, usually near the trash cans.
+
+Mrs. Patterson was not charmed. "That thing tipped over my bins three nights running," she complained at the mailbox one morning. "I'm calling someone to trap it."
+
+Worried, Simone spent an afternoon researching at the library instead of arguing. She learned that red foxes had been living in cities and suburbs for decades, adapting well to life alongside people, and that most foxes avoid humans entirely, sniffing around trash simply because it's an easy meal, not because they're dangerous.
+
+She brought her notes to Mrs. Patterson's porch the next day, nervous but determined. "Foxes almost never bother pets or people," Simone explained. "If we just use bins with locking lids, it probably won't come around anymore, and nobody has to trap it."
+
+Mrs. Patterson looked skeptical but agreed to try it for two weeks before calling anyone. Simone helped her buy a strap to hold down the lid that same afternoon, and together they secured every bin on the block.
+
+The fox visited twice more, sniffing hopefully at the secured cans before trotting off empty-handed. By the third week, it had shifted its evening rounds elsewhere, and Mrs. Patterson admitted, a little reluctantly, that she'd started looking forward to spotting its orange tail from her window instead of dreading it.`,
+  },
+  {
+    content_type: "story",
+    category: "science",
+    title: "The Static Cling Disaster",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What actually happened when Owen rubbed the balloon on his hair?","options":["Nothing happened at all","Electrons transferred, giving the balloon a charge that attracted nearby objects","The balloon popped instantly"],"correct":1},{"question":"How did Ms. Alvarez respond to the messy demonstration?","options":["She explained the science behind what happened","She told Owen to sit down","She canceled the showcase"],"correct":0}],
+    vocabulary: [{"word":"vigorously","definition":"With a lot of energy and force."},{"word":"electrons","definition":"Tiny particles inside atoms that carry a negative electrical charge."},{"word":"charge","definition":"The amount of electricity something holds, either positive or negative."},{"word":"demonstration","definition":"An act of showing how something works."}],
+    body: `Owen had exactly one job for the class science showcase: demonstrate static electricity by rubbing a balloon on his hair and sticking it to the wall. He'd practiced twice at home and it had worked perfectly both times, which is exactly why he wasn't worried the morning of the showcase.
+
+Standing in front of twenty-four classmates, he rubbed the balloon vigorously against his hair, and everything went wrong at once. His hair stood straight up like he'd been struck by lightning, the balloon stuck to his sweater instead of the wall, and when he yanked it free, it grabbed a stray sheet of paper off the science table, sending it fluttering across the room.
+
+A few kids laughed. Owen felt his face go hot, certain he'd ruined the whole experiment.
+
+But his teacher, Ms. Alvarez, clapped instead of frowning. "That's actually a perfect demonstration," she said. "Rubbing the balloon knocked loose electrons off your hair and onto the balloon's surface, giving it a negative charge. Charged objects attract lightweight things nearby, your hair, that paper, even lint, whatever's closest and easiest to pull."
+
+Relieved, Owen tried again more slowly, holding the balloon a careful distance from the wall this time. It stuck, wobbled, and stayed put, drawing a small round of applause.
+
+Afterward, a classmate named Priya asked if he could make her pencil shavings jump too. Owen spent the rest of lunch letting kids test the balloon on paper scraps and hair, and by the end of it, his "disaster" had become the most popular station in the whole showcase.`,
+  },
+  {
+    content_type: "story",
+    category: "kindness",
+    title: "The Table Nobody Chose",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"Why did Reese hesitate before sitting with Devontae?","options":["She didn't like him","Walking across the cafeteria alone felt scary and different from her usual routine","She wasn't allowed to sit there"],"correct":1},{"question":"What changed by the following week?","options":["Devontae moved away","Jade also joined and the table was no longer empty","The cafeteria closed the table"],"correct":1}],
+    vocabulary: [{"word":"staked","definition":"Claimed or marked as one's own territory or spot."},{"word":"footing","definition":"A secure and comfortable position in a new or unfamiliar situation."},{"word":"awkwardly","definition":"In a clumsy or uncomfortable way."},{"word":"announcement","definition":"A public statement telling people about something."}],
+    body: `For three weeks, Reese had noticed the same thing every single lunch period: a boy named Devontae sat completely alone at the round table near the recycling bins, the one nobody else picked. He always had a book open, but he never seemed to actually be reading it, just staring at the same page.
+
+Reese's friends had already staked out their usual spot by the window, and sitting with Devontae instead meant walking across the whole cafeteria alone, in front of everyone, which felt bigger and scarier than it probably should have.
+
+"Why do you care where he sits?" her friend Jade asked when Reese mentioned it. "He's never asked anyone to sit with him."
+
+That night, Reese kept thinking about how it must feel to eat lunch alone every day and pretend you didn't mind. The next afternoon, she picked up her tray, took a breath, and walked over to the table by the recycling bins instead of the window.
+
+"Is this seat taken?" she asked. Devontae looked up, startled, like he'd forgotten anyone could ask that.
+
+"No," he said. "Go ahead."
+
+They didn't talk much at first, but by the end of lunch, she'd learned he'd moved to the district in October and hadn't found his footing since. The next day, Jade sat down too, a little awkwardly, and by the following week, the table by the recycling bins wasn't empty anymore.
+
+Reese never made a big announcement about it. She just kept sitting there, and it turned out that was enough.`,
+  },
+  {
+    content_type: "story",
+    category: "history",
+    title: "The Island That Wasn't an Island",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"What did the old map show incorrectly about California?","options":["That it was much smaller than it really is","That it was a separate island instead of connected to the mainland","That it had no coastline at all"],"correct":1},{"question":"How did the mistake last for two hundred years?","options":["Mapmakers kept copying an influential map without checking it","No one ever sailed near California","The mistake was corrected within a year"],"correct":0}],
+    vocabulary: [{"word":"reproduction","definition":"A copy of something, especially an original piece of art or document."},{"word":"strait","definition":"A narrow strip of water connecting two larger bodies of water."},{"word":"influential","definition":"Having a large effect on the way other people think or act."},{"word":"cartography","definition":"The science and art of making maps."}],
+    body: `Theo needed one interesting fact for his California report, something better than population statistics, and the library's old map cabinet seemed like the obvious place to look. Ms. Kowalski, the reference librarian, pulled out a drawer of antique reproduction maps and let him flip through them at a big wooden table.
+
+One map, dated 1650, stopped him cold. It showed California clearly separated from the rest of North America by a wide stretch of blue water, drawn as a long, curving island floating off the coast.
+
+"That has to be a mistake," Theo said, sliding the map toward her. "California's obviously connected to everything else."
+
+Ms. Kowalski smiled like she'd been waiting for someone to notice. "For almost two hundred years, plenty of European mapmakers agreed with that map, not with you. Early explorers sailed partway up the coast, saw what looked like a strait of open water, and assumed it wrapped all the way around. Once one influential mapmaker drew it as an island, others just kept copying the mistake without checking it themselves."
+
+"Nobody double-checked for two hundred years?" Theo asked, amazed.
+
+"Some captains did sail there and reported it was actually connected," she said, "but old, confident maps are surprisingly hard to argue with, especially before anyone had photographs or satellites to prove it."
+
+Theo photographed the map on his phone and built his entire report around it, titling his project "The Island That Wasn't." His teacher had never seen a report open with a four-hundred-year-old cartography mistake, and Theo got to explain, proudly, exactly how something so wrong had lasted so long.`,
+  },
+  {
+    content_type: "story",
+    category: "dinosaurs",
+    title: "The Bone in the Backyard",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What did Nadia's find turn out to be?","options":["A fossilized shark tooth","A dinosaur egg","An ordinary rock"],"correct":0},{"question":"Why was a shark fossil found so far from the ocean?","options":["Someone must have dropped it there","The region used to be covered by a shallow sea long ago","Sharks used to walk on land"],"correct":1}],
+    vocabulary: [{"word":"ridged","definition":"Having raised lines or bumps across a surface."},{"word":"fossilized","definition":"Turned into a fossil after being preserved in rock over a very long time."},{"word":"paleontologist","definition":"A scientist who studies fossils and ancient life."},{"word":"region","definition":"A particular area of land or part of the world."}],
+    body: `Nadia was digging a hole for a new fence post in the backyard when her shovel struck something that wasn't a rock. She brushed away the dirt to find a smooth, curved object, ridged like a tiny mountain range, half-buried in the clay.
+
+"It's probably just a weird pebble," said her older brother Caleb, barely glancing up from his phone. "This isn't Jurassic Park."
+
+Nadia wasn't so sure. She rinsed it off in the kitchen sink and noticed fine lines running along its surface that didn't look like anything a rock would naturally have. She wrapped it carefully in a paper towel and asked their mom to drive her to the natural history museum's identification day, where visitors could bring in mystery finds.
+
+A paleontologist named Dr. Reyes examined it under a bright lamp, turning it slowly between gloved fingers. "This is a fossilized tooth," she said finally, "from an ancient shark that lived roughly ten million years ago."
+
+"A shark?" Nadia said, confused. "We live nowhere near the ocean."
+
+"You do now," Dr. Reyes explained, "but this whole region used to sit underneath a shallow sea. Fossils like this turn up in backyards more often than people think, because the ground remembers water that disappeared long before any of us existed."
+
+Caleb, who had tagged along mostly to make fun of her, went suspiciously quiet. That evening, Nadia set the tooth on her windowsill in a small glass jar, and for once, her brother asked if he could come dig with her next weekend.`,
+  },
+  {
+    content_type: "story",
+    category: "music",
+    title: "The Trumpet That Squeaked in Front of Everyone",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What happened during Malik's trumpet solo?","options":["He forgot the music completely","His trumpet squeaked loudly in front of the whole school","He dropped his trumpet"],"correct":1},{"question":"According to Mr. Ferris, what separates a good musician from a nervous one?","options":["Never making any mistakes","Playing the loudest","Recovering and keeping composure after a mistake"],"correct":2}],
+    vocabulary: [{"word":"measures","definition":"Small sections of music divided by rhythm, like sentences in a song."},{"word":"steadied","definition":"Became stable or calm after being shaky or uncertain."},{"word":"composure","definition":"A calm and controlled state, especially under pressure."},{"word":"recover","definition":"To return to a normal state after a problem or mistake."}],
+    body: `Malik had practiced his trumpet solo so many times that his little sister could hum it in her sleep. But at the winter concert, standing alone under the gym lights with the whole school watching, his nervous fingers slipped, and instead of a smooth high note, his trumpet let out a squeak so loud it echoed off the bleachers.
+
+A few kids near the front snickered. Malik's ears went hot, and for one terrible second, he thought about lowering the trumpet and walking straight off the stage.
+
+Instead, he caught his band teacher's eye. Mr. Ferris, standing off to the side, gave him the smallest nod, the same one he used during practice whenever a mistake happened and he wanted Malik to just keep going.
+
+Malik took a breath, found his place in the sheet music, and kept playing. His fingers were shaky through the next few measures, but by the final phrase, his sound had steadied into something clear and confident, ringing out over the quiet gym.
+
+Afterward, backstage, he braced himself for teasing, but his friend Deja found him first. "Nobody remembers the squeak," she said. "Everyone remembers you didn't stop."
+
+Mr. Ferris agreed. "Professional musicians squeak sometimes too," he told him. "What separates a good musician from a nervous one isn't whether mistakes happen. It's whether you recover and keep your composure."
+
+At the spring concert three months later, Malik played the same solo without a single squeak, but he told Deja afterward that finishing the messy one had actually taught him more than any perfect performance could have.`,
+  },
+  {
+    content_type: "story",
+    category: "weather",
+    title: "The Kite That Waited for Wind",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What was the problem on the morning of the festival?","options":["It was raining","There was no wind to lift the kites","Aaliyah forgot her kite at home"],"correct":1},{"question":"How did Aaliyah's grandfather help her get the kite flying?","options":["He told her to add more string","He showed her how to find a rising thermal near the parking lot","He bought her a new kite"],"correct":1}],
+    vocabulary: [{"word":"limp","definition":"Hanging loosely without any stiffness or movement."},{"word":"thermal","definition":"A rising current of warm air."},{"word":"current","definition":"A steady flow of air or water moving in one direction."},{"word":"stubbornly","definition":"In a way that refuses to change or give in."}],
+    body: `Aaliyah had built her kite over six weekends, a diamond-shaped flyer patterned like a monarch butterfly, specifically to win the neighborhood kite festival's design contest. The only problem was that on the morning of the festival, the air was completely, stubbornly still. Flags around the park hung limp against their poles, and every kite already in the sky drooped toward the grass.
+
+"There's no wind," Aaliyah said, close to tears, watching her butterfly kite refuse to lift no matter how fast she ran with it. "It's ruined."
+
+Her grandfather, who'd flown kites his whole childhood, wasn't ready to give up. He pointed toward the far end of the field, where the grass met a row of parked cars baking in the sun. "Watch the treetops over there," he said. "See how they're moving just slightly, even though it feels still down here?"
+
+He explained that sunlight heats open pavement and dry grass faster than shaded areas, creating a rising column of warm air called a thermal, which can pull a kite up even without a steady breeze.
+
+They walked to the sunny edge near the parking lot, and Aaliyah let out line while running along the invisible current her grandfather had spotted. The kite wobbled, dipped dangerously close to the ground, and then caught the thermal, climbing steadily until the orange wings stretched out fully against the sky.
+
+She didn't win first place, a kite shaped like a dragon did, but hers was the only one flying at all that morning, and every judge noticed.`,
   },
   // ========== KIDS WORLD NEWS (real events, retold simply) ==========
   {
@@ -1872,6 +1942,236 @@ Cancer research relies heavily on funding to keep scientists working toward bett
 What stands out most about the Comedy Kids is their age. These are children still in elementary school, yet they recognized a need in their community and found a creative way to respond to it. Their comedy show is proof that you do not need to be an adult, or even a teenager, to organize an event that makes a genuine difference for a cause bigger than yourself.`,
   },
   // ========== AMAZING FACTS ==========
+  {
+    content_type: "fact",
+    category: "space",
+    title: "A Trip to the Moon",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"Why do astronauts bounce when they walk on the Moon?","options":["The Moon is very hot","The Moon's gravity is weaker","The Moon is made of ice"],"correct":1},{"question":"Does the Moon make its own light?","options":["Yes, it glows by itself","No, it reflects the Sun's light","It only glows at noon"],"correct":1}],
+    vocabulary: [{"word":"astronauts","definition":"People who travel and work up in space."},{"word":"gravity","definition":"The invisible pull that keeps your feet on the ground."},{"word":"reflecting","definition":"Bouncing light back, the way a mirror does."},{"word":"glowing","definition":"Giving off a soft, warm light."}],
+    body: `Did you know the Moon is closer to us than any other place in space? If you could drive a car straight up into the sky, it would take about six months to get there!
+
+The Moon doesn't have air to breathe, so astronauts wear special suits with their own air inside. When astronauts walk on the Moon, they bounce more than they walk, because the Moon's gravity is much weaker than Earth's. That means if you could jump on the Moon, you could leap over a school bus!
+
+At night, look up and find the Moon glowing in the sky. It isn't making its own light — it's actually reflecting light from the Sun, like a giant mirror in space.`,
+  },
+  {
+    content_type: "fact",
+    category: "nature",
+    title: "Why the Sky Turns Orange",
+    age_band: "big_kids",
+    read_minutes: 3,
+    quiz: [{"question":"What color does the sky usually look like in the daytime?","options":["Green","Blue","Purple"],"correct":1},{"question":"Why does the sunset look orange and pink?","options":["The blue light gets scattered away","The sun changes color","Clouds paint the sky"],"correct":0}],
+    vocabulary: [{"word":"scattered","definition":"Spread out in lots of different directions."},{"word":"sunset","definition":"The time each evening when the sun goes down and the sky changes color."},{"word":"direction","definition":"The way something is pointing or moving, like up, down, or sideways."}],
+    body: `Every evening, the sky puts on a colorful show. In the daytime, the sky looks blue because sunlight bounces off tiny bits of air in every direction, and blue light bounces the most.
+
+But when the sun starts to set, its light has to travel through much more sky to reach your eyes. Along the way, the blue light gets scattered away, leaving behind the warm oranges, pinks, and reds we see at sunset.
+
+That's why the sky can look like it's on fire with color right before night begins! The next time you watch a sunset, you're watching sunlight taking the long way home.`,
+  },
+  {
+    content_type: "fact",
+    category: "space",
+    title: "Why Saturn Wears a Ring",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What are Saturn's rings actually made of?","options":["One solid piece of metal","Chunks of ice and rock","Clouds of gas"],"correct":1},{"question":"Why do the rings look so bright?","options":["They glow on their own","Sunlight bounces off the icy pieces","They are painted"],"correct":1}],
+    vocabulary: [{"word":"spectacular","definition":"Amazing and beautiful to look at."},{"word":"debris","definition":"Scattered bits and pieces left over from something broken apart."},{"word":"telescope","definition":"A tool that makes faraway things, like stars and planets, look closer."},{"word":"astronomers","definition":"Scientists who study stars, planets, and outer space."}],
+    body: `Of all the planets, Saturn is the one everyone wants to draw first, thanks to its spectacular rings circling all the way around it. Kids often think the rings are solid, like a giant hula hoop, but they are actually made of countless chunks of ice and rock, some as tiny as a grain of sand and some as big as a house.
+
+Scientists believe the rings might be leftover pieces from a moon or comet that broke apart long ago, scattering debris that settled into a flat, shimmering band around the planet. Sunlight bounces off the icy pieces, which is why the rings look so bright and easy to spot through a telescope.
+
+Saturn actually has several rings, not just one, with thin gaps between them like grooves on a record. Astronomers keep discovering more about how the rings formed and how long they might last. Until then, kids everywhere can keep drawing Saturn's beautiful rings, wondering what tiny icy secrets are still swirling around out there.`,
+  },
+  {
+    content_type: "fact",
+    category: "nature",
+    title: "The Tree That Talks to Its Friends",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What helps trees connect to each other underground?","options":["Mycelium","Rocks","Rain"],"correct":0},{"question":"What can trees do through this hidden network?","options":["Send sugars and warning signals to each other","Grow taller instantly","Change color"],"correct":0}],
+    vocabulary: [{"word":"mycelium","definition":"Thread-like strands of fungus that spread underground."},{"word":"network","definition":"A system of connected parts that link and work together."},{"word":"cooperating","definition":"Working together with others toward the same goal."}],
+    body: `In a quiet forest, an old oak tree seemed to stand alone, but underground, something amazing was happening. Threads of fungus called mycelium wrapped around the oak's roots and stretched out to connect with dozens of other trees nearby, forming a hidden network scientists sometimes call the wood wide web.
+
+Through this network, the oak tree could send sugars to a struggling young maple that wasn't getting enough sunlight, almost like sharing lunch with a hungry friend. If a beetle attacked one tree, it could even send warning signals through the network so its neighbors could prepare their defenses in time.
+
+A forest that looks like separate trees standing apart is actually more like one giant, cooperating family, quietly helping each other survive storms, droughts, and hungry insects. The next time you walk through the woods, remember that beneath your feet, an entire secret conversation might be happening, tree to tree, root to root.`,
+  },
+  {
+    content_type: "fact",
+    category: "invention",
+    title: "The Wheel That Changed Everything",
+    age_band: "explorers",
+    read_minutes: 4,
+    quiz: [{"question":"What did inventors add to wheels to make them lighter and stronger?","options":["Spokes","Paint","Extra wood"],"correct":0},{"question":"What let wheels spin smoothly beneath carts?","options":["Ropes","Axles","Glue"],"correct":1}],
+    vocabulary: [{"word":"inventors","definition":"People who design and create new things."},{"word":"spokes","definition":"The thin rods that connect the center of a wheel to its outer edge."},{"word":"axles","definition":"The rods that a wheel spins around."},{"word":"transformed","definition":"Changed completely into something different."}],
+    body: `Thousands of years ago, moving heavy stones and carts meant dragging them slowly across the ground, wearing out both people and animals. Then someone had a clever idea: what if something round could roll instead of drag? The wheel was born, and it changed how humans moved things forever.
+
+Early wheels were solid slices of wood, heavy and a little wobbly, but they still made carts glide instead of scrape. Over time, inventors added spokes to make wheels lighter and stronger, and eventually axles that let wheels spin smoothly beneath carts and wagons. Suddenly, farmers could carry more crops, traders could travel farther, and builders could move enormous blocks of stone.
+
+Today, wheels are everywhere, from tiny gears inside a clock to giant tires on a truck, and even the wheels on your own bicycle. It is easy to forget that something as ordinary as a circle rolling along the ground once completely transformed how people lived. Sometimes the simplest ideas turn out to be the most powerful ones.`,
+  },
+  {
+    content_type: "fact",
+    category: "space",
+    title: "The Comet That Almost Missed Its Date",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"How often does Halley’s Comet return to be visible from Earth?","options":["Every year","About every 76 years","Every 10 years"],"correct":1},{"question":"What causes the comet’s glowing tail?","options":["Sunlight bouncing off metal","The sun’s heat turning its ice into streaming gas and dust","Lightning inside the comet"],"correct":1}],
+    vocabulary: [{"word":"orbit","definition":"The curved path an object takes as it travels around another object in space."},{"word":"vaporize","definition":"To turn from a solid or liquid into a gas."},{"word":"predictable","definition":"Able to be known or guessed ahead of time."},{"word":"cosmic","definition":"Relating to the universe or outer space."}],
+    body: `Every 76 years, a ball of ice and dust the size of a small mountain swings past Earth, glows a fuzzy blue-white, and then disappears back into the darkness of space for another human lifetime. It's called Halley's Comet, and it is one of the few comets predictable enough that scientists can tell you almost exactly when it will return, even though nobody alive today will see it twice.
+
+Comets like this one travel in a long, stretched-out orbit shaped more like a squashed oval than a circle. For most of the journey, the comet is out past the orbit of Neptune, frozen and dark, moving so slowly it seems almost motionless. But as it swings closer to the sun, the sun's heat begins to vaporize the ice on its surface, releasing gas and dust that stream out behind it in a glowing tail sometimes millions of miles long.
+
+In 1705, an astronomer named Edmond Halley noticed that comets recorded in 1531, 1607, and 1682 all traced nearly identical paths. He guessed, correctly, that these weren't three different comets but the same one returning again and again on a predictable schedule. He predicted it would come back in 1758, and it did, sixteen years after he died, proving his calculation right.
+
+The comet is due back in 2061. Kids reading this story right now are exactly the generation who will get to look up and see it for themselves, a reminder that some cosmic appointments are kept precisely on time, across centuries.`,
+  },
+  {
+    content_type: "fact",
+    category: "space",
+    title: "Footprints That Never Fade",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"Why do footprints on the Moon last so much longer than footprints on Earth?","options":["The Moon has no wind or rain to erase them","Moon dust is made of glue","Astronauts pressed extra hard"],"correct":0},{"question":"What slowly wears the footprints away over millions of years?","options":["Ocean waves","Tiny micrometeorite impacts","Moonquakes"],"correct":1}],
+    vocabulary: [{"word":"atmosphere","definition":"The layer of gases surrounding a planet."},{"word":"regolith","definition":"The layer of loose dust and broken rock covering a planet or moon’s solid surface."},{"word":"meteorite","definition":"A piece of rock or metal from space that survives its fall to a surface."},{"word":"permanent","definition":"Lasting for a very long time or forever, without changing."}],
+    body: `When astronauts walked on the Moon during the Apollo missions, they left behind footprints in the fine gray dust, and unlike footprints on a beach, those marks are still there today, exactly as sharp as the moment they were pressed in. Scientists estimate they could last for millions of years before slowly fading away.
+
+The reason comes down to what the Moon doesn't have. Earth's footprints disappear because of wind, rain, and waves, which are all driven by our planet's atmosphere and water. The Moon has essentially no atmosphere at all, so there's no breeze to blow dust around and no rain to wash anything away. The lunar dust, called regolith, is also oddly clingy; it's made of jagged, glassy particles formed by billions of years of tiny impacts, so once it's disturbed, it tends to stay put rather than shifting back into place.
+
+The only real threats to those footprints are extremely slow ones: micrometeorites, tiny grains of space rock too small to see, that constantly rain down and gradually erode the surface over enormous stretches of time. A single meteorite strike nearby could disturb the area too, but such direct hits are extremely rare. Even so, scientists calculate it would take millions of years for enough of these tiny impacts to smooth the footprints away completely.
+
+So somewhere on the Moon's Sea of Tranquility, Neil Armstrong's bootprints are still crisp in the dust, patiently waiting out the centuries. They're a strange kind of time capsule, proof that some of the most fragile-looking marks can also be among the most permanent.`,
+  },
+  {
+    content_type: "fact",
+    category: "nature",
+    title: "The Secret Language of Trees",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"What is the \"wood wide web\"?","options":["A network of fungi connecting tree roots underground","A type of tree bark","A nickname for a rainforest"],"correct":0},{"question":"What can a \"mother tree\" do through this network?","options":["Change the weather","Send extra nutrients to struggling seedlings","Grow new branches instantly"],"correct":1}],
+    vocabulary: [{"word":"mycelium","definition":"The thread-like underground part of a fungus that spreads through soil."},{"word":"nutrients","definition":"Substances that living things need to grow and stay healthy."},{"word":"photosynthesis","definition":"The process plants use to turn sunlight, water, and air into food."},{"word":"cooperative","definition":"Working together with others toward a shared goal."}],
+    body: `Walk through an old forest and it might look like each tree is simply standing alone, quietly doing its own thing. But underground, something much stranger is happening: many trees are connected to each other through a vast web of thread-like fungi, and scientists have started calling it the "wood wide web."
+
+These fungal threads, called mycelium, wrap around and even grow into tree roots, forming a partnership called a mycorrhizal network. The fungus helps the tree absorb water and nutrients from the soil, and in exchange, the tree shares some of the sugar it makes through photosynthesis. But the network doesn't just connect one tree to one fungus; it links hundreds of trees together underground, sometimes across an entire forest.
+
+Researchers have discovered that trees use this network to do more than just share food. A large, old tree, sometimes nicknamed a "mother tree," can send extra nutrients through the network to smaller, shaded seedlings that are struggling to get enough sunlight. Trees under insect attack have even been shown to send chemical warning signals through the network, giving their neighbors a head start on defending themselves.
+
+None of this means trees are thinking or talking the way people do. But it does mean a forest behaves less like a crowd of strangers and more like a single, cooperative community, quietly trading resources and information beneath every footstep.`,
+  },
+  {
+    content_type: "fact",
+    category: "ocean",
+    title: "The Deepest Room on Earth",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"What is the Challenger Deep?","options":["The tallest mountain in the ocean","The lowest known point on Earth, in the Pacific Ocean","A type of submarine"],"correct":1},{"question":"Why must submersibles built for that depth have such strong hulls?","options":["To survive extremely high water pressure","To go faster underwater","To protect against sharks"],"correct":0}],
+    vocabulary: [{"word":"remote","definition":"Far away and difficult to reach."},{"word":"pressure","definition":"The force pushing on something, such as water pushing on an object underwater."},{"word":"submersible","definition":"A vehicle designed to travel and operate underwater."},{"word":"translucent","definition":"Allowing some light to pass through, so objects look partly see-through."}],
+    body: `Nearly seven miles beneath the surface of the Pacific Ocean lies a place called the Challenger Deep, the lowest known point on the entire planet. If you could drop Mount Everest into it, the mountain's peak would still sit more than a mile underwater. It is so deep, dark, and remote that only a handful of people have ever traveled there, fewer than have walked on the Moon.
+
+Getting there is a serious engineering challenge because of pressure. At the surface, the ocean's weight presses down on you gently, barely noticeable. But descend to the bottom of the Challenger Deep, and the water above pushes down with a force over a thousand times greater than at sea level, roughly the same as if you balanced fifty jumbo jets on top of a small car. Any submersible built to survive down there needs an incredibly strong, rounded hull to spread out that crushing pressure evenly.
+
+Despite the darkness and the pressure, the Challenger Deep isn't empty. Scientists have found strange, pale sea creatures adapted to life at extreme depths, including a type of shrimp-like amphipod and translucent fish with soft, jelly-like bodies built to withstand pressures that would flatten most animals instantly.
+
+In 1960, two explorers became the first humans to reach the bottom, spending just twenty minutes there before the long ascent back up. Since then, only a few more expeditions have followed, which means Earth's deepest room remains one of the least-visited places on our own planet, stranger, in some ways, than outer space.`,
+  },
+  {
+    content_type: "fact",
+    category: "animals",
+    title: "The Long Walk of the Monarch",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"Why is the monarch butterfly migration considered astonishing?","options":["The butterflies fly at night only","No single butterfly makes the whole round trip; later generations complete it","They travel underwater part of the way"],"correct":1},{"question":"How do scientists think monarchs find their way to Mexico?","options":["By following other migrating birds","Using a mix of sun position, timing, and Earth’s magnetic field","By smell alone"],"correct":1}],
+    vocabulary: [{"word":"astonishing","definition":"Extremely surprising or amazing."},{"word":"generations","definition":"Groups of offspring, each born at different stages after their parents."},{"word":"navigate","definition":"To find and follow a path or direction to a destination."},{"word":"ancestors","definition":"Relatives who lived before, from earlier generations."}],
+    body: `Each fall, millions of monarch butterflies leave the fields and gardens of Canada and the northern United States and fly as far as three thousand miles south to a specific patch of forest in central Mexico, arriving within days of each other year after year, as if following a map nobody wrote down.
+
+What makes this journey especially astonishing is that no single monarch has ever made the round trip before. The butterflies that fly south in autumn are typically the great-great-grandchildren of the monarchs that flew north the previous spring. Along the way north, monarchs live only a few weeks each, laying eggs and dying before completing even a fraction of the total distance. Somehow, the urge and the route get passed along through several short-lived generations until, in late summer, one special generation is born that behaves completely differently: instead of breeding and dying quickly, these monarchs delay reproduction, build up fat reserves, and live up to eight months, long enough to fly the entire way to Mexico.
+
+Scientists believe monarchs navigate using a kind of internal compass that combines the position of the sun with an inner sense of time, plus a sensitivity to Earth's magnetic field, though exactly how such a tiny brain manages such a precise calculation is still being studied.
+
+When the migrating monarchs finally arrive in Mexico, they cluster together by the millions on the very same trees their ancestors used, sometimes bending the branches under their combined weight. None of them have ever seen that forest before. Somehow, they still know exactly how to find it.`,
+  },
+  {
+    content_type: "fact",
+    category: "science",
+    title: "Why Ice Floats (And Why It Matters)",
+    age_band: "big_kids",
+    read_minutes: 4,
+    quiz: [{"question":"Why does ice float instead of sink?","options":["Ice is warmer than water","Frozen water molecules form a structure that takes up more space, making ice less dense","Ice contains air bubbles only"],"correct":1},{"question":"Why is it helpful that ice floats on top of lakes in winter?","options":["It lets boats travel faster","It insulates the water below so fish can survive the winter","It keeps the water warm enough to boil"],"correct":1}],
+    vocabulary: [{"word":"dense","definition":"Having a lot of mass packed tightly into a small space."},{"word":"molecules","definition":"Tiny particles made of atoms joined together, the building blocks of substances."},{"word":"insulating","definition":"Reducing the flow of heat, cold, or sound between two areas."},{"word":"aquatic","definition":"Living or happening in water."}],
+    body: `Drop an ice cube into a glass of water and watch it bob at the top instead of sinking to the bottom. That might seem completely ordinary, but it's actually strange behavior for a solid. For almost every other substance on Earth, the solid form is denser than the liquid form and sinks right down. Water is one of the rare exceptions, and that oddity turns out to be essential for life.
+
+The reason comes down to the shape of water molecules and how they arrange themselves when they freeze. In liquid water, molecules move around loosely and pack together fairly tightly. But as water cools and freezes into ice, its molecules lock into a rigid, six-sided crystal structure that actually takes up more space than the same molecules did as a liquid. Because that same amount of matter now occupies more volume, ice ends up less dense than liquid water, so it floats.
+
+This matters enormously for anything living in lakes, rivers, and oceans during winter. If ice sank instead of floated, lakes would freeze from the bottom up, eventually turning into solid blocks of ice in cold climates and wiping out fish and other aquatic life trapped inside. Instead, ice forms a floating layer on top, acting like an insulating blanket that keeps the water underneath liquid, so fish, frogs, and other creatures can survive the winter comfortably beneath the frozen surface.
+
+It's a small, everyday miracle hiding in your drink: one strange quirk of molecular geometry that quietly keeps entire ecosystems alive every winter.`,
+  },
+  {
+    content_type: "fact",
+    category: "science",
+    title: "The Chemistry of a Thunderstorm",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"What causes electric charge to build up inside a storm cloud?","options":["Wind blowing from outside the cloud","Ice and water particles colliding with each other","Sunlight heating the cloud"],"correct":1},{"question":"Why do you see lightning before you hear thunder?","options":["Thunder happens a few seconds after the lightning forms","Light travels much faster than sound","Lightning is silent"],"correct":1}],
+    vocabulary: [{"word":"collide","definition":"To crash into each other with force."},{"word":"charge","definition":"A property of matter that can attract or repel other charged matter, causing electricity."},{"word":"expands","definition":"Grows larger or spreads out."},{"word":"estimate","definition":"To make a rough guess or calculation based on available information."}],
+    body: `A single bolt of lightning can heat the surrounding air to nearly 54,000 degrees Fahrenheit, roughly five times hotter than the surface of the sun, and it happens in less time than it takes you to blink. Understanding how that much energy builds up inside an ordinary-looking storm cloud is one of nature's more dramatic chemistry lessons.
+
+Inside a thunderstorm, powerful updrafts and downdrafts toss around tiny particles of ice and water at incredible speeds, causing them to collide with each other over and over. Each collision knocks loose tiny electric charges, similar to what happens when you scuff your socks across a carpet. Smaller, lighter ice particles tend to pick up a positive charge and get carried toward the top of the cloud, while heavier particles carry a negative charge and sink toward the bottom.
+
+Eventually, the difference between the negative charge piling up at the cloud's base and the positive charge in the ground below it grows enormous. When that difference becomes too extreme to hold back any longer, electricity leaps across the gap in a blinding flash we call lightning, instantly heating the air along its path.
+
+That superheated air expands violently outward, faster than the speed of sound, creating the shockwave we hear afterward as thunder. Because light travels far faster than sound, you see the flash before you hear the boom, and counting the seconds between them is actually a rough way to estimate how many miles away the storm still is.`,
+  },
+  {
+    content_type: "fact",
+    category: "art",
+    title: "The Museum That Lives in a Cave",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"About how old are the paintings in the Lascaux cave?","options":["About 500 years old","About 17,000 years old","About 100 years old"],"correct":1},{"question":"Why did the original cave close to the public in 1963?","options":["It was too small for visitors","Visitors’ breath was damaging the ancient pigments","It was turned into a museum gift shop"],"correct":1}],
+    vocabulary: [{"word":"pigments","definition":"Substances used to give color to paint or other materials."},{"word":"prehistoric","definition":"From a time before written history existed."},{"word":"ceremonial","definition":"Related to a formal ritual or special occasion."},{"word":"replica","definition":"An exact copy of something."}],
+    body: `Deep inside a hillside in southwestern France, hidden behind a narrow entrance that stayed sealed for thousands of years, is a gallery of paintings older than the pyramids, older than writing itself, older than nearly anything else humans have ever created. The Lascaux cave contains close to six hundred painted images, mostly of animals like horses, deer, and wild cattle, created roughly 17,000 years ago by people who left no other written record behind.
+
+The paintings were discovered almost by accident in 1940, when four teenagers exploring the hillside near their village followed their dog into a hole in the ground and found themselves standing in a chamber covered floor to ceiling in ancient art. Using only mineral pigments like red and yellow ochre and black charcoal, along with simple tools like moss brushes and hollow bones for blowing paint, prehistoric artists had created images so lifelike that some horses appear to be caught mid-gallop.
+
+Scientists still debate exactly why these images were made. Some believe they held spiritual or ceremonial meaning, perhaps tied to hunting rituals. Others think they may have functioned as an early kind of calendar, tracking the seasons when certain animals migrated. What's certain is that whoever painted them had real artistic skill, using the cave's natural bumps and curves to make animals appear three-dimensional in flickering torchlight.
+
+The original cave closed to the public in 1963, once scientists realized that visitors' breath was damaging the ancient pigments. Today, a remarkably exact replica sits nearby, letting visitors experience the wonder of Lascaux without threatening the irreplaceable original.`,
+  },
+  {
+    content_type: "fact",
+    category: "history",
+    title: "The Letter That Crossed an Ocean",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"Before the transatlantic cable, how long did it usually take to send a message across the Atlantic?","options":["A few minutes","Weeks, since messages traveled by ship","About one hour"],"correct":1},{"question":"Why did the first working cable in 1858 stop functioning after only three weeks?","options":["A ship accidentally cut it","Too much electrical voltage was pushed through it","It was stolen"],"correct":1}],
+    vocabulary: [{"word":"unspool","definition":"To unwind something, like wire or thread, from a roll."},{"word":"insulation","definition":"A protective layer used to prevent heat, electricity, or water from passing through."},{"word":"transmit","definition":"To send a signal or message from one place to another."},{"word":"durable","definition":"Strong and able to last a long time without breaking down."}],
+    body: `For most of human history, sending a message across the Atlantic Ocean meant putting it on a ship and waiting weeks, sometimes over a month, for it to arrive. In 1858, a team of engineers attempted something that sounded almost impossible: laying a copper wire cable along the floor of the entire Atlantic Ocean so that messages could travel between North America and Europe in minutes instead of weeks.
+
+The project required specially built ships to carry and unspool nearly 2,500 miles of cable, encased in layers of rubber-like insulation to protect it from seawater and enormous ocean pressure. Two earlier attempts had already failed when the cable snapped under its own weight partway through, sinking uselessly to the ocean floor. On the third attempt, engineers finally succeeded, and on August 16, 1858, Queen Victoria sent a congratulatory telegram to American President James Buchanan, a message that took about seventeen hours to transmit, agonizingly slow by today's standards but almost unimaginably fast for its time.
+
+Celebrations broke out in cities on both sides of the ocean, with fireworks and parades marking what people called the shrinking of the world. Unfortunately, the celebration was short-lived: engineers eager to speed up transmission pushed too much electrical voltage through the fragile cable, and it stopped working entirely after only about three weeks.
+
+It took until 1866 for a more durable cable to succeed permanently, but that brief, flickering month in 1858 had already proven the concept. For the first time in history, someone standing in London could send a message and get a reply from someone in New York within the same day.`,
+  },
+  {
+    content_type: "fact",
+    category: "dinosaurs",
+    title: "The Tiny Dinosaur That Outlived Them All",
+    age_band: "big_kids",
+    read_minutes: 5,
+    quiz: [{"question":"According to scientists, what are birds?","options":["Distant cousins of fish","The last surviving branch of dinosaurs called theropods","Unrelated to dinosaurs entirely"],"correct":1},{"question":"Why did small, bird-like dinosaurs survive the asteroid impact better than giant dinosaurs?","options":["They could fly to space","They needed only small amounts of food to survive the aftermath","They lived underwater"],"correct":1}],
+    vocabulary: [{"word":"catastrophe","definition":"A sudden event that causes great damage or suffering."},{"word":"descendant","definition":"An animal or person related to an earlier ancestor."},{"word":"theropods","definition":"A group of mostly meat-eating dinosaurs that walked on two legs."},{"word":"scavenged","definition":"Searched for and collected usable scraps, often of food."}],
+    body: `Sixty-six million years ago, a massive asteroid slammed into Earth, triggering a global catastrophe that wiped out roughly three-quarters of all species alive at the time, including every dinosaur larger than a small dog. Yet if you've ever watched a pigeon peck at breadcrumbs or heard a sparrow chirp outside your window, you've actually been looking at a dinosaur descendant the entire time.
+
+Scientists now widely agree that birds are, technically, living dinosaurs, specifically the last surviving branch of a dinosaur group called theropods, the same broad family that included Tyrannosaurus rex and Velociraptor. Fossils discovered over the past few decades, especially in China, revealed small feathered dinosaurs with hollow bones, wishbones, and other skeletal features nearly identical to modern birds, filling in a transition that once seemed impossibly mysterious.
+
+So why did birds survive the asteroid impact when their giant relatives didn't? Researchers believe their small size mattered enormously. In the years after the impact, sunlight was blocked by debris and dust, plants died off, and food became scarce worldwide. Tiny animals that could survive on small amounts of seeds, insects, or scavenged scraps had a much better chance than enormous creatures that needed enormous quantities of food every single day just to stay alive.
+
+That means the story of dinosaurs never really ended in extinction at all. It simply narrowed down to one incredibly successful branch that kept adapting, shrinking, and changing for tens of millions of years, until it filled the skies with more than ten thousand living species. The next time a dinosaur story feels like ancient history, remember: one might currently be building a nest in your backyard tree.`,
+  },
   {
     content_type: "fact",
     category: "animals",
