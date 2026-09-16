@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kids Reading App</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <span class="floaty" style="top:8%; left:10%;">⭐</span>
-  <span class="floaty" style="top:18%; right:12%; animation-delay: 1.2s;">🌈</span>
-  <span class="floaty" style="bottom:14%; left:8%; animation-delay: 2.4s;">📚</span>
-  <span class="floaty" style="bottom:10%; right:10%; animation-delay: 0.6s;">🚀</span>
+  <div class="glow" style="top:-10%; left:-8%; width:340px; height:340px; background:#6c3ce9;"></div>
+  <div class="glow" style="bottom:-12%; right:-8%; width:380px; height:380px; background:#ff3b5c;"></div>
+  <div class="glow" style="top:35%; right:15%; width:220px; height:220px; background:#4c6fff;"></div>
 
   <!-- ============ LOGIN / SIGNUP VIEW ============ -->
   <div class="card" id="auth-card">
@@ -30,6 +30,7 @@
         <input type="email" id="login-email" required>
         <label for="login-password">Password</label>
         <input type="password" id="login-password" required>
+        <p class="link-row"><a href="#" id="forgot-link" class="text-link">Forgot password?</a></p>
         <button class="primary" type="submit">Log In</button>
       </form>
     </div>
@@ -47,6 +48,49 @@
     <p id="auth-status"></p>
   </div>
 
+  <!-- ============ CHECK YOUR EMAIL (shown right after signup, and when
+       login is blocked pending confirmation) ============ -->
+  <div class="card hidden" id="verify-pending-card">
+    <p class="title">📬 Check your email</p>
+    <p class="subtitle" id="verify-pending-msg">We sent a confirmation link to your email address.</p>
+    <button class="primary" id="resend-verification-btn">Resend confirmation email</button>
+    <button class="secondary full" id="verify-pending-back-btn">Back to Log In</button>
+    <p id="verify-pending-status"></p>
+  </div>
+
+  <!-- ============ EMAIL CONFIRMATION RESULT (landed on from the emailed link) ============ -->
+  <div class="card hidden" id="verify-result-card">
+    <p class="title" id="verify-result-title">Confirming your email...</p>
+    <p class="subtitle" id="verify-result-msg"></p>
+    <button class="primary hidden" id="verify-result-login-btn">Go to Log In</button>
+  </div>
+
+  <!-- ============ FORGOT PASSWORD ============ -->
+  <div class="card hidden" id="forgot-card">
+    <p class="title">🔑 Forgot your password?</p>
+    <p class="subtitle">Enter your email and we'll send you a reset link.</p>
+    <form id="forgot-form">
+      <label for="forgot-email">Email</label>
+      <input type="email" id="forgot-email" required>
+      <button class="primary" type="submit">Send Reset Link</button>
+    </form>
+    <button class="secondary full" id="forgot-back-btn">Back to Log In</button>
+    <p id="forgot-status"></p>
+  </div>
+
+  <!-- ============ RESET PASSWORD (landed on from the emailed link) ============ -->
+  <div class="card hidden" id="reset-card">
+    <p class="title">🔒 Set a new password</p>
+    <form id="reset-form">
+      <label for="reset-password">New password (min 8 characters)</label>
+      <input type="password" id="reset-password" required minlength="8">
+      <label for="reset-password-confirm">Confirm new password</label>
+      <input type="password" id="reset-password-confirm" required minlength="8">
+      <button class="primary" type="submit">Set New Password</button>
+    </form>
+    <p id="reset-status"></p>
+  </div>
+
   <!-- ============ PARENT DASHBOARD VIEW ============ -->
   <div class="card wide hidden" id="dashboard-card">
     <div class="dash-header">
@@ -54,7 +98,10 @@
         <p class="title small">👋 Hi there!</p>
         <p class="subtitle" id="dash-email" style="margin:0;"></p>
       </div>
-      <button class="secondary" id="logout-btn">Log Out</button>
+      <div class="header-actions">
+        <button class="secondary" id="settings-btn">⚙️ Settings</button>
+        <button class="secondary" id="logout-btn">Log Out</button>
+      </div>
     </div>
 
     <h3 class="section-heading">Your kids</h3>
@@ -69,6 +116,30 @@
     </form>
 
     <p id="dash-status"></p>
+  </div>
+
+  <!-- ============ PROFILE SETTINGS ============ -->
+  <div class="card hidden" id="settings-card">
+    <div class="dash-header">
+      <button class="secondary" id="back-from-settings-btn">← Back</button>
+      <p class="title small" style="margin:0;">⚙️ Profile Settings</p>
+    </div>
+
+    <h3 class="section-heading">Account</h3>
+    <label for="settings-email">Email</label>
+    <input type="email" id="settings-email" disabled>
+
+    <h3 class="section-heading">Change password</h3>
+    <form id="change-password-form">
+      <label for="current-password">Current password</label>
+      <input type="password" id="current-password" required>
+      <label for="new-password">New password (min 8 characters)</label>
+      <input type="password" id="new-password" required minlength="8">
+      <label for="new-password-confirm">Confirm new password</label>
+      <input type="password" id="new-password-confirm" required minlength="8">
+      <button class="primary" type="submit">Update Password</button>
+    </form>
+    <p id="settings-status"></p>
   </div>
 
   <!-- ============ KID READER: TABS + GRID ============ -->
@@ -170,7 +241,14 @@
         ...options,
       });
       const body = await res.json().catch(() => ({}));
-      if (!res.ok) throw new Error(body.error || 'Something went wrong');
+      if (!res.ok) {
+        // Carry any extra fields the server sent (like needsVerification)
+        // onto the thrown Error, so callers can react to more than just
+        // the message text.
+        const err = new Error(body.error || 'Something went wrong');
+        Object.assign(err, body);
+        throw err;
+      }
       return body;
     }
 
@@ -632,6 +710,21 @@
       });
     });
 
+    // --- Signup / Login / email verification / password reset ---
+    // Remembered so "Resend confirmation email" and the verify-pending
+    // screen know which address to act on without asking again.
+    let lastAuthEmail = '';
+    let pendingResetToken = null;
+
+    function showVerifyPending(email) {
+      lastAuthEmail = email;
+      document.getElementById('verify-pending-msg').textContent =
+        `We sent a confirmation link to ${email}. Click it to activate your account, then come back and log in.`;
+      document.getElementById('verify-pending-status').textContent = '';
+      hide(document.getElementById('auth-card'));
+      show(document.getElementById('verify-pending-card'));
+    }
+
     // --- Signup ---
     document.getElementById('signup-form').addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -640,7 +733,7 @@
       const statusEl = document.getElementById('auth-status');
       try {
         const result = await api('/api/signup', { method: 'POST', body: JSON.stringify({ email, password }) });
-        await enterDashboard(result.email);
+        showVerifyPending(result.email);
       } catch (err) {
         statusEl.textContent = err.message;
         statusEl.className = 'error';
@@ -656,6 +749,151 @@
       try {
         const result = await api('/api/login', { method: 'POST', body: JSON.stringify({ email, password }) });
         await enterDashboard(result.email);
+      } catch (err) {
+        if (err.needsVerification) {
+          showVerifyPending(email);
+        } else {
+          statusEl.textContent = err.message;
+          statusEl.className = 'error';
+        }
+      }
+    });
+
+    document.getElementById('resend-verification-btn').addEventListener('click', async () => {
+      const statusEl = document.getElementById('verify-pending-status');
+      statusEl.className = '';
+      statusEl.textContent = 'Sending...';
+      try {
+        await api('/api/resend-verification', { method: 'POST', body: JSON.stringify({ email: lastAuthEmail }) });
+        statusEl.textContent = 'Confirmation email sent — check your inbox.';
+        statusEl.className = 'success';
+      } catch (err) {
+        statusEl.textContent = err.message;
+        statusEl.className = 'error';
+      }
+    });
+    document.getElementById('verify-pending-back-btn').addEventListener('click', () => {
+      hide(document.getElementById('verify-pending-card'));
+      show(document.getElementById('auth-card'));
+    });
+    document.getElementById('verify-result-login-btn').addEventListener('click', () => {
+      hide(document.getElementById('verify-result-card'));
+      show(document.getElementById('auth-card'));
+    });
+
+    // --- Forgot password ---
+    document.getElementById('forgot-link').addEventListener('click', (e) => {
+      e.preventDefault();
+      document.getElementById('forgot-status').textContent = '';
+      hide(document.getElementById('auth-card'));
+      show(document.getElementById('forgot-card'));
+    });
+    document.getElementById('forgot-back-btn').addEventListener('click', () => {
+      hide(document.getElementById('forgot-card'));
+      show(document.getElementById('auth-card'));
+    });
+    document.getElementById('forgot-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = document.getElementById('forgot-email').value;
+      const statusEl = document.getElementById('forgot-status');
+      try {
+        await api('/api/forgot-password', { method: 'POST', body: JSON.stringify({ email }) });
+        statusEl.textContent = "If an account exists for that email, we've sent a reset link.";
+        statusEl.className = 'success';
+        document.getElementById('forgot-form').reset();
+      } catch (err) {
+        statusEl.textContent = err.message;
+        statusEl.className = 'error';
+      }
+    });
+
+    // --- Reset password (arrived here via the emailed link) ---
+    document.getElementById('reset-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const password = document.getElementById('reset-password').value;
+      const confirmPassword = document.getElementById('reset-password-confirm').value;
+      const statusEl = document.getElementById('reset-status');
+      if (password !== confirmPassword) {
+        statusEl.textContent = "Passwords don't match.";
+        statusEl.className = 'error';
+        return;
+      }
+      try {
+        await api('/api/reset-password', { method: 'POST', body: JSON.stringify({ token: pendingResetToken, password }) });
+        hide(document.getElementById('reset-card'));
+        document.getElementById('auth-status').textContent = 'Password updated! You can log in now.';
+        document.getElementById('auth-status').className = 'success';
+        show(document.getElementById('auth-card'));
+      } catch (err) {
+        statusEl.textContent = err.message;
+        statusEl.className = 'error';
+      }
+    });
+
+    // --- Handle a page load that arrived from an emailed link, i.e.
+    // ?verify=TOKEN (from the signup confirmation email) or
+    // ?reset=TOKEN (from the forgot-password email). Returns true if one
+    // of those was found and handled, so boot() knows to skip the normal
+    // "am I logged in" check. ---
+    async function handleUrlTokens() {
+      const params = new URLSearchParams(window.location.search);
+      const verifyToken = params.get('verify');
+      const resetToken = params.get('reset');
+
+      if (verifyToken) {
+        window.history.replaceState({}, '', window.location.pathname);
+        show(document.getElementById('verify-result-card'));
+        try {
+          await api(`/api/verify-email?token=${encodeURIComponent(verifyToken)}`);
+          document.getElementById('verify-result-title').textContent = '✅ Email confirmed!';
+          document.getElementById('verify-result-msg').textContent = 'Your account is now active — you can log in.';
+        } catch (err) {
+          document.getElementById('verify-result-title').textContent = '⚠️ Something went wrong';
+          document.getElementById('verify-result-msg').textContent = err.message;
+        }
+        show(document.getElementById('verify-result-login-btn'));
+        return true;
+      }
+
+      if (resetToken) {
+        window.history.replaceState({}, '', window.location.pathname);
+        pendingResetToken = resetToken;
+        document.getElementById('reset-status').textContent = '';
+        show(document.getElementById('reset-card'));
+        return true;
+      }
+
+      return false;
+    }
+
+    // --- Profile settings ---
+    document.getElementById('settings-btn').addEventListener('click', () => {
+      document.getElementById('settings-email').value = document.getElementById('dash-email').textContent;
+      document.getElementById('change-password-form').reset();
+      document.getElementById('settings-status').textContent = '';
+      hide(document.getElementById('dashboard-card'));
+      show(document.getElementById('settings-card'));
+    });
+    document.getElementById('back-from-settings-btn').addEventListener('click', () => {
+      hide(document.getElementById('settings-card'));
+      show(document.getElementById('dashboard-card'));
+    });
+    document.getElementById('change-password-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const currentPassword = document.getElementById('current-password').value;
+      const newPassword = document.getElementById('new-password').value;
+      const confirmPassword = document.getElementById('new-password-confirm').value;
+      const statusEl = document.getElementById('settings-status');
+      if (newPassword !== confirmPassword) {
+        statusEl.textContent = "New passwords don't match.";
+        statusEl.className = 'error';
+        return;
+      }
+      try {
+        await api('/api/change-password', { method: 'POST', body: JSON.stringify({ currentPassword, newPassword }) });
+        statusEl.textContent = 'Password updated!';
+        statusEl.className = 'success';
+        document.getElementById('change-password-form').reset();
       } catch (err) {
         statusEl.textContent = err.message;
         statusEl.className = 'error';
@@ -686,7 +924,13 @@
       show(document.getElementById('auth-card'));
     });
 
-    checkLoginOnLoad();
+    async function boot() {
+      const handledByUrlToken = await handleUrlTokens();
+      if (!handledByUrlToken) {
+        await checkLoginOnLoad();
+      }
+    }
+    boot();
   </script>
 </body>
 </html>
