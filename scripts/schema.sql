@@ -155,3 +155,32 @@ ALTER TABLE stories ENABLE ROW LEVEL SECURITY;
 ALTER TABLE reading_progress ENABLE ROW LEVEL SECURITY;
 ALTER TABLE reactions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE quiz_attempts ENABLE ROW LEVEL SECURITY;
+
+-- ================= STICKER REWARDS =================
+-- The sticker catalog itself (see scripts/stickers.js for the actual
+-- emoji/name/rarity list — this table just holds whatever that file
+-- seeds into it). "code" is the stable identifier scripts/seed-
+-- stickers.js matches on, the same way "title" works for stories.
+CREATE TABLE IF NOT EXISTS stickers (
+  id BIGSERIAL PRIMARY KEY,
+  code TEXT UNIQUE NOT NULL,
+  emoji TEXT NOT NULL,
+  name TEXT NOT NULL,
+  rarity TEXT NOT NULL DEFAULT 'common' CHECK (rarity IN ('common', 'rare', 'super_rare'))
+);
+
+-- Which stickers a kid has earned, and how many times (a kid can win the
+-- same sticker again from a different story — count just goes up rather
+-- than adding a duplicate row). One row per kid+sticker pair.
+CREATE TABLE IF NOT EXISTS kid_stickers (
+  id BIGSERIAL PRIMARY KEY,
+  kid_id BIGINT NOT NULL REFERENCES kids(id) ON DELETE CASCADE,
+  sticker_id BIGINT NOT NULL REFERENCES stickers(id),
+  count INTEGER NOT NULL DEFAULT 1,
+  first_earned_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  last_earned_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_kid_stickers_kid_sticker ON kid_stickers(kid_id, sticker_id);
+
+ALTER TABLE stickers ENABLE ROW LEVEL SECURITY;
+ALTER TABLE kid_stickers ENABLE ROW LEVEL SECURITY;

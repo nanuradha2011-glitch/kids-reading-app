@@ -1,23 +1,13 @@
-// The actual story/news content, unchanged from the dev version — split
-// into its own file so seed.js (below) can focus on the database logic.
 module.exports = [
-  // ---------- STORIES (evergreen) ----------
+  // ========== STORIES ==========
   {
-    content_type: 'story',
-    category: 'kindness',
-    title: 'The Brave Little Snail',
-    age_band: 'little_ones',
+    content_type: "story",
+    category: "kindness",
+    title: "The Brave Little Snail",
+    age_band: "little_ones",
     read_minutes: 4,
-    quiz: [
-      { question: 'What kind of animal was Sam?', options: ['A snail', 'A dragonfly', 'A ladybug'], correct: 0 },
-      { question: 'How did Sam help the ladybug?', options: ['He raced past her', 'He pushed the leaf aside', 'He ignored her'], correct: 1 },
-    ],
-    vocabulary: [
-      { word: 'meadow', definition: 'A field full of grass, flowers, and small critters.' },
-      { word: 'buzzed', definition: 'Made a fast, humming sound while talking.' },
-      { word: 'gently', definition: "In a soft, careful way that doesn't hurt anything." },
-      { word: 'steady', definition: 'Moving in a slow, calm way without rushing.' },
-    ],
+    quiz: [{"question":"What kind of animal was Sam?","options":["A snail","A dragonfly","A ladybug"],"correct":0},{"question":"How did Sam help the ladybug?","options":["He raced past her","He pushed the leaf aside","He ignored her"],"correct":1}],
+    vocabulary: [{"word":"meadow","definition":"A field full of grass, flowers, and small critters."},{"word":"buzzed","definition":"Made a fast, humming sound while talking."},{"word":"gently","definition":"In a soft, careful way that doesn't hurt anything."},{"word":"steady","definition":"Moving in a slow, calm way without rushing."}],
     body: `Sam the snail was the smallest in Sunny Meadow. Every day, the other bugs raced past him without stopping. "You're too slow to play with us," buzzed a dragonfly. Sam felt sad, but he kept smiling.
 
 One rainy morning, a baby ladybug got stuck under a big leaf. She was too scared to move. All the fast bugs zoomed by, too busy to notice. But slow, steady Sam saw her. He gently pushed the leaf aside with his shell, one tiny step at a time.
@@ -25,21 +15,13 @@ One rainy morning, a baby ladybug got stuck under a big leaf. She was too scared
 "Thank you for not giving up on me," said the ladybug. From that day on, everyone in Sunny Meadow knew that being kind matters more than being fast. Sam the snail became everyone's favorite friend.`,
   },
   {
-    content_type: 'story',
-    category: 'space',
-    title: 'A Trip to the Moon',
-    age_band: 'explorers',
+    content_type: "story",
+    category: "space",
+    title: "A Trip to the Moon",
+    age_band: "explorers",
     read_minutes: 4,
-    quiz: [
-      { question: "Why do astronauts bounce when they walk on the Moon?", options: ['The Moon is very hot', "The Moon's gravity is weaker", 'The Moon is made of ice'], correct: 1 },
-      { question: 'Does the Moon make its own light?', options: ['Yes, it glows by itself', "No, it reflects the Sun's light", 'It only glows at noon'], correct: 1 },
-    ],
-    vocabulary: [
-      { word: 'astronauts', definition: 'People who travel and work up in space.' },
-      { word: 'gravity', definition: 'The invisible pull that keeps your feet on the ground.' },
-      { word: 'reflecting', definition: 'Bouncing light back, the way a mirror does.' },
-      { word: 'glowing', definition: 'Giving off a soft, warm light.' },
-    ],
+    quiz: [{"question":"Why do astronauts bounce when they walk on the Moon?","options":["The Moon is very hot","The Moon's gravity is weaker","The Moon is made of ice"],"correct":1},{"question":"Does the Moon make its own light?","options":["Yes, it glows by itself","No, it reflects the Sun's light","It only glows at noon"],"correct":1}],
+    vocabulary: [{"word":"astronauts","definition":"People who travel and work up in space."},{"word":"gravity","definition":"The invisible pull that keeps your feet on the ground."},{"word":"reflecting","definition":"Bouncing light back, the way a mirror does."},{"word":"glowing","definition":"Giving off a soft, warm light."}],
     body: `Did you know the Moon is closer to us than any other place in space? If you could drive a car straight up into the sky, it would take about six months to get there!
 
 The Moon doesn't have air to breathe, so astronauts wear special suits with their own air inside. When astronauts walk on the Moon, they bounce more than they walk, because the Moon's gravity is much weaker than Earth's. That means if you could jump on the Moon, you could leap over a school bus!
@@ -47,20 +29,13 @@ The Moon doesn't have air to breathe, so astronauts wear special suits with thei
 At night, look up and find the Moon glowing in the sky. It isn't making its own light — it's actually reflecting light from the Sun, like a giant mirror in space.`,
   },
   {
-    content_type: 'story',
-    category: 'nature',
-    title: 'Why the Sky Turns Orange',
-    age_band: 'big_kids',
+    content_type: "story",
+    category: "nature",
+    title: "Why the Sky Turns Orange",
+    age_band: "big_kids",
     read_minutes: 3,
-    quiz: [
-      { question: 'What color does the sky usually look like in the daytime?', options: ['Green', 'Blue', 'Purple'], correct: 1 },
-      { question: 'Why does the sunset look orange and pink?', options: ['The blue light gets scattered away', 'The sun changes color', 'Clouds paint the sky'], correct: 0 },
-    ],
-    vocabulary: [
-      { word: 'scattered', definition: 'Spread out in lots of different directions.' },
-      { word: 'sunset', definition: 'The time each evening when the sun goes down and the sky changes color.' },
-      { word: 'direction', definition: 'The way something is pointing or moving, like up, down, or sideways.' },
-    ],
+    quiz: [{"question":"What color does the sky usually look like in the daytime?","options":["Green","Blue","Purple"],"correct":1},{"question":"Why does the sunset look orange and pink?","options":["The blue light gets scattered away","The sun changes color","Clouds paint the sky"],"correct":0}],
+    vocabulary: [{"word":"scattered","definition":"Spread out in lots of different directions."},{"word":"sunset","definition":"The time each evening when the sun goes down and the sky changes color."},{"word":"direction","definition":"The way something is pointing or moving, like up, down, or sideways."}],
     body: `Every evening, the sky puts on a colorful show. In the daytime, the sky looks blue because sunlight bounces off tiny bits of air in every direction, and blue light bounces the most.
 
 But when the sun starts to set, its light has to travel through much more sky to reach your eyes. Along the way, the blue light gets scattered away, leaving behind the warm oranges, pinks, and reds we see at sunset.
@@ -68,20 +43,13 @@ But when the sun starts to set, its light has to travel through much more sky to
 That's why the sky can look like it's on fire with color right before night begins! The next time you watch a sunset, you're watching sunlight taking the long way home.`,
   },
   {
-    content_type: 'story',
-    category: 'kindness',
-    title: 'The Kindest Elephant in the Jungle',
-    age_band: 'explorers',
+    content_type: "story",
+    category: "kindness",
+    title: "The Kindest Elephant in the Jungle",
+    age_band: "explorers",
     read_minutes: 4,
-    quiz: [
-      { question: 'What did Ellie use to give the animals water?', options: ['A cup', 'Her trunk', 'A bucket'], correct: 1 },
-      { question: 'What did Ellie say the biggest animal should have?', options: ['The biggest lunch', 'The biggest heart', 'The biggest house'], correct: 1 },
-    ],
-    vocabulary: [
-      { word: 'trunk', definition: "An elephant's long nose, used almost like a hand." },
-      { word: 'thirsty', definition: 'Feeling like you really need a drink of water.' },
-      { word: 'jungle', definition: 'A thick, green forest full of plants and animals.' },
-    ],
+    quiz: [{"question":"What did Ellie use to give the animals water?","options":["A cup","Her trunk","A bucket"],"correct":1},{"question":"What did Ellie say the biggest animal should have?","options":["The biggest lunch","The biggest heart","The biggest house"],"correct":1}],
+    vocabulary: [{"word":"trunk","definition":"An elephant's long nose, used almost like a hand."},{"word":"thirsty","definition":"Feeling like you really need a drink of water."},{"word":"jungle","definition":"A thick, green forest full of plants and animals."}],
     body: `Ellie the elephant was the biggest animal in the jungle, but she had the gentlest heart. One hot afternoon, the jungle's only water hole had almost dried up. The smaller animals — mice, rabbits, and turtles — couldn't reach the little bit of water left at the bottom.
 
 Ellie walked to the water hole, filled her long trunk, and gently sprayed water into a leaf bowl for each animal to drink. She did this again and again until every thirsty friend had a drink.
@@ -89,29 +57,19 @@ Ellie walked to the water hole, filled her long trunk, and gently sprayed water 
 "You could have kept it all for yourself," said a tiny mouse. Ellie smiled. "The biggest animal should have the biggest heart too," she said. From then on, all the jungle animals knew they had a true friend in Ellie.`,
   },
   {
-    content_type: 'story',
-    category: 'nature',
-    title: 'How Bees Say Thank You',
-    age_band: 'little_ones',
+    content_type: "story",
+    category: "nature",
+    title: "How Bees Say Thank You",
+    age_band: "little_ones",
     read_minutes: 3,
-    quiz: [
-      { question: 'What does a bee collect from flowers?', options: ['Nectar', 'Leaves', 'Sticks'], correct: 0 },
-      { question: 'How do bees help new flowers grow?', options: ['By watering them', 'By carrying pollen between flowers', 'By singing to them'], correct: 1 },
-    ],
-    vocabulary: [
-      { word: 'nectar', definition: 'The sweet liquid inside flowers that bees love to drink.' },
-      { word: 'pollen', definition: 'Tiny yellow dust from flowers that helps new plants grow.' },
-      { word: 'buzzing', definition: "The humming sound a bee's wings make." },
-      { word: 'bloom', definition: 'To open up into a flower.' },
-    ],
+    quiz: [{"question":"What does a bee collect from flowers?","options":["Nectar","Leaves","Sticks"],"correct":0},{"question":"How do bees help new flowers grow?","options":["By watering them","By carrying pollen between flowers","By singing to them"],"correct":1}],
+    vocabulary: [{"word":"nectar","definition":"The sweet liquid inside flowers that bees love to drink."},{"word":"pollen","definition":"Tiny yellow dust from flowers that helps new plants grow."},{"word":"buzzing","definition":"The humming sound a bee's wings make."},{"word":"bloom","definition":"To open up into a flower."}],
     body: `When a bee visits a flower, something amazing happens. The bee is looking for sweet nectar to bring home and turn into honey. While it drinks, tiny grains of yellow pollen stick to its fuzzy legs.
 
 When the bee flies to the next flower, some of that pollen rubs off — and that's how new flowers, fruits, and seeds get to grow! So every time a bee sips from a flower, it's saying thank you in the best way it knows how: by helping a brand new flower bloom.
 
 The next time you see a bee buzzing by, give it space to work — it's busy doing one of the most important jobs in the whole garden.`,
   },
-
-  // ---------- MORE STORIES: little_ones (3-5) ----------
   {
     content_type: "story",
     category: "kindness",
@@ -119,7 +77,7 @@ The next time you see a bee buzzing by, give it space to work — it's busy doin
     age_band: "little_ones",
     read_minutes: 2,
     quiz: [{"question":"Where did Rosie live?","options":["A cozy burrow","A tall tree","A deep river"],"correct":0},{"question":"What did Rosie give Pip?","options":["Nothing","The bigger piece of her carrot","A toy"],"correct":1}],
-    vocabulary: [{"word":"burrow","definition":"A cozy little home dug into the ground."},{"word":"nibble","definition":"To take small, gentle bites of food."},{"word":"generous","definition":"Happy to share what you have with others."},{"word":"share","definition":"To give part of what you have to someone else."}],
+    vocabulary: [{"word":"burrow","definition":"A cozy little home dug into the ground."},{"word":"nibble","definition":"To take small, gentle bites of food."},{"word":"generous","definition":"Happy to share what you have with others."},{"word":"shared","definition":"Gave part of what you have to someone else."}],
     body: `Rosie the bunny lived in a cozy burrow at the edge of the garden. She loved carrots more than anything, and every day she found a fresh one to nibble. One sunny morning, she saw her friend Pip the mouse with no lunch at all.
 
 Rosie did not think twice. She broke her carrot in half and gave Pip the bigger piece. Pip's eyes lit up with joy. From that day on, the two friends shared every snack together, and Rosie learned that being generous made her tummy feel warm and happy too.`,
@@ -131,7 +89,7 @@ Rosie did not think twice. She broke her carrot in half and gave Pip the bigger 
     age_band: "little_ones",
     read_minutes: 2,
     quiz: [{"question":"What was Zip?","options":["A little rocket","A big dog","A tall tree"],"correct":0},{"question":"What did Zip fly around?","options":["A house","The moon","A lake"],"correct":1}],
-    vocabulary: [{"word":"launch pad","definition":"The flat spot where a rocket waits before flying up."},{"word":"zoom","definition":"To move very fast."},{"word":"orbit","definition":"To fly in a big circle around something."},{"word":"twinkle","definition":"A tiny, sparkly light that blinks."}],
+    vocabulary: [{"word":"launch","definition":"To send a rocket zooming up into the sky."},{"word":"zoom","definition":"To move very fast."},{"word":"orbit","definition":"To fly in a big circle around something."},{"word":"twinkle","definition":"A tiny, sparkly light that blinks."}],
     body: `Zip the little rocket sat on the launch pad, feeling a tiny bit nervous. Today was his very first flight into the big, dark sky. His friend Star the astronaut patted his side and said, "You will do great, Zip!"
 
 With a whoosh, Zip began to zoom past fluffy clouds and into space. He flew in a smooth orbit around the moon, waving at every twinkle of light he passed. When Zip landed back home, he told everyone that space was the most wonderful place he had ever seen.`,
@@ -227,7 +185,7 @@ Grandma let the soup simmer slowly on the stove, filling the kitchen with a savo
     age_band: "little_ones",
     read_minutes: 2,
     quiz: [{"question":"What did Coco like to do over the town?","options":["Drift slowly","Sing loudly","Hide forever"],"correct":0},{"question":"What appeared after Coco's rain?","options":["A rainbow","A spaceship","A mountain"],"correct":0}],
-    vocabulary: [{"word":"droplet","definition":"A tiny drop of water."},{"word":"drift","definition":"To move slowly and gently, carried by the wind."},{"word":"puddle","definition":"A small pool of water on the ground."},{"word":"rainbow","definition":"A colorful arc of light that appears after rain."}],
+    vocabulary: [{"word":"droplets","definition":"Tiny drops of water."},{"word":"drift","definition":"To move slowly and gently, carried by the wind."},{"word":"puddles","definition":"Small pools of water on the ground."},{"word":"rainbow","definition":"A colorful arc of light that appears after rain."}],
     body: `High in the sky, a fluffy cloud named Coco liked to drift slowly over the town. She was full of tiny water droplets and felt heavier every day. "I think it's time," Coco said with a happy wobble.
 
 Coco let her droplets fall gently down to the ground, making little puddles for children to splash in. When the sun peeked out again, a colorful rainbow stretched across the sky. Coco floated away feeling light and proud, knowing she had helped the flowers grow.`,
@@ -412,8 +370,6 @@ His kite began to soar higher and higher, dancing and swooping above the trees. 
 
 A boy named Diego noticed Maya standing quietly and ran over with a big smile. "Come play with us! We need one more teammate," he said, and gave her a warm welcome. Maya joined the game, and by the end of recess, she had made a whole playground full of new friends.`,
   },
-
-  // ---------- MORE STORIES: explorers (6-8) ----------
   {
     content_type: "story",
     category: "kindness",
@@ -764,8 +720,6 @@ On Friday, Ravi finally grabbed his tray and walked over, asking if he could sit
 
 By Monday, Ravi's old table had grown by one seat, and Yusuf was laughing along with the whole group like he had always belonged there. Ravi's friends admitted they had noticed Yusuf too but felt awkward walking over. Ravi told them it only takes one person willing to go first to make someone feel welcome.`,
   },
-
-  // ---------- MORE STORIES: big_kids (9-10) ----------
   {
     content_type: "story",
     category: "kindness",
@@ -1166,24 +1120,15 @@ So why did birds survive the asteroid impact when their giant relatives didn't? 
 
 That means the story of dinosaurs never really ended in extinction at all. It simply narrowed down to one incredibly successful branch that kept adapting, shrinking, and changing for tens of millions of years, until it filled the skies with more than ten thousand living species. The next time a dinosaur story feels like ancient history, remember: one might currently be building a nest in your backyard tree.`,
   },
-
-  // ---------- KIDS WORLD NEWS (real events, retold simply) ----------
+  // ========== KIDS WORLD NEWS (real events, retold simply) ==========
   {
-    content_type: 'news',
-    category: 'ocean',
-    title: 'Whale Families Are Growing!',
-    age_band: 'explorers',
+    content_type: "news",
+    category: "ocean",
+    title: "Whale Families Are Growing!",
+    age_band: "explorers",
     read_minutes: 4,
-    quiz: [
-      { question: 'How many baby whales were counted this year?', options: ['3', '23', '100'], correct: 1 },
-      { question: 'What are people doing to help whale families?', options: ['Slowing down boats near them', 'Catching them', 'Nothing'], correct: 0 },
-    ],
-    vocabulary: [
-      { word: 'calves', definition: 'Baby whales.' },
-      { word: 'scientists', definition: 'People whose job is to study and learn about the world.' },
-      { word: 'nurseries', definition: 'Safe, cozy places where babies are cared for.' },
-      { word: 'enormous', definition: 'Extremely, extremely big.' },
-    ],
+    quiz: [{"question":"How many baby whales were counted this year?","options":["3","23","100"],"correct":1},{"question":"What are people doing to help whale families?","options":["Slowing down boats near them","Catching them","Nothing"],"correct":0}],
+    vocabulary: [{"word":"calves","definition":"Baby whales."},{"word":"scientists","definition":"People whose job is to study and learn about the world."},{"word":"nurseries","definition":"Safe, cozy places where babies are cared for."},{"word":"enormous","definition":"Extremely, extremely big."}],
     body: `Great news from the ocean! This year, scientists counted 23 baby North Atlantic right whales — more new whale calves than they've seen in almost twenty years.
 
 Right whales are enormous, gentle giants that can grow longer than a school bus, and for a while, scientists were worried there weren't enough babies being born. People who study whales worked hard to keep the ocean safer for them, and it's working — boats now slow down in whale nurseries, and helpers watch out for whale families along the coast.
@@ -1191,21 +1136,13 @@ Right whales are enormous, gentle giants that can grow longer than a school bus,
 Somewhere in the ocean right now, a baby whale is swimming close beside its mama, learning how to be a whale. Scientists say this is one of the best baby whale seasons in a long time.`,
   },
   {
-    content_type: 'news',
-    category: 'ocean',
-    title: 'Turtle Helpers Save Baby Turtles',
-    age_band: 'explorers',
+    content_type: "news",
+    category: "ocean",
+    title: "Turtle Helpers Save Baby Turtles",
+    age_band: "explorers",
     read_minutes: 4,
-    quiz: [
-      { question: 'Who protects the turtle nests at night?', options: ['Turtle helpers', 'Fish', 'No one'], correct: 0 },
-      { question: 'What happens to baby turtles after they hatch now?', options: ['They get lost', 'They get a safe path to the water', 'They stay in the sand'], correct: 1 },
-    ],
-    vocabulary: [
-      { word: 'islands', definition: 'Pieces of land with water all around them.' },
-      { word: 'nests', definition: 'Safe little spots where eggs are laid and kept warm.' },
-      { word: 'hatched', definition: 'Broke out of an egg.' },
-      { word: 'protecting', definition: 'Keeping something safe from harm.' },
-    ],
+    quiz: [{"question":"Who protects the turtle nests at night?","options":["Turtle helpers","Fish","No one"],"correct":0},{"question":"What happens to baby turtles after they hatch now?","options":["They get lost","They get a safe path to the water","They stay in the sand"],"correct":1}],
+    vocabulary: [{"word":"islands","definition":"Pieces of land with water all around them."},{"word":"nests","definition":"Safe little spots where eggs are laid and kept warm."},{"word":"hatched","definition":"Broke out of an egg."},{"word":"protecting","definition":"Keeping something safe from harm."}],
     body: `On a group of islands in Indonesia called the Kei Islands, something wonderful has been happening. Years ago, people worried that leatherback sea turtles — some of the biggest turtles in the world — were in trouble, because their eggs weren't safe on the beach.
 
 So local turtle helpers started watching the nests every single night, protecting the eggs until they safely hatched. Baby turtles that hatch now get a safe, clear path down to the water.
@@ -1213,21 +1150,13 @@ So local turtle helpers started watching the nests every single night, protectin
 Since the helpers started this work, turtle nests being disturbed has dropped by 85 percent — that means almost all the nests are safe now! Every baby turtle that makes it to the ocean has a whole team of turtle helpers to thank.`,
   },
   {
-    content_type: 'news',
-    category: 'invention',
-    title: 'The Sidewalk That Drinks Rain',
-    age_band: 'big_kids',
+    content_type: "news",
+    category: "invention",
+    title: "The Sidewalk That Drinks Rain",
+    age_band: "big_kids",
     read_minutes: 4,
-    quiz: [
-      { question: 'What problem was Luca trying to solve?', options: ['Streets flooding', 'Too much sunshine', 'Noisy cars'], correct: 0 },
-      { question: 'What did Luca mix to make the sidewalk?', options: ['Sand and water', 'Oyster shells and charcoal', 'Wood and glue'], correct: 1 },
-    ],
-    vocabulary: [
-      { word: 'invent', definition: "To think up and build something brand new that didn't exist before." },
-      { word: 'flood', definition: "When too much water covers a place that's usually dry." },
-      { word: 'material', definition: 'The stuff something is made out of.' },
-      { word: 'soak', definition: 'To take in liquid, the way a sponge does.' },
-    ],
+    quiz: [{"question":"What problem was Luca trying to solve?","options":["Streets flooding","Too much sunshine","Noisy cars"],"correct":0},{"question":"What did Luca mix to make the sidewalk?","options":["Sand and water","Oyster shells and charcoal","Wood and glue"],"correct":1}],
+    vocabulary: [{"word":"invent","definition":"To think up and build something brand new that didn't exist before."},{"word":"flood","definition":"When too much water covers a place that's usually dry."},{"word":"material","definition":"The stuff something is made out of."},{"word":"soak","definition":"To take in liquid, the way a sponge does."}],
     body: `A sixth-grader named Luca had a big idea to solve a soggy problem: streets that flood when it rains hard. Luca mixed together crushed oyster shells, seashells, charcoal, and gravel to invent a brand new kind of sidewalk material — one that can actually soak up rainwater like a sponge instead of letting it puddle up!
 
 When it rains, Luca's special sidewalk drinks up the extra water before it can flood the street. Luca's invention could one day help keep neighborhoods dry during big storms.
@@ -1235,21 +1164,13 @@ When it rains, Luca's special sidewalk drinks up the extra water before it can f
 It just goes to show: you don't have to be a grown-up scientist to invent something that helps your whole town. Sometimes the best ideas start with one kid asking, "what if?"`,
   },
   {
-    content_type: 'news',
-    category: 'space',
-    title: 'Look Up! A Big Month for Skywatching',
-    age_band: 'big_kids',
+    content_type: "news",
+    category: "space",
+    title: "Look Up! A Big Month for Skywatching",
+    age_band: "big_kids",
     read_minutes: 4,
-    quiz: [
-      { question: 'Which planet shines extra bright in the story?', options: ['Mars', 'Venus', 'Jupiter'], correct: 1 },
-      { question: 'What is the Harvest Moon near in the sky?', options: ['Saturn', 'The Sun', 'A rainbow'], correct: 0 },
-    ],
-    vocabulary: [
-      { word: 'planet', definition: 'A giant round world that travels around the Sun.' },
-      { word: 'glowing', definition: 'Giving off a soft light.' },
-      { word: 'rises', definition: 'Moves up into the sky.' },
-      { word: 'spot', definition: 'To notice or see something.' },
-    ],
+    quiz: [{"question":"Which planet shines extra bright in the story?","options":["Mars","Venus","Jupiter"],"correct":1},{"question":"What is the Harvest Moon near in the sky?","options":["Saturn","The Sun","A rainbow"],"correct":0}],
+    vocabulary: [{"word":"planet","definition":"A giant round world that travels around the Sun."},{"word":"glowing","definition":"Giving off a soft light."},{"word":"rises","definition":"Moves up into the sky."},{"word":"spot","definition":"To notice or see something."}],
     body: `September is a wonderful month to look up at the night sky! Early in the month, the planet Venus shines brighter than it has all year, glowing low in the sky just after sunset — some people call it the "evening star," even though it's really a planet.
 
 Later in the month, a big, golden Harvest Moon rises in the east, and if you look closely nearby, you might spot the planet Saturn glowing next to it. There's even a special night called International Observe the Moon Night, when families all over the world step outside together to look up at the Moon at the very same time.
@@ -1257,29 +1178,19 @@ Later in the month, a big, golden Harvest Moon rises in the east, and if you loo
 So grab a grown-up, go outside after dinner, and see what you can spot!`,
   },
   {
-    content_type: 'news',
-    category: 'animals',
-    title: 'A Very Special Zoo Baby',
-    age_band: 'explorers',
+    content_type: "news",
+    category: "animals",
+    title: "A Very Special Zoo Baby",
+    age_band: "explorers",
     read_minutes: 4,
-    quiz: [
-      { question: 'What kind of animal was born at the Detroit Zoo?', options: ['A gorilla', 'A giraffe', 'A tiger'], correct: 0 },
-      { question: 'How long had the zoo waited for this kind of birth?', options: ['1 year', '10 years', '96 years'], correct: 2 },
-    ],
-    vocabulary: [
-      { word: 'newborn', definition: 'A baby that was just born.' },
-      { word: 'zookeepers', definition: 'People whose job is to take care of animals at the zoo.' },
-      { word: 'forage', definition: 'To search around for food.' },
-      { word: 'intelligent', definition: 'Smart — able to learn and understand things well.' },
-    ],
+    quiz: [{"question":"What kind of animal was born at the Detroit Zoo?","options":["A gorilla","A giraffe","A tiger"],"correct":0},{"question":"How long had the zoo waited for this kind of birth?","options":["1 year","10 years","96 years"],"correct":2}],
+    vocabulary: [{"word":"newborn","definition":"A baby that was just born."},{"word":"zookeepers","definition":"People whose job is to take care of animals at the zoo."},{"word":"forage","definition":"To search around for food."},{"word":"intelligent","definition":"Smart — able to learn and understand things well."}],
     body: `The Detroit Zoo just welcomed a very special visitor: a baby gorilla, born for the very first time in the zoo's entire 96-year history! The baby's mother, a gorilla named Bandia, is taking gentle care of her newborn, holding her close and keeping her warm, just like gorilla mothers have done for their babies forever.
 
 Zookeepers say the baby is healthy and growing stronger every day. Gorillas are very intelligent and caring animals, and baby gorillas often stay close to their mothers for years, learning how to climb, forage for food, and be part of their family group.
 
 Everyone at the zoo is celebrating this happy, once-in-a-lifetime arrival.`,
   },
-
-  // ---------- MORE NEWS: little_ones ----------
   {
     content_type: "news",
     category: "ocean",
@@ -1367,7 +1278,7 @@ Everyone at the zoo is celebrating this happy, once-in-a-lifetime arrival.`,
     age_band: "little_ones",
     read_minutes: 2,
     quiz: [{"question":"What did the boy do really fast?","options":["Star jumps","Push-ups","Cartwheels"],"correct":0},{"question":"What kind of animal set a jumping record?","options":["A cat","A dog","A bird"],"correct":1}],
-    vocabulary: [{"word":"jumps","definition":"Hops up off the ground with your feet."},{"word":"record","definition":"The best or fastest anyone has ever done something."}],
+    vocabulary: [{"word":"jumps","definition":"Hops up off the ground with your feet."},{"word":"records","definition":"The best or fastest anyone has ever done something."}],
     body: `Two amazing new records were made! A boy did super fast star jumps, again and again, in just one minute. And a speedy dog named Twinkie jumped through her owner's arms ten times in only a few seconds. Both of them worked hard to become the best jumpers around. What a fun way to move and play!`,
   },
   {
@@ -1450,8 +1361,6 @@ Everyone at the zoo is celebrating this happy, once-in-a-lifetime arrival.`,
     vocabulary: [{"word":"comedy","definition":"Something silly and funny that makes people laugh."},{"word":"research","definition":"Careful study to learn new things and solve problems."}],
     body: `A group of third-grade friends call themselves the Comedy Kids. They put on a silly comedy show full of jokes to make everyone giggle and laugh. People paid to watch, and all the money helped support cancer research. The Comedy Kids showed that laughing together can also help people in a big way.`,
   },
-
-  // ---------- MORE NEWS: explorers ----------
   {
     content_type: "news",
     category: "ocean",
@@ -1459,7 +1368,7 @@ Everyone at the zoo is celebrating this happy, once-in-a-lifetime arrival.`,
     age_band: "explorers",
     read_minutes: 4,
     quiz: [{"question":"Where is the coral reef that scientists found alive?","options":["Near Benin, West Africa","In the Arctic Ocean","Near Australia"],"correct":0},{"question":"What special tool did scientists use to map the seafloor?","options":["A magnifying glass","Sonar","A telescope"],"correct":1}],
-    vocabulary: [{"word":"scientists","definition":"People whose job is to study and learn about the world."},{"word":"coral reef","definition":"A colorful underwater home built by tiny sea animals."},{"word":"sonar","definition":"A tool that uses sound waves to find things underwater."},{"word":"species","definition":"A group of living things that are the same kind."}],
+    vocabulary: [{"word":"scientists","definition":"People whose job is to study and learn about the world."},{"word":"reef","definition":"A colorful underwater home built by tiny sea animals."},{"word":"sonar","definition":"A tool that uses sound waves to find things underwater."},{"word":"species","definition":"A group of living things that are the same kind."}],
     body: `Long ago, scientists visited a coral reef deep in the ocean near Benin, in West Africa. It sat more than 50 meters below the surface, where sunlight barely reaches. Back in the 1960s, people thought this reef was probably dead.
 
 Recently, a team led by scientist Gérard Zinzindohoué went back to look again. They used sonar, which sends out sound waves to map the seafloor, and underwater cameras to see what was really there. To their amazement, the reef was alive and full of color! They found 8 different kinds of coral and 8 species of fish, including golden African snappers and damselfish, swimming along 11.5 kilometers of seafloor.
@@ -1473,7 +1382,7 @@ Even more exciting, the whole reef system might stretch as far as 40 kilometers,
     age_band: "explorers",
     read_minutes: 3,
     quiz: [{"question":"What animal benefited from the ocean cleanup?","options":["Hawaiian monk seals","Polar bears","Sea turtles"],"correct":0},{"question":"How much did seal entanglements drop on some islands?","options":["10 percent","70 percent","100 percent"],"correct":1}],
-    vocabulary: [{"word":"monument","definition":"A special protected place set aside to keep something safe."},{"word":"debris","definition":"Trash or broken pieces left floating around."},{"word":"cleanup crews","definition":"Teams of people who work together to clean up a place."},{"word":"rare","definition":"Something that is very unusual or hard to find."}],
+    vocabulary: [{"word":"monument","definition":"A special protected place set aside to keep something safe."},{"word":"debris","definition":"Trash or broken pieces left floating around."},{"word":"crews","definition":"Teams of people who work together on a job."},{"word":"rare","definition":"Something that is very unusual or hard to find."}],
     body: `In the Northwestern Hawaiian Islands, there is a huge ocean protected area called the Papahānaumokuākea Marine National Monument. It is home to many animals, including Hawaiian monk seals, a rare kind of seal found nowhere else in the world.
 
 For years, ocean trash like old fishing nets has floated through the water, and seals sometimes got tangled up in it. That can be very dangerous for them. So cleanup crews have been working hard, pulling dangerous floating nets and other debris out of the ocean.
@@ -1571,7 +1480,7 @@ This is an extra special year for Everland, too, because 2026 marks the 10th ann
     age_band: "explorers",
     read_minutes: 3,
     quiz: [{"question":"How many star jumps did the boy do in 60 seconds?","options":["18","58","118"],"correct":2},{"question":"How fast did the dog Twinkie complete her 10 jumps?","options":["7.48 seconds","17.48 seconds","27.48 seconds"],"correct":0}],
-    vocabulary: [{"word":"record","definition":"The best or most ever achieved at something."},{"word":"achievement","definition":"Something impressive that someone has worked hard to accomplish."},{"word":"owner","definition":"A person who has and takes care of a pet."},{"word":"inspire","definition":"To give someone the idea or feeling to do something great."}],
+    vocabulary: [{"word":"record","definition":"The best or most ever achieved at something."},{"word":"achievements","definition":"Impressive things that someone has worked hard to accomplish."},{"word":"talented","definition":"Very good at doing something."},{"word":"inspire","definition":"To give someone the idea or feeling to do something great."}],
     body: `Guinness World Records loves celebrating amazing feats by kids and animals, and this year had two record-breakers that will make your jaw drop. First, a boy from South Africa did 118 star jumps in just 60 seconds. That's nearly 2 jumps every single second!
 
 Meanwhile, a talented dog named Twinkie set her own record. She jumped through her owner's arms 10 times in a row in only 7.48 seconds. That's fast enough to make anyone's head spin trying to count!
@@ -1690,8 +1599,6 @@ The young comedians practiced their jokes and skits, then performed their show i
 
 Cancer research helps scientists learn more about the disease and search for better treatments that could help patients someday. Thanks to the Comedy Kids, their community had fun while also supporting something that could help many people. It just goes to show that kids can make a real impact, even with a comedy show!`,
   },
-
-  // ---------- MORE NEWS: big_kids ----------
   {
     content_type: "news",
     category: "ocean",
@@ -1763,7 +1670,7 @@ By combining clever engineering with real environmental science, this student sh
     age_band: "big_kids",
     read_minutes: 4,
     quiz: [{"question":"What pollution problem was the student's invention designed to solve?","options":["Oil spills in the ocean","Tire-related pollutants washing into water","Smoke pollution in the air"],"correct":1},{"question":"What are the two key ingredients used to make the hydrosponges?","options":["Sand and glass","Citric acid and aluminum-crosslinked nanocellulose","Salt and sugar"],"correct":1}],
-    vocabulary: [{"word":"nanocellulose","definition":"A material made from extremely tiny plant fibers."},{"word":"pollutant","definition":"A substance that dirties or damages air, water, or soil."},{"word":"crosslinked","definition":"Chemically connected together to form a stronger material."},{"word":"citric","definition":"Relating to citric acid, a natural substance found in citrus fruits."}],
+    vocabulary: [{"word":"nanocellulose","definition":"A material made from extremely tiny plant fibers."},{"word":"pollutants","definition":"Substances that dirty or damage air, water, or soil."},{"word":"crosslinking","definition":"Chemically connecting things together to form a stronger material."},{"word":"citric","definition":"Relating to citric acid, a natural substance found in citrus fruits."}],
     body: `A student from Washington State walked away from the 2026 Regeneron International Science and Engineering Fair with a Young Scientist Award for tackling a pollution problem many people do not even think about: tire dust. Every time cars and trucks drive down a road, their tires wear down bit by bit, and that worn rubber often washes into streams and waterways when it rains, carrying pollutants along with it.
 
 To fight this, the student developed a new kind of water treatment material using citric acid, a natural substance found in citrus fruits, combined with aluminum-crosslinked nanocellulose. Nanocellulose is made from incredibly tiny plant fibers, and crosslinking them with aluminum connects those fibers into a stronger, more absorbent structure.
@@ -1923,7 +1830,7 @@ Perhaps most meaningful is a project called "Melodies of Memories," through whic
     age_band: "big_kids",
     read_minutes: 4,
     quiz: [{"question":"What is the name of the FIRST Robotics Competition's 2026 game?","options":["REBUILT","SPACE RACE","FUEL RUN"],"correct":0},{"question":"How much of the match is autonomous, run under the robot's own programming?","options":["The entire match","The first 20 seconds","The last 2 minutes"],"correct":1}],
-    vocabulary: [{"word":"autonomous","definition":"Able to work on its own, without a person controlling every move."},{"word":"alliance","definition":"A group of teams working together toward a shared goal."},{"word":"programming","definition":"Instructions written in code that a machine follows."},{"word":"compete","definition":"To take part in a contest against others."}],
+    vocabulary: [{"word":"autonomously","definition":"Done on its own, without a person controlling every move."},{"word":"alliance","definition":"A group of teams working together toward a shared goal."},{"word":"programming","definition":"Instructions written in code that a machine follows."},{"word":"compete","definition":"To take part in a contest against others."}],
     body: `Every year, thousands of teams around the world compete in the FIRST Robotics Competition, a contest that challenges students to design, build, and program a robot completely from scratch, then put it to the test against other teams' machines.
 
 The 2026 game is called "REBUILT," and it comes with a specific set of challenges built right into its name. Robots have to collect and launch objects nicknamed "fuel," in the form of balls, into targets called alliance hubs. These hubs are not simply sitting open the whole time; they alternate between active and inactive, forcing teams to plan their strategy around timing rather than just raw speed. On top of scoring points with fuel, robots must also climb a tower before the match clock runs out.
@@ -1964,67 +1871,65 @@ Cancer research relies heavily on funding to keep scientists working toward bett
 
 What stands out most about the Comedy Kids is their age. These are children still in elementary school, yet they recognized a need in their community and found a creative way to respond to it. Their comedy show is proof that you do not need to be an adult, or even a teenager, to organize an event that makes a genuine difference for a cause bigger than yourself.`,
   },
-
-  // ---------- AMAZING FACTS (short, no quiz/vocabulary — quick fun
-  // reads rather than full mini-articles) ----------
+  // ========== AMAZING FACTS ==========
   {
-    content_type: 'fact',
-    category: 'animals',
-    title: 'Octopuses Have Three Hearts!',
-    age_band: 'little_ones',
+    content_type: "fact",
+    category: "animals",
+    title: "Octopuses Have Three Hearts!",
+    age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"octopus","definition":"A sea animal with eight arms and no bones."}],
     body: `An octopus has three hearts, not just one! Two of its hearts help pump blue blood to its gills, and the third heart sends blood to the rest of its body. Isn't that amazing?`,
   },
   {
-    content_type: 'fact',
-    category: 'animals',
+    content_type: "fact",
+    category: "animals",
     title: "A Big Group of Flamingos Has a Silly Name",
-    age_band: 'little_ones',
+    age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"flamboyance","definition":"A fun name for a group of flamingos together."}],
     body: `When lots of pink flamingos stand together, we call the group a flamboyance! Baby flamingos are actually born gray or white — they slowly turn pink from the tiny shrimp they eat.`,
   },
   {
-    content_type: 'fact',
-    category: 'nature',
-    title: 'A Fluffy Cloud Can Weigh as Much as 100 Elephants',
-    age_band: 'explorers',
+    content_type: "fact",
+    category: "nature",
+    title: "A Fluffy Cloud Can Weigh as Much as 100 Elephants",
+    age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"droplets","definition":"Very tiny drops of a liquid, like water."},{"word":"average","definition":"A usual or typical amount, not too big or too small."}],
     body: `Clouds look light and fluffy, but they're actually really heavy! A cloud is made of millions and millions of tiny water droplets. Each droplet is super light, but put them all together and an average cloud can weigh about as much as 100 elephants.`,
   },
   {
-    content_type: 'fact',
-    category: 'nature',
-    title: 'Honey Can Last for Thousands of Years',
-    age_band: 'explorers',
+    content_type: "fact",
+    category: "nature",
+    title: "Honey Can Last for Thousands of Years",
+    age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"ancient","definition":"From a very, very long time ago."},{"word":"tombs","definition":"Special rooms or places where people are buried after they die."}],
     body: `Honey almost never goes bad! People have found jars of honey in ancient Egyptian tombs that were more than 3,000 years old — and it was still safe to eat. Bees make honey in a special way that keeps it fresh for a very, very long time.`,
   },
   {
-    content_type: 'fact',
-    category: 'nature',
+    content_type: "fact",
+    category: "nature",
     title: "Bananas Are Berries — But Strawberries Aren't",
-    age_band: 'big_kids',
+    age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"scientists","definition":"People who study the world carefully through observation and experiments to learn new facts."},{"word":"count","definition":"To be officially classified or considered as belonging to a certain group."},{"word":"rule","definition":"A specific guideline used to decide how something should be classified."}],
     body: `Scientists who study plants use a special rule to decide what counts as a real berry. By that rule, bananas, watermelons, and even avocados count as berries — but strawberries and raspberries don't! It all comes down to how the fruit grows, not how sweet or small it looks.`,
   },
   {
-    content_type: 'fact',
-    category: 'space',
-    title: 'Saturn Is So Light, It Could Float in Water',
-    age_band: 'big_kids',
+    content_type: "fact",
+    category: "space",
+    title: "Saturn Is So Light, It Could Float in Water",
+    age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"solar","definition":"Having to do with the Sun and everything that circles around it."},{"word":"gas","definition":"A substance, like air, that has no fixed shape and spreads out to fill its space."},{"word":"system","definition":"A group of parts, like planets and their star, that work together as a whole."}],
     body: `Saturn is the second-largest planet in our solar system, but most of it is made of gas instead of solid rock. That makes it surprisingly light for its huge size. If you could find a bathtub big enough to fit it, Saturn would actually float instead of sinking!`,
   },
   {
@@ -2034,7 +1939,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"elephants","definition":"Huge, gray animals with long trunks and big ears."}],
     body: `Did you know elephants cannot jump? Every other animal you know can hop off the ground, but elephants are just too big and heavy! Their legs are built for standing strong, not for jumping high in the air.`,
   },
   {
@@ -2044,7 +1949,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"otters","definition":"Furry animals that love to swim and play in water."}],
     body: `Sea otters float on their backs when they nap in the ocean. Sometimes they hold hands with their otter friends so they do not drift away from each other while they snooze! Isn't that sweet?`,
   },
   {
@@ -2054,7 +1959,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"jellyfish","definition":"A soft, see-through sea animal that can sting."}],
     body: `Jellyfish have been swimming in the ocean for a very, very long time — even longer than dinosaurs walked the Earth! These wobbly, see-through creatures have been around for hundreds of millions of years.`,
   },
   {
@@ -2064,7 +1969,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"planet","definition":"A huge round world that travels around the sun."}],
     body: `On the planet Venus, one day takes longer than one whole year! Venus spins around very, very slowly, but it zooms around the sun quickly. So a Venus day is actually longer than a Venus year!`,
   },
   {
@@ -2074,7 +1979,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"astronauts","definition":"People who travel to space in a spaceship."}],
     body: `When astronauts walked on the Moon, they left footprints in the dusty ground. Since there is no wind or rain on the Moon, those footprints could stay there for millions and millions of years!`,
   },
   {
@@ -2084,7 +1989,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"fungi","definition":"Living things like mushrooms that grow underground."}],
     body: `Trees can talk to each other! Tiny threads called fungi grow under the ground and connect tree roots together, like a secret telephone line. Trees use it to share food and warn each other about danger.`,
   },
   {
@@ -2094,7 +1999,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"bamboo","definition":"A tall plant that grows very, very fast."}],
     body: `Bamboo is one of the fastest growing plants on Earth. Some kinds of bamboo can grow almost three feet taller in just one single day! That is faster than you could grow in a whole year.`,
   },
   {
@@ -2104,7 +2009,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"bones","definition":"The hard parts inside your body that hold you up."}],
     body: `A tiny baby has about 300 bones inside their body, but grown-ups only have 206! As babies grow bigger, some of their bones join together and become one strong bone. Amazing, right?`,
   },
   {
@@ -2114,7 +2019,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"muscle","definition":"A body part that helps you move."}],
     body: `Your heart is a busy little muscle! It beats about one hundred thousand times every single day, pumping blood all around your body without ever taking a break, even while you sleep.`,
   },
   {
@@ -2124,7 +2029,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"carrots","definition":"A crunchy orange vegetable that grows in the ground."}],
     body: `Long, long ago, most carrots were purple, not orange! Farmers grew purple, white, and yellow carrots for many years before orange carrots became popular. Carrots come in lots of colors!`,
   },
   {
@@ -2134,7 +2039,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"kernel","definition":"A tiny seed, like the part inside popcorn."}],
     body: `Inside every popcorn kernel is a tiny drop of water. When you heat the kernel, the water turns into steam and gets so squished that the kernel suddenly pops inside out. Pop!`,
   },
   {
@@ -2144,7 +2049,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"snowflake","definition":"A tiny piece of snow with a pretty shape."}],
     body: `Look closely at a snowflake and you will always count six sides or six points! Every single snowflake that has ever fallen is shaped this way, even though no two snowflakes look exactly alike.`,
   },
   {
@@ -2154,7 +2059,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"rainbow","definition":"Colorful bands of light you see in the sky."}],
     body: `A rainbow you see in the sky is really a whole circle, not just an arch! We usually only see the top half because the ground is in the way. From an airplane, you might spot the whole circle!`,
   },
   {
@@ -2164,7 +2069,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"fossils","definition":"Old bones or prints left by animals from long ago."}],
     body: `Not all dinosaurs had scaly skin! Scientists have found dinosaur fossils covered in fluffy feathers, just like birds today. Some dinosaurs may have looked more like giant, colorful chickens than scary lizards!`,
   },
   {
@@ -2174,7 +2079,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"dinosaurs","definition":"Giant animals that lived on Earth long, long ago."}],
     body: `The Tyrannosaurus rex was one of the biggest dinosaurs ever, but its arms were tiny compared to its huge body! Even though they were small, its arms were still very strong and powerful.`,
   },
   {
@@ -2184,7 +2089,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"crayon","definition":"A colorful stick you use to draw pictures."}],
     body: `Have you ever wondered where the word crayon comes from? It comes from old French and Latin words meaning chalk and earth! People have been coloring with crayon-like sticks for a very long time.`,
   },
   {
@@ -2194,7 +2099,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"piano","definition":"A big musical instrument with black and white keys."}],
     body: `Count the keys on a piano and you will find eighty-eight of them! Some keys are white and some are black, and together they can make thousands of different beautiful songs and sounds.`,
   },
   {
@@ -2204,7 +2109,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"basketball","definition":"A game where players toss a ball through a hoop."}],
     body: `The very first basketball hoops were not hoops at all — they were peach baskets nailed to a wall! A teacher named James Naismith invented the game so his students could play indoors.`,
   },
   {
@@ -2214,7 +2119,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"workers","definition":"People who do a job, like building something."}],
     body: `The Great Wall of China is so long and so big that it took hundreds and hundreds of years to build! Many different groups of workers built parts of it a long, long time ago.`,
   },
   {
@@ -2224,7 +2129,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"inventor","definition":"A person who creates something new and clever."}],
     body: `Long ago, a clever inventor made the very first zipper to help people fasten their boots faster! Before zippers, people had to button or lace up their shoes one little hole at a time.`,
   },
   {
@@ -2234,7 +2139,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"firefighters","definition":"People whose job is to put out fires."}],
     body: `Before firetrucks had engines, strong horses used to pull them through the streets! The horses galloped as fast as they could to help firefighters reach a fire and save the day.`,
   },
   {
@@ -2244,7 +2149,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"kangaroos","definition":"Animals that hop on strong back legs."}],
     body: `When kangaroos hop around together, they are called a mob! A mob of kangaroos can bounce across the grass together, hopping high with their strong back legs and long tails.`,
   },
   {
@@ -2254,7 +2159,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "little_ones",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"rumbles","definition":"A deep, low sound that shakes the ground a bit."}],
     body: `Elephants can sense sounds through their giant feet! When another elephant stomps or rumbles far away, the ground shakes just a little, and elephants can feel it through their feet to know a friend is near.`,
   },
   {
@@ -2264,7 +2169,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"mammals","definition":"Animals that have fur or hair and feed milk to their babies."},{"word":"pillars","definition":"Tall, strong posts that hold something up."}],
     body: `Believe it or not, elephants are the only mammals in the world that cannot jump! Their legs are built like giant pillars to support their huge weight, and their leg bones don't bend the right way to push off the ground. So even though elephants can run, swim, and climb, jumping is one thing they'll never do.`,
   },
   {
@@ -2274,7 +2179,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"clever","definition":"Good at thinking and figuring things out quickly."},{"word":"gather","definition":"To come together in one place as a group."}],
     body: `Crows are super smart birds, and when a bunch of them gather together, people call the group a murder! Nobody knows exactly why this spooky name stuck, but it's been used for hundreds of years. Crows are so clever they can remember human faces and even use simple tools to get food.`,
   },
   {
@@ -2284,7 +2189,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"estivation","definition":"A long, deep sleep some animals take to survive hot, dry weather."},{"word":"seal","definition":"To close something up tightly so nothing can get in or out."}],
     body: `When the weather gets too hot or dry, some land snails seal themselves inside their shells with a layer of slime and go to sleep. This resting state is called estivation, and it can last an amazingly long time — some snails have snoozed like this for up to three whole years before waking up again!`,
   },
   {
@@ -2294,7 +2199,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"species","definition":"A group of living things that are alike in important ways."},{"word":"creaking","definition":"Making a squeaky, cracking sound."}],
     body: `Bamboo is one of the fastest-growing plants on Earth. Some giant bamboo species can shoot up almost a meter — that's taller than a kitchen counter — in just twenty-four hours! You could practically watch it grow. Farmers say on a warm, rainy day, you can sometimes hear bamboo creaking as it stretches upward.`,
   },
   {
@@ -2304,7 +2209,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"ancient","definition":"From a very, very long time ago."},{"word":"incredibly","definition":"Extremely, or way more than you'd expect."}],
     body: `Giant redwood trees growing in California can live for more than two thousand years, making them some of the oldest living things on the planet. They also grow incredibly tall, sometimes over 90 meters high — taller than a football field is long! A single redwood might have been alive since ancient Roman times.`,
   },
   {
@@ -2314,7 +2219,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"collapses","definition":"Suddenly falls apart or caves in."},{"word":"burst","definition":"A sudden, quick release of something, like light or sound."}],
     body: `The tiny pistol shrimp has one giant claw, and when it snaps it shut, something amazing happens. The snap creates a bubble that collapses so fast it makes a popping sound louder than a gunshot and even flashes a tiny burst of light! Scientists use special cameras just to see it happen.`,
   },
   {
@@ -2324,7 +2229,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"vessels","definition":"Tiny tubes inside the body that carry blood around."}],
     body: `Blue whales are the largest animals to have ever lived, and their hearts match their size! A blue whale's heart can weigh as much as a small car and is so big that a child could crawl through some of its blood vessels. When it beats, you could hear it from far away underwater.`,
   },
   {
@@ -2334,7 +2239,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"zips","definition":"Moves somewhere very fast."},{"word":"entire","definition":"The whole thing, from start to finish."}],
     body: `Venus spins so slowly that it takes 243 Earth days to turn all the way around just once — that's one Venus day. But Venus zips around the sun much faster, finishing one full trip in only 225 Earth days. That means a single day on Venus lasts longer than its entire year!`,
   },
   {
@@ -2344,7 +2249,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"preserved","definition":"Kept safe and unchanged for a long time."}],
     body: `When astronauts walked on the Moon, they left footprints in the dusty ground. Because the Moon has no wind, rain, or air to blow the dust around, those footprints aren't going anywhere anytime soon. Scientists think many of them could stay perfectly preserved for millions and millions of years.`,
   },
   {
@@ -2354,7 +2259,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"recognize","definition":"To know who or what something is because you've seen it before."},{"word":"patterns","definition":"Shapes or designs that repeat in a certain way."}],
     body: `Honey bees have never needed to recognize people, but scientists discovered they actually can! In experiments, bees were trained to remember different human faces in photographs and pick out the right one for a reward. Their tiny brains are smaller than a grain of rice, yet they can still learn tricky patterns.`,
   },
   {
@@ -2364,7 +2269,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"potassium","definition":"A mineral found in some foods that helps your body work well."},{"word":"harmless","definition":"Not able to hurt you at all."}],
     body: `Bananas contain potassium, an important mineral your body needs, and a tiny bit of that potassium is naturally radioactive. Don't worry though — the amount is so small it's completely harmless! Scientists even use the phrase "banana equivalent dose" as a fun, easy way to explain tiny amounts of everyday radiation.`,
   },
   {
@@ -2374,7 +2279,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"credited","definition":"Given the recognition for making or discovering something."}],
     body: `The orange carrots you eat today aren't how carrots always looked. Long ago, most carrots grown around the world were purple, yellow, or white. Farmers in the Netherlands are often credited with growing the sweet orange carrots we know now, and over time they became the most popular color of all.`,
   },
   {
@@ -2384,7 +2289,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"volume","definition":"How much space something takes up."},{"word":"trapped","definition":"Stuck somewhere and unable to get out."}],
     body: `Ever wonder why apples bob around during apple bobbing games? About a quarter of an apple's volume is actually made up of tiny pockets of air packed between its cells. All that trapped air makes apples light enough to float right on top of water instead of sinking to the bottom.`,
   },
   {
@@ -2394,7 +2299,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"expand","definition":"To get bigger and take up more space."},{"word":"intense","definition":"Very strong or very powerful."}],
     body: `A single bolt of lightning can heat the air around it to about 30,000 degrees Kelvin, which is roughly five times hotter than the surface of the sun! That intense heat causes the air to expand incredibly fast, creating the booming sound we hear as thunder just moments after we see the flash.`,
   },
   {
@@ -2404,7 +2309,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"decades","definition":"Periods of time that each last ten years."},{"word":"centuries","definition":"Periods of time that each last one hundred years."}],
     body: `Not every place on Earth gets regular rainfall. Parts of the Atacama Desert in Chile are so dry that some weather stations there have gone decades, and in a few spots even centuries, without recording any measurable rain at all. It's considered one of the driest places anywhere on the planet.`,
   },
   {
@@ -2414,7 +2319,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"fossils","definition":"The hardened remains of ancient plants or animals found in rock."},{"word":"scaly","definition":"Covered in small, hard, overlapping pieces, like a lizard's skin."}],
     body: `Not all dinosaurs were scaly! Scientists have found fossils showing that many small dinosaurs, especially ones closely related to birds, actually had feathers covering their bodies. Some used their feathers to stay warm, while others may have used colorful feathers to show off, much like birds do with their feathers today.`,
   },
   {
@@ -2424,7 +2329,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"roamed","definition":"Walked or wandered around over a large area."},{"word":"gap","definition":"An empty space or distance between two things."}],
     body: `Here's something that surprises almost everyone: Tyrannosaurus rex roamed the Earth about 66 million years ago, while Stegosaurus lived around 150 million years earlier. That means there's a longer gap of time between Stegosaurus and T. rex than there is between T. rex and you reading this fact right now!`,
   },
   {
@@ -2434,7 +2339,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"historians","definition":"People who study and learn about things that happened long ago."},{"word":"priceless","definition":"So special and valuable that it has no fixed price."}],
     body: `The famous artist Vincent van Gogh painted hundreds of colorful artworks, including sunflowers and starry skies, but historians believe he only sold one single painting while he was alive. Today his paintings are considered priceless treasures and hang in famous museums all over the world, loved by millions of people.`,
   },
   {
@@ -2444,7 +2349,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"composer","definition":"A person who writes pieces of music."},{"word":"vibrations","definition":"Fast little shaking movements, like the ones sound makes."}],
     body: `The composer Ludwig van Beethoven began losing his hearing in his twenties, and eventually became almost completely deaf. Instead of giving up, he kept writing music, including his famous Ninth Symphony. He is said to have felt the vibrations of the piano through the floor to help him keep composing.`,
   },
   {
@@ -2454,7 +2359,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"footrace","definition":"A race where people run to see who is fastest."},{"word":"chariot","definition":"An old-fashioned open cart pulled by horses."}],
     body: `The ancient Olympic Games began in Greece way back in 776 BCE, and back then there was only one event: a short footrace called the stade. Over hundreds of years, more events like wrestling, chariot racing, and long jump were added, eventually growing into the huge multi-sport Olympics we watch today.`,
   },
   {
@@ -2464,7 +2369,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"royalty","definition":"Kings, queens, and their families."},{"word":"mourned","definition":"Felt and showed sadness after someone or something died."}],
     body: `In ancient Egypt, cats were treated like royalty. People believed cats brought good luck and protected homes from pests, and harming one could get a person into serious trouble. Egyptians even had a cat goddess named Bastet, and families sometimes mourned by shaving their eyebrows when a beloved pet cat died.`,
   },
   {
@@ -2474,7 +2379,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"sleek","definition":"Smooth, shiny, and nicely shaped."},{"word":"clunky","definition":"Big, heavy, and awkward looking instead of smooth and neat."}],
     body: `In 1964, an inventor named Douglas Engelbart built the very first computer mouse, and it wasn't sleek plastic like today's mice — it was a simple wooden box with one button and two metal wheels underneath. Nobody knew it then, but this clunky wooden gadget would change how people use computers forever.`,
   },
   {
@@ -2484,7 +2389,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "explorers",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"resources","definition":"Things that people can use to help them do something."},{"word":"telescopes","definition":"Tools that help you see things far away, like stars."}],
     body: `Libraries aren't only for books anymore! Many libraries today also let you borrow things like musical instruments, telescopes, board games, tools, and even seeds for planting a garden. It's all part of sharing resources with your community so everyone can try new things without having to buy them.`,
   },
   {
@@ -2494,7 +2399,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"enormous","definition":"Extremely large in size, far bigger than what feels normal."},{"word":"mass","definition":"The total amount of matter, or material, that makes up an object."},{"word":"asteroid","definition":"A small, rocky object that orbits the Sun, smaller than a planet."}],
     body: `The Sun is so enormous that its size is hard to imagine. If you hollowed it out and packed planets the size of Earth inside, you could fit more than 1.3 million of them. Even though the Sun looks like a small, bright dot from Earth's surface, it actually makes up about 99.8 percent of all the mass in our entire solar system, with every planet, moon, and asteroid combined making up the rest.`,
   },
   {
@@ -2504,7 +2409,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"collapses","definition":"Falls inward or caves in suddenly under its own weight."},{"word":"densest","definition":"Having the most matter packed tightly into the smallest possible space."},{"word":"mass","definition":"The total amount of matter that makes up an object."}],
     body: `When a giant star runs out of fuel and collapses, it can squeeze down into a neutron star, one of the densest objects in the universe. A neutron star packs more mass than our entire Sun into a ball only about 12 miles wide. Just one teaspoon of neutron star material would weigh roughly a billion tons here on Earth — heavier than every car in the United States combined.`,
   },
   {
@@ -2514,7 +2419,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"astronauts","definition":"People trained to travel and work in space."},{"word":"micrometeorites","definition":"Tiny fragments of space rock, smaller than a grain of sand, that hit a surface."},{"word":"surface","definition":"The outermost layer or top part of something, like the ground."}],
     body: `When Apollo astronauts walked on the Moon, they left footprints pressed into its dusty surface. Unlike on Earth, the Moon has no wind, rain, or air to blow the footprints away, so scientists believe many of them could last for millions of years. The only real changes will come from tiny space rocks called micrometeorites slowly wearing down the surface, grain by grain, over an incredibly long stretch of time.`,
   },
   {
@@ -2524,7 +2429,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"accelerates","definition":"Speeds up, moving faster and faster in a short amount of time."},{"word":"prey","definition":"An animal that is hunted and eaten by another animal."},{"word":"force","definition":"A push or pull strong enough to move or change something."}],
     body: `The peacock mantis shrimp has a club-like claw that snaps forward so fast it's considered one of the quickest movements in the animal kingdom. Its strike accelerates about as fast as a bullet leaving a gun, hitting prey with enough force to crack open snail and crab shells. The strike happens so quickly that it briefly heats the surrounding water and creates a tiny flash of light.`,
   },
   {
@@ -2534,7 +2439,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"salamander","definition":"A small, moist-skinned amphibian with a tail, related to frogs."},{"word":"tissue","definition":"A group of similar cells in a living body that work together."},{"word":"spinal","definition":"Relating to the spine, the row of connected bones running down the back."}],
     body: `The axolotl, a type of salamander from Mexico, has an amazing superpower: it can regrow body parts that are lost or injured. If an axolotl loses a leg or part of its tail, or even damages parts of its heart, spinal cord, or brain, new tissue can grow back over time, often looking and working just like the original. Scientists study axolotls closely, hoping to learn secrets that could someday help heal human injuries.`,
   },
   {
@@ -2544,7 +2449,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"reflection","definition":"An image of something seen in a mirror or shiny surface."},{"word":"captive","definition":"Kept in a controlled place, like a zoo, instead of living freely in the wild."},{"word":"self-awareness","definition":"The ability to recognize yourself as a separate individual from others."}],
     body: `Only a handful of animals have passed the "mirror test," a way scientists check whether an animal understands that its reflection is itself and not another animal. Elephants are one of them. In a famous study, a captive elephant used a mirror to inspect a mark painted on her own head, proving she knew she was looking at herself. This kind of self-awareness is rare in the animal kingdom.`,
   },
   {
@@ -2554,7 +2459,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"researchers","definition":"People who study something carefully to discover new information."},{"word":"sensor","definition":"A device that detects and measures something, like motion, sound, or heat."},{"word":"extreme","definition":"Very great in degree, far beyond what is usual."}],
     body: `The blue whale is the largest animal ever known to have lived, and its heart matches that size, weighing as much as a small car. Researchers have attached special sensor tags to wild blue whales to record their heartbeats, discovering the rate can drop to just two beats per minute during a deep dive. Their massive hearts work so hard afterward that scientists are still learning how whales manage such extreme changes.`,
   },
   {
@@ -2564,7 +2469,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"trench","definition":"A long, deep, narrow valley cut into the ocean floor."},{"word":"plunges","definition":"Drops or falls suddenly and steeply downward."}],
     body: `The deepest known spot in the ocean, called the Challenger Deep, plunges down about 36,000 feet into the Mariana Trench. Mount Everest, the tallest mountain on Earth, rises about 29,000 feet above sea level. If you dropped Everest into the Challenger Deep, its peak would still sit more than a mile underwater, completely hidden beneath the waves above it.`,
   },
   {
@@ -2574,7 +2479,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"species","definition":"A specific kind of living thing that shares certain traits."},{"word":"segment","definition":"One of the separate sections that make up a larger whole."},{"word":"multiply","definition":"To increase quickly in number."}],
     body: `Bamboo isn't a tree — it's actually a giant grass, and it happens to be one of the fastest-growing plants on Earth. Certain species, like moso bamboo, can shoot up nearly three feet in just twenty-four hours under perfect conditions of warmth, water, and sunlight. That rapid growth comes from special cells at the base of each segment that stretch and multiply incredibly quickly.`,
   },
   {
@@ -2584,7 +2489,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"clone","definition":"A living thing that is genetically identical to the one it grew from."},{"word":"genetically","definition":"Relating to genes, the instructions inside cells that control how living things grow."},{"word":"organisms","definition":"Living things, such as plants, animals, or fungi."}],
     body: `A grove of quaking aspen trees in Utah, nicknamed Pando, looks like thousands of separate trees, but they're all connected underground by one shared root system. Every trunk is a clone that sprouted from that same roots, making the whole grove genetically one living thing. Pando covers about 106 acres and is estimated to weigh around 6,000 tons, making it one of the largest known organisms on Earth.`,
   },
   {
@@ -2594,7 +2499,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"graphite","definition":"A soft, dark form of carbon used to make pencil marks."},{"word":"atoms","definition":"The extremely tiny particles that combine to make up all matter."},{"word":"arrangement","definition":"The particular way that parts are organized or positioned."}],
     body: `A sparkling diamond and the soft gray graphite inside a pencil might seem like opposites, but both are made purely of carbon atoms. The difference comes down to arrangement: in diamonds, carbon atoms bond into a rigid, tightly packed structure, making them the hardest natural material on Earth. In graphite, carbon atoms form loose, flat sheets that slide past each other easily, which is why pencil marks smear so easily.`,
   },
   {
@@ -2604,7 +2509,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"symmetry","definition":"A balanced pattern where matching parts mirror each other evenly."},{"word":"molecules","definition":"Tiny groups of atoms bonded together, the building blocks of matter."},{"word":"hexagonal","definition":"Having six straight sides and six corners, like a honeycomb cell."}],
     body: `No matter how a snowflake forms, it almost always ends up with six-fold symmetry. This happens because water molecules naturally link together at specific angles as they freeze, building hexagonal patterns as ice crystals grow. Tiny differences in temperature and humidity as each snowflake falls create its own unique branching shape, which is why it's often said that no two snowflakes look exactly alike.`,
   },
   {
@@ -2614,7 +2519,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"shockwave","definition":"A powerful wave of pressure that spreads quickly through the air after a sudden burst of energy."},{"word":"expand","definition":"To increase in size or take up more space."},{"word":"energy","definition":"The power needed to do work, move things, or create heat and light."}],
     body: `A single bolt of lightning can heat the air around it to about 30,000 Kelvin, roughly five times hotter than the surface of the Sun, which is around 5,500 degrees Celsius. That extreme heat causes the surrounding air to expand explosively fast, creating the shockwave we hear as thunder. This all happens in a flash lasting only a fraction of a second, yet it releases an enormous burst of energy.`,
   },
   {
@@ -2624,7 +2529,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"reptiles","definition":"Cold-blooded animals with scaly skin, like snakes and lizards."},{"word":"fossils","definition":"The preserved remains or traces of ancient living things, found in rock."},{"word":"quill","definition":"The hollow, stiff shaft at the base of a feather."}],
     body: `Not all dinosaurs looked like the scaly reptiles often shown in movies. Fossils discovered over the past few decades show that many dinosaurs, including close relatives of Velociraptor, had feathers covering parts of their bodies. Scientists found evidence in the form of quill knobs, small bumps on arm bones where feathers would have attached, similar to what's seen on the wings of modern birds today.`,
   },
   {
@@ -2634,7 +2539,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"roamed","definition":"Wandered freely over a wide area without a fixed path."},{"word":"spans","definition":"Periods of time that stretch from a beginning point to an end point."}],
     body: `Dinosaurs first appeared around 245 million years ago and didn't disappear until about 66 million years ago, meaning they roamed the planet for roughly 179 million years. Modern humans, Homo sapiens, have only been around for about 300,000 years so far. Comparing the two spans, dinosaurs existed on Earth for hundreds of times longer than humans have existed up to now, and still counting.`,
   },
   {
@@ -2644,7 +2549,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"volume","definition":"The total amount of space that something takes up."},{"word":"dense","definition":"Having a lot of mass packed tightly into a small amount of space."},{"word":"flesh","definition":"The soft inner part of a fruit, found beneath its skin."}],
     body: `Bite into an apple and you might not realize that about 25 percent of its volume is actually trapped air pockets inside its flesh. That trapped air makes apples less dense than water, which is why a whole apple bobs on the surface instead of sinking. This is also part of the fun behind bobbing for apples, a game that only works because of this quirky bit of food science.`,
   },
   {
@@ -2654,7 +2559,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"historians","definition":"People who study and write about events from the past."},{"word":"smudging","definition":"Blurring or smearing something, like wet ink, by accidentally touching it."},{"word":"left-handed","definition":"Naturally using the left hand as the main hand for writing and tasks."}],
     body: `Leonardo da Vinci filled thousands of notebook pages with sketches and ideas, but much of his writing looks like scrambled code at first glance. He often wrote in mirror image, forming letters backwards from right to left, so the words only become readable when held up to a mirror. Historians think he may have done this because he was left-handed, which made backward writing more comfortable and helped avoid smudging fresh ink.`,
   },
   {
@@ -2664,7 +2569,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"symphony","definition":"A long, complex piece of music written for a full orchestra."},{"word":"vibrations","definition":"Fast back-and-forth movements that can be felt or that create sound."},{"word":"premiere","definition":"The very first public performance of a play, film, or piece of music."}],
     body: `Ludwig van Beethoven began losing his hearing in his twenties, and by the time he composed his Ninth Symphony, one of the most celebrated pieces of music ever written, he was almost completely deaf. He composed by studying vibrations, reading musical notation, and relying on his deep training in music theory built up over many years. At the symphony's premiere, he had to be turned around to see the audience applauding because he could not hear it.`,
   },
   {
@@ -2674,7 +2579,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"organizers","definition":"People who plan and arrange the details of an event."},{"word":"royal","definition":"Relating to a king, queen, or another member of a ruling family."},{"word":"marathon","definition":"A long-distance foot race, traditionally 26.2 miles."}],
     body: `Today's marathon distance, 26.2 miles, wasn't planned that way from the start. At the 1908 London Olympics, organizers stretched the course so it could begin at Windsor Castle and finish right in front of the royal viewing box inside the stadium. That extra distance stuck, and years later it became the official marathon length used in every Olympics and major race held around the world.`,
   },
   {
@@ -2684,7 +2589,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"engineer","definition":"A person trained to design, build, or test machines and technology."},{"word":"radar","definition":"A system that uses radio waves to detect the location and speed of objects."},{"word":"invisible","definition":"Not able to be seen by the human eye."}],
     body: `In 1945, an engineer named Percy Spencer was testing radar equipment when he noticed a chocolate bar in his pocket had melted, even though he hadn't felt any heat. Curious, he experimented further with popcorn kernels and an egg, both of which cooked rapidly near the device. His discovery of how those invisible waves could heat food quickly led to the invention of the microwave oven still used in kitchens today.`,
   },
   {
@@ -2694,7 +2599,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"burrs","definition":"Prickly seed cases that cling to fur or clothing using tiny hooks."},{"word":"microscope","definition":"A tool used to view things far too small for the eye to see alone."},{"word":"fastener","definition":"A device, like a clip or button, used to hold two things together."}],
     body: `In the 1940s, Swiss engineer George de Mestral returned from a walk and noticed prickly burrs clinging stubbornly to his dog's fur and his own clothing. Looking at them under a microscope, he discovered tiny hooks that caught onto anything with a loop-like texture. Inspired by nature's clever design, he spent years developing a fabric fastener with the same hook-and-loop system, which he eventually named Velcro.`,
   },
   {
@@ -2704,7 +2609,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"religious","definition":"Relating to a particular faith or set of spiritual beliefs."},{"word":"sacred","definition":"Considered holy or deeply important within a religion."},{"word":"coordinating","definition":"Organizing separate parts or people so everything works together smoothly."}],
     body: `Every few years in India, an enormous religious festival called the Kumbh Mela draws crowds so large it's considered the biggest peaceful gathering of people on Earth. During the largest events, over 100 million people are estimated to attend across the festival's full run, arriving to bathe in sacred rivers as part of ancient traditions. Coordinating food, shelter, and safety for that many visitors takes years of careful planning.`,
   },
   {
@@ -2714,7 +2619,7 @@ What stands out most about the Comedy Kids is their age. These are children stil
     age_band: "big_kids",
     read_minutes: 1,
     quiz: [],
-    vocabulary: [],
+    vocabulary: [{"word":"brewery","definition":"A place where beer is made."},{"word":"reference","definition":"A book or source used to look up facts and information."},{"word":"feats","definition":"Impressive achievements that require great skill, strength, or courage."}],
     body: `In 1954, Sir Hugh Beaver, the managing director of a brewery in Ireland, got into a dinner argument about which European game bird was the fastest flyer. Unable to find the answer in any reference book, he realized there was no single place to settle facts and arguments like that. His idea led to the creation of the Guinness Book of Records in 1955, which has been tracking amazing feats and record-breakers ever since.`,
   },
 ];

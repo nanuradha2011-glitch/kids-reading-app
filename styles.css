@@ -507,3 +507,66 @@ button.secondary.full { width: 100%; margin-top: 12px; }
 .quiz-option.correct { border-color: var(--success); background: #eafbf1; }
 .quiz-option.incorrect { border-color: var(--accent); background: #fff0f2; }
 .quiz-result { text-align: center; font-size: 20px; font-weight: 700; color: var(--violet); margin-bottom: 14px; }
+
+/* --- Sticker album --- */
+.sticker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.sticker-tile {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 16px 8px;
+  text-align: center;
+  border: 2px solid transparent;
+}
+.sticker-tile-emoji { font-size: 36px; line-height: 1; }
+.sticker-tile-name { font-size: 12px; font-weight: 700; margin-top: 8px; color: var(--ink); }
+.sticker-tile-count {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--violet);
+  background: white;
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+.sticker-tile.sticker-locked { opacity: 0.55; }
+.sticker-tile.sticker-locked .sticker-tile-name { color: var(--muted); }
+.sticker-tile.rarity-rare:not(.sticker-locked) { border-color: var(--blue); box-shadow: 0 0 0 1px rgba(76, 111, 255, 0.15); }
+.sticker-tile.rarity-super_rare:not(.sticker-locked) {
+  border-color: var(--amber);
+  background: linear-gradient(160deg, #fff8e8 0%, var(--surface) 100%);
+  box-shadow: 0 0 0 1px rgba(255, 193, 69, 0.25);
+}
+
+/* --- Sticker-earned celebration popup --- */
+.sticker-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(21, 18, 31, 0.55);
+  animation: fade-in 0.2s ease;
+}
+.sticker-popup-inner {
+  width: min(360px, calc(100vw - 48px));
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 32px 24px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  animation: rise-in 0.3s cubic-bezier(.2,.8,.2,1);
+}
+.sticker-popup-emoji { font-size: 72px; line-height: 1; margin-bottom: 8px; }
+.sticker-popup-headline { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; color: var(--violet); margin: 0; }
+.sticker-popup-name { font-size: 22px; font-weight: 700; margin: 6px 0 2px; }
+.sticker-popup-rarity { font-size: 13px; font-weight: 700; color: var(--muted); margin: 0 0 18px; }
+.sticker-popup-rarity.rarity-rare { color: var(--blue); }
+.sticker-popup-rarity.rarity-super_rare { color: #b8860b; }
+#sticker-popup-close-btn { width: 100%; }

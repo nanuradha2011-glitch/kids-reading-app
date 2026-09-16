@@ -145,8 +145,13 @@
   <!-- ============ KID READER: TABS + GRID ============ -->
   <div class="card xwide hidden" id="reader-card">
     <div class="dash-header">
-      <button class="secondary" id="back-to-kids-btn">← Back</button>
-      <p class="title small" id="reader-kid-name" style="margin:0;"></p>
+      <div class="header-actions">
+        <button class="secondary" id="back-to-kids-btn">← Back</button>
+        <p class="title small" id="reader-kid-name" style="margin:0;"></p>
+      </div>
+      <div class="header-actions">
+        <button class="secondary" id="stickers-btn">🎟️ My Stickers</button>
+      </div>
     </div>
 
     <div class="tabs" id="content-tabs">
@@ -182,6 +187,27 @@
     <div class="quiz-section" id="quiz-section">
       <h3 class="section-heading">📝 Quick Quiz!</h3>
       <div id="quiz-body"></div>
+    </div>
+  </div>
+
+  <!-- ============ STICKER ALBUM ============ -->
+  <div class="card wide hidden" id="sticker-album-card">
+    <div class="dash-header">
+      <button class="secondary" id="back-from-stickers-btn">← Back</button>
+      <p class="title small" style="margin:0;">🎟️ My Stickers</p>
+    </div>
+    <p class="hint" id="sticker-album-progress"></p>
+    <div class="sticker-grid" id="sticker-grid"></div>
+  </div>
+
+  <!-- ============ STICKER EARNED POPUP ============ -->
+  <div class="sticker-popup hidden" id="sticker-popup">
+    <div class="sticker-popup-inner">
+      <div class="sticker-popup-emoji" id="sticker-popup-emoji"></div>
+      <p class="sticker-popup-headline" id="sticker-popup-headline"></p>
+      <p class="sticker-popup-name" id="sticker-popup-name"></p>
+      <p class="sticker-popup-rarity" id="sticker-popup-rarity"></p>
+      <button class="primary" id="sticker-popup-close-btn">Yay! 🎉</button>
     </div>
   </div>
 
@@ -398,7 +424,10 @@
           span.textContent = match[1];
           span.dataset.start = match.index;
 
-          const cleaned = match[1].toLowerCase().replace(/[^a-z]/g, '');
+          // Keep hyphens (so a vocab word like "self-awareness" or
+          // "semi-aquatic" can still match) while stripping everything
+          // else — surrounding punctuation, quote marks, etc.
+          const cleaned = match[1].toLowerCase().replace(/[^a-z-]/g, '').replace(/^-+|-+$/g, '');
           if (vocabMap[cleaned]) {
             span.classList.add('vocab-word');
             span.addEventListener('click', () => showVocabPopup(cleaned, vocabMap[cleaned]));
@@ -661,6 +690,57 @@
       show(document.getElementById('dashboard-card'));
     });
 
+    // ================= STICKER ALBUM & REWARD POPUP =================
+    const RARITY_LABELS = { common: 'Common', rare: '✨ Rare!', super_rare: '🌟 Super Rare!!' };
+
+    async function openStickerAlbum() {
+      hide(document.getElementById('reader-card'));
+      show(document.getElementById('sticker-album-card'));
+      const stickers = await api(`/api/kids/${currentKid.id}/stickers`);
+      renderStickerAlbum(stickers);
+    }
+
+    function renderStickerAlbum(stickers) {
+      const owned = stickers.filter((s) => s.count > 0).length;
+      document.getElementById('sticker-album-progress').textContent =
+        `You've collected ${owned} of ${stickers.length} stickers!`;
+
+      document.getElementById('sticker-grid').innerHTML = stickers
+        .map((s) => {
+          const isOwned = s.count > 0;
+          return `
+            <div class="sticker-tile ${isOwned ? '' : 'sticker-locked'} rarity-${s.rarity}">
+              <div class="sticker-tile-emoji">${isOwned ? s.emoji : '❔'}</div>
+              <div class="sticker-tile-name">${isOwned ? escapeHtml(s.name) : '???'}</div>
+              ${isOwned && s.count > 1 ? `<div class="sticker-tile-count">x${s.count}</div>` : ''}
+            </div>
+          `;
+        })
+        .join('');
+    }
+
+    document.getElementById('stickers-btn').addEventListener('click', openStickerAlbum);
+    document.getElementById('back-from-stickers-btn').addEventListener('click', () => {
+      hide(document.getElementById('sticker-album-card'));
+      show(document.getElementById('reader-card'));
+    });
+
+    function showStickerPopup(sticker, count) {
+      document.getElementById('sticker-popup-emoji').textContent = sticker.emoji;
+      document.getElementById('sticker-popup-headline').textContent =
+        count > 1 ? 'You got another sticker!' : 'You got a new sticker!';
+      document.getElementById('sticker-popup-name').textContent =
+        sticker.name + (count > 1 ? ` (x${count})` : '');
+      document.getElementById('sticker-popup-rarity').textContent = RARITY_LABELS[sticker.rarity] || '';
+      document.getElementById('sticker-popup-rarity').className =
+        `sticker-popup-rarity rarity-${sticker.rarity}`;
+      show(document.getElementById('sticker-popup'));
+      speakText(`${count > 1 ? "You got another sticker!" : "You got a new sticker!"} ${sticker.name}.`);
+    }
+    document.getElementById('sticker-popup-close-btn').addEventListener('click', () => {
+      hide(document.getElementById('sticker-popup'));
+    });
+
     // --- Content tabs (Stories / Kids World News) ---
     document.querySelectorAll('#content-tabs .tab').forEach((tab) => {
       tab.addEventListener('click', () => {
@@ -687,12 +767,15 @@
     document.getElementById('mark-done-btn').addEventListener('click', async () => {
       const statusEl = document.getElementById('reading-status');
       try {
-        await api(`/api/kids/${currentKid.id}/progress`, {
+        const result = await api(`/api/kids/${currentKid.id}/progress`, {
           method: 'POST',
           body: JSON.stringify({ story_id: currentStoryId }),
         });
         statusEl.textContent = '🌟 Nice job! Marked as read.';
         statusEl.className = 'success';
+        if (result.sticker) {
+          showStickerPopup(result.sticker, result.sticker_count);
+        }
       } catch (err) {
         statusEl.textContent = err.message;
         statusEl.className = 'error';
