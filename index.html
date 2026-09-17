@@ -4,15 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kids Reading App</title>
+<script>
+  // Applies a saved theme choice before the page paints, so returning
+  // visitors never see a flash of the wrong theme. If nothing is saved
+  // yet, we leave the attribute unset and the CSS media query falls
+  // back to the device's system preference.
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark' || saved === 'light') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (e) {}
+  })();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+
+<!-- Makes the app installable as a home-screen icon (Add to Home Screen /
+     Install App), so it can open full-screen instead of in a browser tab. -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#4b2fbe">
+<link rel="icon" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Little Explorers">
 </head>
 <body>
   <div class="glow" style="top:-10%; left:-8%; width:340px; height:340px; background:#6c3ce9;"></div>
   <div class="glow" style="bottom:-12%; right:-8%; width:380px; height:380px; background:#ff3b5c;"></div>
   <div class="glow" style="top:35%; right:15%; width:220px; height:220px; background:#4c6fff;"></div>
+
+  <button id="theme-toggle-btn" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"></button>
 
   <!-- ============ LOGIN / SIGNUP VIEW ============ -->
   <div class="card" id="auth-card">
@@ -1024,6 +1050,52 @@
       hide(document.getElementById('dashboard-card'));
       show(document.getElementById('auth-card'));
     });
+
+    // --- Dark mode toggle ---
+    // A visitor's choice always wins (stored in localStorage). Until they
+    // pick one, the CSS just follows the device's system preference, so
+    // this button only needs to know what's on screen right now to decide
+    // which way to switch.
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function isDarkActive() {
+      const explicit = document.documentElement.getAttribute('data-theme');
+      if (explicit === 'dark') return true;
+      if (explicit === 'light') return false;
+      return systemPrefersDark.matches;
+    }
+
+    function syncThemeToggleIcon() {
+      const dark = isDarkActive();
+      themeToggleBtn.textContent = dark ? '☀️' : '🌙';
+      themeToggleBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      const next = isDarkActive() ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      syncThemeToggleIcon();
+    });
+
+    // Keep the icon correct if the visitor hasn't chosen yet and their
+    // system theme changes (e.g. their phone switches to dark at sunset).
+    systemPrefersDark.addEventListener('change', syncThemeToggleIcon);
+
+    syncThemeToggleIcon();
+
+    // --- PWA install support ---
+    // Registering a service worker is one of the browser's requirements
+    // for showing the "Install app" / "Add to Home Screen" prompt. This
+    // one does no caching (see sw.js) - it's here purely for installability.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch((err) => {
+          console.error('Service worker registration failed:', err);
+        });
+      });
+    }
 
     async function boot() {
       const handledByUrlToken = await handleUrlTokens();

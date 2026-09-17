@@ -25,10 +25,73 @@
   --amber: #ffc145;       /* read-aloud word highlight */
   --success: #16a34a;
 
+  /* Soft tinted backgrounds (quiz right/wrong feedback, the gold sticker
+     glow) — kept as separate tokens rather than hardcoded hex so dark
+     mode can swap in a low-alpha version instead of a light pastel that
+     would look out of place on a dark card. */
+  --success-tint: #eafbf1;
+  --accent-tint: #fff0f2;
+  --amber-tint: #fff8e8;
+  --gold-text: #b8860b;
+
   --radius: 20px;
   --radius-sm: 12px;
   --shadow-card: 0 24px 60px rgba(13, 10, 35, 0.35);
   --shadow-soft: 0 10px 24px rgba(21, 18, 31, 0.12);
+}
+
+/* --- Dark mode ---
+   The backdrop behind every card is already a deep indigo gradient, so
+   "dark mode" here mainly means flipping the CARDS themselves from
+   white to a dark surface, which is what makes reading comfortable in
+   a dim room at bedtime — exactly when this app is most likely to be
+   used. Three layers, same pattern used for any well-behaved dark
+   mode: (1) a system-preference media query so a device already set to
+   dark mode gets it automatically, (2) an explicit [data-theme="dark"]
+   override so the manual toggle (see the JS) can force dark regardless
+   of system setting, (3) [data-theme="light"] to force light even on a
+   dark system. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #f1eef8;
+    --muted: #a79fcf;
+    --paper: #1e1a38;
+    --surface: #2a2452;
+    --border: #3d3568;
+    --accent: #ff5470;
+    --accent-deep: #ff3b5c;
+    --violet: #9c7bf0;
+    --violet-deep: #8360e8;
+    --blue: #6f8bff;
+    --amber: #ffc145;
+    --success: #2fd66c;
+    --success-tint: rgba(47, 214, 108, 0.16);
+    --accent-tint: rgba(255, 84, 112, 0.16);
+    --amber-tint: rgba(255, 193, 69, 0.16);
+    --gold-text: #f0c869;
+    --shadow-card: 0 24px 60px rgba(0, 0, 0, 0.55);
+    --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.35);
+  }
+}
+:root[data-theme="dark"] {
+  --ink: #f1eef8;
+  --muted: #a79fcf;
+  --paper: #1e1a38;
+  --surface: #2a2452;
+  --border: #3d3568;
+  --accent: #ff5470;
+  --accent-deep: #ff3b5c;
+  --violet: #9c7bf0;
+  --violet-deep: #8360e8;
+  --blue: #6f8bff;
+  --amber: #ffc145;
+  --success: #2fd66c;
+  --success-tint: rgba(47, 214, 108, 0.16);
+  --accent-tint: rgba(255, 84, 112, 0.16);
+  --amber-tint: rgba(255, 193, 69, 0.16);
+  --gold-text: #f0c869;
+  --shadow-card: 0 24px 60px rgba(0, 0, 0, 0.55);
+  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.35);
 }
 
 * { box-sizing: border-box; }
@@ -63,6 +126,29 @@ h1, h2, h3, .title, button, .stat-value {
   pointer-events: none;
   z-index: 0;
 }
+
+/* Fixed top-right button, visible on every screen (it lives outside the
+   swapped .card views), for switching between light and dark mode. */
+.theme-toggle {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  background: var(--paper);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+.theme-toggle:hover { transform: scale(1.08); }
 
 .card {
   position: relative;
@@ -213,7 +299,7 @@ button.primary:active { transform: translateY(0); }
 
 button.secondary {
   border: 2px solid var(--violet);
-  background: white;
+  background: var(--paper);
   color: var(--violet);
   font-family: inherit;
   font-weight: 700;
@@ -258,7 +344,7 @@ button.secondary.full { width: 100%; margin-top: 12px; }
   top: 6px;
   right: 6px;
   border: none;
-  background: white;
+  background: var(--paper);
   border-radius: 50%;
   width: 26px;
   height: 26px;
@@ -272,7 +358,7 @@ button.secondary.full { width: 100%; margin-top: 12px; }
   top: 6px;
   left: 6px;
   border: none;
-  background: white;
+  background: var(--paper);
   border-radius: 50%;
   width: 26px;
   height: 26px;
@@ -280,7 +366,7 @@ button.secondary.full { width: 100%; margin-top: 12px; }
   cursor: pointer;
   box-shadow: 0 2px 6px rgba(21, 18, 31, 0.15);
 }
-.delete-btn:hover { transform: scale(1.1); background: #fff0f2; }
+.delete-btn:hover { transform: scale(1.1); background: var(--accent-tint); }
 
 /* --- Parent progress view --- */
 .stat-row {
@@ -385,7 +471,7 @@ button.secondary.full { width: 100%; margin-top: 12px; }
   align-items: center;
   gap: 4px;
   border: 2px solid var(--border);
-  background: white;
+  background: var(--paper);
   border-radius: 16px;
   padding: 10px 16px;
   font-size: 22px;
@@ -491,7 +577,7 @@ button.secondary.full { width: 100%; margin-top: 12px; }
 .quiz-options { display: flex; flex-direction: column; gap: 10px; }
 .quiz-option {
   border: 2px solid var(--border);
-  background: white;
+  background: var(--paper);
   border-radius: var(--radius-sm);
   padding: 12px 16px;
   font-family: inherit;
@@ -504,8 +590,8 @@ button.secondary.full { width: 100%; margin-top: 12px; }
 }
 .quiz-option:hover:not(:disabled) { transform: translateX(4px); border-color: var(--violet); }
 .quiz-option:disabled { cursor: default; }
-.quiz-option.correct { border-color: var(--success); background: #eafbf1; }
-.quiz-option.incorrect { border-color: var(--accent); background: #fff0f2; }
+.quiz-option.correct { border-color: var(--success); background: var(--success-tint); }
+.quiz-option.incorrect { border-color: var(--accent); background: var(--accent-tint); }
 .quiz-result { text-align: center; font-size: 20px; font-weight: 700; color: var(--violet); margin-bottom: 14px; }
 
 /* --- Sticker album --- */
@@ -530,7 +616,7 @@ button.secondary.full { width: 100%; margin-top: 12px; }
   font-size: 11px;
   font-weight: 700;
   color: var(--violet);
-  background: white;
+  background: var(--paper);
   border-radius: 10px;
   padding: 1px 8px;
 }
@@ -539,7 +625,7 @@ button.secondary.full { width: 100%; margin-top: 12px; }
 .sticker-tile.rarity-rare:not(.sticker-locked) { border-color: var(--blue); box-shadow: 0 0 0 1px rgba(76, 111, 255, 0.15); }
 .sticker-tile.rarity-super_rare:not(.sticker-locked) {
   border-color: var(--amber);
-  background: linear-gradient(160deg, #fff8e8 0%, var(--surface) 100%);
+  background: linear-gradient(160deg, var(--amber-tint) 0%, var(--surface) 100%);
   box-shadow: 0 0 0 1px rgba(255, 193, 69, 0.25);
 }
 
@@ -568,5 +654,5 @@ button.secondary.full { width: 100%; margin-top: 12px; }
 .sticker-popup-name { font-size: 22px; font-weight: 700; margin: 6px 0 2px; }
 .sticker-popup-rarity { font-size: 13px; font-weight: 700; color: var(--muted); margin: 0 0 18px; }
 .sticker-popup-rarity.rarity-rare { color: var(--blue); }
-.sticker-popup-rarity.rarity-super_rare { color: #b8860b; }
+.sticker-popup-rarity.rarity-super_rare { color: var(--gold-text); }
 #sticker-popup-close-btn { width: 100%; }
